@@ -799,7 +799,7 @@ footer.no-print {
    PRINT MEDIA STYLES (Meticulously optimized for A4 3-Page Layout)
    ========================================================================== */
 @media print {
-    /* 1. Force browser to print exact colors, backgrounds, and shadows */
+    /* 1. Request browser to print exact colors, backgrounds, and shadows if enabled */
     * {
         -webkit-print-color-adjust: exact !important;
         print-color-adjust: exact !important;
@@ -846,7 +846,7 @@ footer.no-print {
 
     .profile-photo-container {
         border: 3px solid var(--accent) !important;
-        box-shadow: var(--shadow) !important;
+        box-shadow: none !important;
     }
 
     /* Keep NDT/Safety/particular SVGs and emojis visible */
@@ -864,7 +864,7 @@ footer.no-print {
         content: "" !important;
     }
 
-    /* 5. Card layout overrides: preserve background colors and shapes */
+    /* 5. Card layout overrides: preserve borders so cards look structured even without backgrounds */
     .cv-card {
         background-color: var(--bg-card) !important;
         border: 1px solid var(--border-color) !important;
@@ -904,7 +904,7 @@ footer.no-print {
         page-break-inside: avoid !important;
     }
 
-    /* 6. Retain timeline vertical bar and badge shapes */
+    /* 6. Retain timeline vertical bar and badge shapes (defensive styling with borders) */
     .timeline::before {
         display: block !important;
         background-color: var(--border-color) !important;
@@ -912,18 +912,21 @@ footer.no-print {
 
     .timeline-badge {
         display: flex !important;
-        background: var(--accent) !important;
-        color: #ffffff !important;
-        box-shadow: var(--shadow) !important;
+        background-color: var(--bg-card) !important;
+        color: var(--text-primary) !important;
+        border: 1.5px solid var(--border-color) !important;
+        box-shadow: none !important;
     }
 
     .timeline-badge.roc {
-        background: var(--accent-green) !important;
+        border-color: var(--accent-green) !important;
+        color: var(--accent-green) !important;
     }
 
-    /* 7. Keep perisian highlights, tags, and status badges colorful */
+    /* 7. Highlight labels, tags, and status badges (defensive borders for printing) */
     .tech-highlight {
-        background-color: rgba(2, 132, 199, 0.1) !important;
+        background-color: rgba(2, 132, 199, 0.05) !important;
+        border: 1px solid rgba(2, 132, 199, 0.2) !important;
         color: var(--accent) !important;
         padding: 2px 6px !important;
         border-radius: 4px !important;
@@ -932,7 +935,7 @@ footer.no-print {
     }
 
     .renewal-badge {
-        background-color: rgba(245, 158, 11, 0.1) !important;
+        background-color: rgba(245, 158, 11, 0.05) !important;
         border: 1px solid rgba(245, 158, 11, 0.3) !important;
         color: var(--accent-yellow) !important;
         padding: 2px 6px !important;
@@ -951,9 +954,9 @@ footer.no-print {
     }
 
     .badge-cert {
-        background-color: rgba(245, 158, 11, 0.1) !important;
+        background-color: rgba(245, 158, 11, 0.05) !important;
+        border: 1px solid rgba(245, 158, 11, 0.25) !important;
         color: var(--accent-yellow) !important;
-        border: 1px solid rgba(245, 158, 11, 0.2) !important;
         white-space: nowrap !important;
         flex-shrink: 0 !important;
     }
