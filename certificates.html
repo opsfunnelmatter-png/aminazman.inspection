@@ -462,31 +462,87 @@
         </div>
     </footer>
 
-    <!-- Simple Active Anchor Highlighting Script -->
+    <!-- Robust Active Anchor Highlighting Script -->
     <script>
         window.addEventListener('DOMContentLoaded', () => {
+            const sections = document.querySelectorAll('section.cert-card');
+            const navLinks = document.querySelectorAll('.nav-list li a');
+            
+            const intersectionStates = new Map();
+            let isClickScrolling = false;
+            let clickScrollTimeout = null;
+            
+            const updateActiveLink = (targetId = null) => {
+                let activeSectionId = targetId;
+                
+                if (!activeSectionId) {
+                    for (const section of sections) {
+                        const id = section.getAttribute('id');
+                        if (intersectionStates.get(id)) {
+                            activeSectionId = id;
+                            break;
+                        }
+                    }
+                }
+                
+                if (activeSectionId) {
+                    navLinks.forEach(a => {
+                        if (a.getAttribute('href') === `#${activeSectionId}`) {
+                            a.style.background = 'rgba(2, 132, 199, 0.08)';
+                            a.style.color = 'var(--accent)';
+                            a.style.fontWeight = '700';
+                        } else {
+                            a.style.background = 'none';
+                            a.style.color = 'var(--text-secondary)';
+                            a.style.fontWeight = '500';
+                        }
+                    });
+                }
+            };
+            
             const observer = new IntersectionObserver(entries => {
                 entries.forEach(entry => {
-                    const id = entry.target.getAttribute('id');
-                    if (entry.intersectionRatio > 0) {
-                        document.querySelectorAll('.nav-list li a').forEach(a => {
-                            if (a.getAttribute('href') === `#${id}`) {
-                                a.style.background = 'rgba(2, 132, 199, 0.08)';
-                                a.style.color = 'var(--accent)';
-                                a.style.fontWeight = '700';
-                            } else {
-                                a.style.background = 'none';
-                                a.style.color = 'var(--text-secondary)';
-                                a.style.fontWeight = '500';
-                            }
-                        });
-                    }
+                    intersectionStates.set(entry.target.getAttribute('id'), entry.isIntersecting);
                 });
-            }, { rootMargin: '-20% 0px -60% 0px' });
+                
+                if (!isClickScrolling) {
+                    updateActiveLink();
+                }
+            }, { rootMargin: '-15% 0px -55% 0px', threshold: 0.05 });
 
-            document.querySelectorAll('section.cert-card').forEach(section => {
+            sections.forEach(section => {
                 observer.observe(section);
             });
+            
+            navLinks.forEach(link => {
+                link.addEventListener('click', (e) => {
+                    const href = link.getAttribute('href');
+                    if (href.startsWith('#')) {
+                        const targetId = href.substring(1);
+                        isClickScrolling = true;
+                        clearTimeout(clickScrollTimeout);
+                        
+                        updateActiveLink(targetId);
+                        
+                        clickScrollTimeout = setTimeout(() => {
+                            isClickScrolling = false;
+                            updateActiveLink();
+                        }, 800);
+                    }
+                });
+            });
+
+            // Handle initial hash on page load
+            if (window.location.hash) {
+                const targetId = window.location.hash.substring(1);
+                updateActiveLink(targetId);
+                const targetEl = document.getElementById(targetId);
+                if (targetEl) {
+                    setTimeout(() => {
+                        targetEl.scrollIntoView({ behavior: 'auto', block: 'start' });
+                    }, 100);
+                }
+            }
         });
     </script>
 
