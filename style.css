@@ -357,6 +357,8 @@ a:hover {
     font-size: 0.75rem;
     font-weight: 600;
     display: inline-block;
+    white-space: nowrap;
+    flex-shrink: 0;
 }
 
 .badge-cert:hover {
