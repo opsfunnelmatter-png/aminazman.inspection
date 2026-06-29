@@ -1425,3 +1425,62 @@ footer.no-print {
         color: var(--accent) !important;
     }
 }
+
+/* --- CLICKABLE BUTTON HOVER ARROW INDICATORS --- */
+.tag-link-btn, .btn-cert, .btn-cert-outline, .hub-btn, .inline-link {
+    cursor: pointer !important;
+}
+
+/* Diagonal arrow for tag links */
+.tag-link-btn::after {
+    content: " ↗";
+    font-size: 0.8em;
+    margin-left: 3px;
+    display: inline-block;
+    transition: transform 0.2s ease;
+}
+
+.tag-link-btn:hover::after {
+    transform: translate(1px, -1px);
+}
+
+/* Horizontal arrow for navigation cards */
+.hub-btn::after {
+    content: " ➔";
+    font-size: 0.85em;
+    margin-left: 6px;
+    display: inline-block;
+    transition: transform 0.2s ease;
+}
+
+.hub-card:hover .hub-btn::after {
+    transform: translateX(4px);
+}
+
+/* Diagonal arrow for major actions */
+.btn-cert::after,
+.btn-cert-outline::after {
+    content: " ↗";
+    font-size: 0.85em;
+    margin-left: 5px;
+    display: inline-block;
+    transition: transform 0.2s ease;
+}
+
+.btn-cert:hover::after,
+.btn-cert-outline:hover::after {
+    transform: translate(1px, -1px);
+}
+
+/* Simple inline navigation links */
+.inline-link::after {
+    content: " ➔";
+    font-size: 0.8em;
+    margin-left: 4px;
+    display: inline-block;
+    transition: transform 0.2s ease;
+}
+
+.inline-link:hover::after {
+    transform: translateX(3px);
+}
