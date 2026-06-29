@@ -1185,3 +1185,46 @@ footer.no-print {
         display: inline-block !important;
     }
 }
+
+/* --- CAMPAIGN PHOTOS --- */
+.campaign-photo-container {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+    background-color: var(--bg-card);
+    max-width: 480px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: var(--transition);
+}
+
+.campaign-photo-container:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(56, 189, 248, 0.15);
+    border-color: var(--accent);
+}
+
+.campaign-photo {
+    width: 100%;
+    height: auto;
+    max-height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+.photo-caption {
+    display: block;
+    padding: 8px 12px;
+    font-size: 0.78rem;
+    color: var(--text-secondary);
+    background-color: rgba(15, 23, 42, 0.2);
+    border-top: 1px solid var(--border-color);
+    font-weight: 500;
+}
+
+@media print {
+    .campaign-photo-container {
+        display: none !important;
+    }
+}
