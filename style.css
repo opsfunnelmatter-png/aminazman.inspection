@@ -799,353 +799,166 @@ footer.no-print {
    PRINT MEDIA STYLES (Meticulously optimized for A4 3-Page Layout)
    ========================================================================== */
 @media print {
+    /* 1. Force browser to print exact colors, backgrounds, and shadows */
+    * {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+        color-adjust: exact !important;
+    }
     
-    /* 1. Page settings & dimensions */
+    /* 2. Page dimensions & margins */
     @page {
         size: A4;
-        margin: 14mm 14mm 14mm 14mm; /* Adjusted margins for optimal content distribution */
+        margin: 10mm 12mm 10mm 12mm;
     }
 
-    /* 2. Body overrides for clean white background and solid black ink */
     body {
-        background-color: #ffffff !important;
-        color: #111111 !important;
-        font-size: 11.5px; /* Slightly scaled down text for A4 spacing */
-        line-height: 1.45;
-        padding-bottom: 0;
+        background-color: var(--bg-main) !important;
+        color: var(--text-primary) !important;
+        font-size: 13.5px !important;
+        line-height: 1.5 !important;
+        padding-bottom: 0 !important;
     }
 
-    /* 3. Hide non-printable action bar and screen footer elements */
+    /* Hide non-printable action bar and screen elements */
     .no-print {
         display: none !important;
     }
 
-    /* 4. Remove dark card wrapper visual decorations */
+    /* 3. CV Wrapper styling to print exactly like the screen container */
     .cv-wrapper {
-        background-color: #ffffff !important;
-        border: none !important;
-        border-radius: 0 !important;
-        padding: 0 !important;
+        background-color: var(--bg-content) !important;
+        border: 1px solid var(--border-color) !important;
+        border-radius: 12px !important;
+        padding: 24px !important;
         margin: 0 !important;
         box-shadow: none !important;
         width: 100% !important;
+        max-width: 100% !important;
     }
 
-    /* 5. Header adjustments (keep clean on Page 1) */
+    /* 4. Header adjustments (keep clean on Page 1) */
     .header-section {
-        border-bottom: 1.5px solid #111111 !important;
-        padding-bottom: 18px !important;
+        border-bottom: 2px solid var(--accent) !important;
+        padding-bottom: 15px !important;
         margin-bottom: 20px !important;
-    }
-
-    .header-grid {
-        grid-template-columns: 105px 1fr !important;
-        gap: 20px !important;
     }
 
     .profile-photo-container {
-        width: 105px !important;
-        height: 105px !important;
-        border: 2px solid #111111 !important;
-        box-shadow: none !important;
+        border: 3px solid var(--accent) !important;
+        box-shadow: var(--shadow) !important;
     }
 
-    .header-info h1 {
-        font-size: 1.8rem !important;
-        color: #111111 !important;
-        margin-bottom: 4px !important;
-    }
-
-    .header-info .subtitle {
-        font-size: 1rem !important;
-        color: #333333 !important;
-        margin-bottom: 10px !important;
-        font-weight: 700 !important;
-    }
-
-    .badge {
-        background: transparent !important;
-        color: #111111 !important;
-        border: 1px solid #111111 !important;
-        padding: 2px 6px !important;
-        font-size: 0.7rem !important;
-        margin-bottom: 5px !important;
-    }
-
-    .contact-grid {
-        gap: 12px !important;
-        margin-top: 6px !important;
-    }
-
-    .contact-item {
-        font-size: 0.8rem !important;
-        color: #333333 !important;
+    /* Keep NDT/Safety/particular SVGs and emojis visible */
+    .card-title svg, .section-title svg, .subsection-title svg, .btn-cert svg, .btn-cert-outline svg {
+        display: inline-block !important;
+        vertical-align: middle !important;
     }
 
     .contact-item .icon {
-        display: none !important; /* Hide emojis in print */
-    }
-
-    /* Print URL notation next to inline links */
-    .contact-item a::after {
-        content: " (" attr(href) ")";
-        font-size: 0.75rem;
-        color: #555555;
-    }
-
-    /* 6. Particulars and Education Card Layout overrides */
-    .main-grid {
-        grid-template-columns: 1fr 1fr !important;
-        gap: 20px !important;
-        margin-bottom: 15px !important;
-    }
-
-    .cv-card {
-        background-color: #ffffff !important;
-        border: 1px solid #e2e8f0 !important;
-        border-radius: 6px !important;
-        padding: 14px !important;
-        margin-bottom: 15px !important;
-        box-shadow: none !important;
-    }
-
-    .card-title {
-        font-size: 1.05rem !important;
-        color: #111111 !important;
-        margin-bottom: 10px !important;
-        border-bottom: 1.5px solid #111111 !important;
-        padding-bottom: 4px !important;
-    }
-
-    .card-title svg {
-        display: none !important; /* Hide SVGs in print for standard look */
-    }
-
-    .p-item {
-        grid-template-columns: 110px 1fr !important;
-        font-size: 0.8rem !important;
-        padding-bottom: 5px !important;
-        margin-bottom: 2px !important;
-        border-bottom: 1px solid #f1f5f9 !important;
-    }
-
-    .particulars-list {
-        gap: 6px !important;
-    }
-
-    /* Simplify links for clean look on paper */
-    .cert-link {
-        text-decoration: none !important;
-        color: #111111 !important;
-    }
-    
-    .cert-link:hover, .cert-link:active {
-        color: #111111 !important;
-    }
-
-    .tag-link, .tag-link-btn, .btn-cert, .badge-cert, .btn-cert-outline {
-        border: 1px solid #cccccc !important;
-        background: transparent !important;
-        color: #111111 !important;
-        padding: 2px 6px !important;
-        font-size: 0.75rem !important;
-        border-radius: 4px !important;
         display: inline-block !important;
-        margin: 1px !important;
+    }
+
+    /* Remove ugly browser-appended URLs next to printed links */
+    .contact-item a::after {
+        content: "" !important;
+    }
+
+    /* 5. Card layout overrides: preserve background colors and shapes */
+    .cv-card {
+        background-color: var(--bg-card) !important;
+        border: 1px solid var(--border-color) !important;
+        border-radius: 8px !important;
+        padding: 16px !important;
+        margin-bottom: 16px !important;
         box-shadow: none !important;
-        font-weight: 500 !important;
-    }
-
-    .btn-cert svg, .btn-cert-outline svg {
-        display: none !important;
-    }
-
-    /* 7. Safety Grid overrides */
-    .safety-grid {
-        gap: 8px !important;
-    }
-
-    .safety-card {
-        padding: 8px !important;
-        border: 1px solid #f1f5f9 !important;
-        background: transparent !important;
-    }
-
-    .safety-card h4 {
-        font-size: 0.85rem !important;
-        margin-bottom: 2px !important;
-    }
-
-    .safety-card .meta {
-        font-size: 0.75rem !important;
-        margin-bottom: 4px !important;
-    }
-
-    .safety-card .btn-group {
-        display: none !important; /* Hide duplicate action buttons in print */
-    }
-
-    /* 8. Skills adjustments */
-    .skills-section {
-        gap: 8px !important;
-    }
-
-    .skill-category h5 {
-        font-size: 0.75rem !important;
-        color: #111111 !important;
-        margin-bottom: 2px !important;
-    }
-
-    .skill-category p {
-        font-size: 0.75rem !important;
-        color: #333333 !important;
-    }
-
-    /* 9. Timeline work history overrides (Page 2 & 3) */
-    .section-title {
-        font-size: 1.25rem !important;
-        color: #111111 !important;
-        margin-bottom: 15px !important;
-        border-bottom: 1.5px solid #111111 !important;
-        padding-bottom: 6px !important;
-    }
-
-    .section-title svg {
-        display: none !important;
-    }
-
-    .timeline {
-        padding-left: 0 !important; /* Remove timeline vertical bar layout for clean printing */
-    }
-
-    .timeline::before {
-        display: none !important;
-    }
-
-    .timeline-badge {
-        display: none !important;
-    }
-
-    .timeline-item {
-        margin-bottom: 20px !important;
-        page-break-inside: avoid !important;
         break-inside: avoid !important;
+        page-break-inside: avoid !important;
     }
 
     .timeline-content {
-        background-color: #ffffff !important;
-        border: 1px solid #cccccc !important;
-        border-radius: 6px !important;
-        padding: 14px !important;
+        background-color: var(--bg-card) !important;
+        border: 1px solid var(--border-color) !important;
+        border-radius: 8px !important;
+        padding: 16px !important;
         box-shadow: none !important;
-    }
-
-    .job-header h3 {
-        font-size: 1.05rem !important;
-        color: #111111 !important;
-    }
-
-    .job-header .company {
-        color: #333333 !important;
-        font-size: 0.85rem !important;
-        font-weight: 700 !important;
-    }
-
-    .job-duration {
-        background: transparent !important;
-        color: #111111 !important;
-        border: 1px solid #111111 !important;
-        padding: 1px 6px !important;
-        font-size: 0.7rem !important;
-    }
-
-    .job-loc {
-        font-size: 0.75rem !important;
-        color: #555555 !important;
-        margin-bottom: 4px !important;
-    }
-
-    .job-desc {
-        font-size: 0.8rem !important;
-        color: #111111 !important;
-        font-weight: 700 !important;
-        margin-bottom: 4px !important;
-    }
-
-    .job-details li {
-        font-size: 0.8rem !important;
-        color: #333333 !important;
-        padding-left: 12px !important;
-    }
-
-    .job-details li::before {
-        content: '-' !important;
-        color: #111111 !important;
-        left: 0 !important;
-    }
-
-    /* 10. Technical Summary & Duties */
-    .subsection-title {
-        font-size: 1.05rem !important;
-        color: #111111 !important;
-        margin-top: 15px !important;
-        margin-bottom: 10px !important;
-        border-left: 2px solid #111111 !important;
-        padding-left: 8px !important;
-    }
-
-    .duties-grid {
-        grid-template-columns: 1fr !important; /* Stack for vertical print layout */
-        gap: 10px !important;
-    }
-
-    .duties-grid .duty-card:nth-child(3) {
-        grid-column: span 1 !important;
+        break-inside: avoid !important;
+        page-break-inside: avoid !important;
     }
 
     .duty-card {
-        background: #ffffff !important;
-        border: 1px solid #e2e8f0 !important;
-        padding: 10px !important;
-        page-break-inside: avoid !important;
-        break-inside: avoid !important;
-    }
-
-    .duty-card h4 {
-        font-size: 0.85rem !important;
-        margin-bottom: 4px !important;
-        color: #111111 !important;
-    }
-
-    .duty-card p {
-        font-size: 0.75rem !important;
-        color: #333333 !important;
-    }
-
-    /* 11. Appraisal letter block */
-    .appraisal-box {
-        background: #ffffff !important;
-        border: 1px dashed #999999 !important;
+        background-color: var(--bg-card) !important;
+        border: 1px solid var(--border-color) !important;
         padding: 12px !important;
-        margin-top: 15px !important;
-        gap: 8px !important;
-        page-break-inside: avoid !important;
+        border-radius: 8px !important;
         break-inside: avoid !important;
+        page-break-inside: avoid !important;
     }
 
-    .appraisal-box p {
-        font-size: 0.75rem !important;
-        color: #333333 !important;
+    .appraisal-box {
+        background: var(--bg-card) !important;
+        border: 1px dashed var(--accent) !important;
+        padding: 12px !important;
+        border-radius: 8px !important;
+        break-inside: avoid !important;
+        page-break-inside: avoid !important;
     }
 
-    /* Hide call to action text on buttons when printing */
-    .appraisal-box .btn-cert-outline {
+    /* 6. Retain timeline vertical bar and badge shapes */
+    .timeline::before {
         display: block !important;
-        margin: 0 auto !important;
-        width: max-content !important;
+        background-color: var(--border-color) !important;
     }
 
-    /* 12. STRICT PAGE BREAK CONTROLS FOR EXACT 3 PAGES */
+    .timeline-badge {
+        display: flex !important;
+        background: var(--accent) !important;
+        color: #ffffff !important;
+        box-shadow: var(--shadow) !important;
+    }
+
+    .timeline-badge.roc {
+        background: var(--accent-green) !important;
+    }
+
+    /* 7. Keep perisian highlights, tags, and status badges colorful */
+    .tech-highlight {
+        background-color: rgba(2, 132, 199, 0.1) !important;
+        color: var(--accent) !important;
+        padding: 2px 6px !important;
+        border-radius: 4px !important;
+        font-weight: 600 !important;
+        display: inline-block !important;
+    }
+
+    .renewal-badge {
+        background-color: rgba(245, 158, 11, 0.1) !important;
+        border: 1px solid rgba(245, 158, 11, 0.3) !important;
+        color: var(--accent-yellow) !important;
+        padding: 2px 6px !important;
+        border-radius: 4px !important;
+        font-weight: 700 !important;
+        display: inline-block !important;
+    }
+
+    .tag-link, .tag-link-btn, .btn-cert, .badge-cert, .btn-cert-outline {
+        background-color: var(--bg-card) !important;
+        border: 1px solid var(--border-color) !important;
+        color: var(--text-primary) !important;
+        box-shadow: none !important;
+        display: inline-flex !important;
+        align-items: center !important;
+    }
+
+    .badge-cert {
+        background-color: rgba(245, 158, 11, 0.1) !important;
+        color: var(--accent-yellow) !important;
+        border: 1px solid rgba(245, 158, 11, 0.2) !important;
+        white-space: nowrap !important;
+        flex-shrink: 0 !important;
+    }
+
+    /* 8. Strict page breaks management */
     .page-break {
         display: block !important;
         height: 0 !important;
@@ -1154,43 +967,6 @@ footer.no-print {
         padding: 0 !important;
         page-break-before: always !important;
         break-before: page !important;
-    }
-
-    /* 13. Professional Summary, Highlights & Badges overrides for Print */
-    .summary-card {
-        background-color: #ffffff !important;
-        border: 1px solid #e2e8f0 !important;
-        padding: 14px !important;
-        margin-bottom: 15px !important;
-        page-break-inside: avoid !important;
-        break-inside: avoid !important;
-    }
-
-    .summary-text {
-        font-size: 0.8rem !important;
-        color: #333333 !important;
-        line-height: 1.5 !important;
-    }
-
-    .tech-highlight {
-        background: transparent !important;
-        border: none !important;
-        color: #111111 !important;
-        font-weight: 700 !important;
-        padding: 0 !important;
-        display: inline !important;
-    }
-
-    .renewal-badge {
-        background: transparent !important;
-        border: 1px solid #666666 !important;
-        color: #333333 !important;
-        padding: 1px 5px !important;
-        font-size: 0.7rem !important;
-        border-radius: 3px !important;
-        font-weight: 700 !important;
-        margin-left: 6px !important;
-        display: inline-block !important;
     }
 }
 
