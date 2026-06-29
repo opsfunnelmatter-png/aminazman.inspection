@@ -1373,3 +1373,46 @@ footer.no-print {
         width: auto !important;
     }
 }
+
+/* --- EDUCATION FLEX ROW LAYOUT (SPACE SAVER) --- */
+.edu-item.flex-row-layout {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    gap: 15px !important;
+}
+
+.edu-info {
+    flex: 1 !important;
+    min-width: 0 !important;
+}
+
+.edu-actions {
+    flex-shrink: 0 !important;
+}
+
+.edu-actions .cert-link {
+    margin: 0 !important;
+    width: 140px !important; /* matches width of safety buttons */
+    justify-content: center !important;
+    text-align: center !important;
+    white-space: nowrap !important;
+    font-size: 0.72rem !important;
+    padding: 6px 12px !important;
+}
+
+@media screen and (max-width: 480px) {
+    .edu-item.flex-row-layout {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 10px !important;
+    }
+    
+    .edu-actions {
+        width: 100% !important;
+    }
+    
+    .edu-actions .cert-link {
+        width: 100% !important;
+    }
+}
