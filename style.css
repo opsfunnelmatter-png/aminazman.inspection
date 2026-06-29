@@ -741,13 +741,8 @@ a:hover {
 
 /* --- PREMIUM TECH HIGHLIGHT & RENEWAL BADGES --- */
 .tech-highlight {
-    background: rgba(56, 189, 248, 0.12);
     color: var(--accent);
-    padding: 2px 6px;
-    border-radius: 4px;
     font-weight: 600;
-    border: 1px solid rgba(56, 189, 248, 0.25);
-    display: inline-block;
 }
 
 .renewal-badge {
@@ -991,16 +986,9 @@ footer.no-print {
         font-size: 0.75rem !important;
     }
 
-    /* 8. Highlight labels, tags, and status badges (defensive borders for printing) */
     .tech-highlight {
-        background-color: rgba(2, 132, 199, 0.05) !important;
-        border: 1px solid rgba(2, 132, 199, 0.2) !important;
         color: var(--accent) !important;
-        padding: 1px 4px !important;
-        border-radius: 4px !important;
         font-weight: 600 !important;
-        display: inline-block !important;
-        font-size: 0.7rem !important;
     }
 
     .renewal-badge {
