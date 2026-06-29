@@ -1048,6 +1048,50 @@ footer.no-print {
         page-break-before: always !important;
         break-before: page !important;
     }
+
+    /* 10. Cover Letter Print Layout for Page 2 Hub Cards (index.html) */
+    .right-sidebar-panel {
+        display: flex !important;
+        flex-direction: row !important; /* arrange cards horizontally on page 2 */
+        flex-wrap: wrap !important;
+        gap: 15px !important;
+        width: 100% !important;
+        margin-top: 15px !important;
+    }
+
+    .right-sidebar-panel .linkedin-sidebar-card,
+    .right-sidebar-panel .hub-card {
+        flex: 1 !important;
+        min-width: 200px !important;
+        min-height: auto !important;
+        padding: 12px !important;
+        margin: 0 !important;
+        break-inside: avoid !important;
+        page-break-inside: avoid !important;
+        border: 1px solid var(--border-color) !important;
+        border-radius: 8px !important;
+        background-color: var(--bg-card) !important;
+    }
+    
+    .right-sidebar-panel .linkedin-sidebar-card h4,
+    .right-sidebar-panel .hub-card h3 {
+        font-size: 0.95rem !important;
+        margin-bottom: 6px !important;
+        border-bottom: 1px solid var(--border-color) !important;
+        padding-bottom: 4px !important;
+    }
+    
+    .right-sidebar-panel .linkedin-sidebar-card p,
+    .right-sidebar-panel .hub-card p {
+        font-size: 0.72rem !important;
+        line-height: 1.35 !important;
+    }
+
+    /* Hide action buttons in printed card summary */
+    .right-sidebar-panel .btn-cert,
+    .right-sidebar-panel .hub-btn {
+        display: none !important;
+    }
 }
 
 /* --- GALLERY CAROUSEL --- */
