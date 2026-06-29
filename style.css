@@ -1186,45 +1186,93 @@ footer.no-print {
     }
 }
 
-/* --- CAMPAIGN PHOTOS --- */
-.campaign-photo-container {
-    margin-top: 15px;
-    margin-bottom: 15px;
-    border-radius: 8px;
+/* --- GALLERY CAROUSEL --- */
+.gallery-carousel-wrapper {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 35px;
+}
+
+.gallery-carousel {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: thin;
+    scrollbar-color: var(--accent) var(--bg-card);
+    padding-bottom: 15px;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+
+.gallery-carousel::-webkit-scrollbar {
+    height: 8px;
+}
+
+.gallery-carousel::-webkit-scrollbar-track {
+    background: var(--bg-card);
+    border-radius: 4px;
+}
+
+.gallery-carousel::-webkit-scrollbar-thumb {
+    background: var(--border-color);
+    border-radius: 4px;
+}
+
+.gallery-carousel::-webkit-scrollbar-thumb:hover {
+    background: var(--accent);
+}
+
+.gallery-slide {
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+    border-radius: 12px;
     overflow: hidden;
     border: 1px solid var(--border-color);
-    background-color: var(--bg-card);
-    max-width: 480px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: var(--transition);
+    background: var(--bg-card);
+    position: relative;
+    box-shadow: var(--shadow);
+    aspect-ratio: 16/9;
 }
 
-.campaign-photo-container:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 15px rgba(56, 189, 248, 0.15);
-    border-color: var(--accent);
+@media (min-width: 576px) {
+    .gallery-slide {
+        flex: 0 0 calc(50% - 10px);
+    }
 }
 
-.campaign-photo {
+@media (min-width: 992px) {
+    .gallery-slide {
+        flex: 0 0 calc(33.333% - 13.33px);
+    }
+}
+
+.gallery-slide img {
     width: 100%;
-    height: auto;
-    max-height: 250px;
+    height: 100%;
     object-fit: cover;
     display: block;
+    pointer-events: none;
+    user-select: none;
 }
 
-.photo-caption {
-    display: block;
-    padding: 8px 12px;
-    font-size: 0.78rem;
-    color: var(--text-secondary);
-    background-color: rgba(15, 23, 42, 0.2);
-    border-top: 1px solid var(--border-color);
-    font-weight: 500;
+.gallery-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 12px 15px;
+    background: linear-gradient(transparent, rgba(15, 23, 42, 0.95));
+    color: #ffffff;
+    font-size: 0.82rem;
+    font-weight: 600;
+    font-family: var(--font-header);
+    text-shadow: 0 1px 2px rgba(0,0,0,0.6);
 }
 
 @media print {
-    .campaign-photo-container {
+    .gallery-carousel-wrapper,
+    .gallery-section-title {
         display: none !important;
     }
 }
