@@ -1,0 +1,89 @@
+==========================================================================
+                     PANDUAN CARA GUNA: JOB APPLICATION CRM
+==========================================================================
+Sistem ini dibina untuk membantu anda menghantar e-mel permohonan kerja 
+secara personal secara automatik, menjejak status permohonan, dan mencari 
+kenalan crewing baru.
+
+Semua skrip berada di dalam folder: job-crm/
+
+--------------------------------------------------------------------------
+LANGKAH 1: PERSEDIAAN AWAL (BUAT SEKALI SAHAJA)
+--------------------------------------------------------------------------
+1. Sediakan fail CV PDF anda.
+2. Letakkan fail PDF tersebut ke dalam folder:
+   👉 job-crm\cv_attachments\
+   (Sistem akan pilih fail PDF terbaru secara automatik jika ada banyak fail).
+
+--------------------------------------------------------------------------
+LANGKAH 2: CARA SEMAK STATISTIK HANTAR (DASHBOARD)
+--------------------------------------------------------------------------
+Untuk melihat berapa e-mel yang dah dihantar, yang belum dihantar (Pending), 
+atau yang dah balas (Replied):
+
+1. Buka terminal (PowerShell / Command Prompt).
+2. Jalankan arahan ini:
+   cd c:\Users\amin8\Desktop\AG-Offshore\job-crm
+   python 04_dashboard.py
+
+--------------------------------------------------------------------------
+LANGKAH 3: MULA HANTAR EMEL (QUEUE SENDING)
+--------------------------------------------------------------------------
+Sistem akan hantar e-mel satu persatu dengan delay rawak (45 hingga 120 saat) 
+secara automatik untuk mengelakkan e-mel anda masuk ke folder SPAM.
+
+* Hantar 5 e-mel (Tetapan asal/Lalai - Sangat Selamat):
+  python 02_send_emails.py
+
+* Hantar mengikut had yang anda mahu (contohnya 10 e-mel):
+  python 02_send_emails.py --limit 10
+
+* Hantar semua e-mel pending sekaligus (tidak digalakkan untuk jumlah yang banyak):
+  python 02_send_emails.py --no-limit
+
+--------------------------------------------------------------------------
+LANGKAH 4: KEMASKINI STATUS BILA DAPAT BALASAN (REPLY / BOUNCE)
+--------------------------------------------------------------------------
+Apabila syarikat membalas e-mel anda (sama ada mereka berminat, menolak, atau 
+meminta anda mengisi borang di website), anda wajib mengemas kini statusnya 
+supaya rekod sentiasa kemas.
+
+1. Jalankan arahan ini:
+   python 03_update_status.py
+2. Pilih menu:
+   [1] Search & Update Contact Status (Cari & Kemaskini Status)
+3. Cari menggunakan e-mel atau nama syarikat.
+4. Pilih kenalan tersebut dan masukkan status baru:
+   - Pending           -> Belum hantar
+   - Sent              -> Sudah dihantar, menunggu jawapan
+   - System-Reply      -> Auto-reply daripada sistem syarikat
+   - Replied-NCA       -> Balas tetapi tiada kekosongan (No Current Availability)
+   - Replied-Interested-> Berminat / Ada Peluang!
+   - Replied-Forwarded -> E-mel dihantar ke bahagian HR/Crewing lain
+   - Profile-Submitted -> Sudah daftar profil di portal web syarikat
+   - Invalid           -> E-mel salah / melantul (bounce)
+   - Replied-Other     -> Balasan lain-lain
+
+--------------------------------------------------------------------------
+LANGKAH 5: CARI KENALAN CREWING / HR BARU (SEARCH GENERATOR)
+--------------------------------------------------------------------------
+Jika anda ingin mencari nama atau e-mel pegawai crewing/HR di syarikat yang 
+belum dihantar e-mel:
+
+1. Jalankan arahan ini:
+   python 05_find_contacts.py
+2. Fail bernama "contact_search_links.txt" akan dicipta dalam folder job-crm/.
+3. Buka fail tersebut, klik pautan LinkedIn/Google yang dijana untuk syarikat sasaran.
+4. Cari nama/emel di LinkedIn.
+5. Selepas jumpa e-mel baru, jalankan:
+   python 03_update_status.py
+6. Pilih menu:
+   [3] Add New Contact (Tambah Kenalan Baru)
+7. Masukkan nama, syarikat, dan e-mel baru tersebut ke dalam pangkalan data.
+
+==========================================================================
+LOG PENGHANTARAN EMEL
+==========================================================================
+Setiap kali e-mel berjaya dihantar, sistem akan merekodkannya di dalam fail:
+👉 job-crm\email_log.txt
+==========================================================================
