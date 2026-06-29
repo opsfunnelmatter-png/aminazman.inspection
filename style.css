@@ -1427,7 +1427,7 @@ footer.no-print {
 }
 
 /* --- CLICKABLE BUTTON MOUSE CURSOR INDICATORS --- */
-.tag-link-btn, .btn-cert, .btn-cert-outline, .hub-btn, .inline-link {
+.tag-link-btn, .btn-cert, .btn-cert-outline, .hub-btn, .inline-link, .badge-cert, .tag-link {
     cursor: pointer !important;
 }
 
@@ -1436,7 +1436,9 @@ footer.no-print {
 .btn-cert::after,
 .btn-cert-outline::after,
 .hub-btn::after,
-.inline-link::after {
+.inline-link::after,
+.badge-cert::after,
+.tag-link::after {
     content: "";
     display: inline-block;
     width: 11px;
@@ -1458,6 +1460,8 @@ footer.no-print {
 .btn-cert:hover::after,
 .btn-cert-outline:hover::after,
 .hub-card:hover .hub-btn::after,
-.inline-link:hover::after {
+.inline-link:hover::after,
+.badge-cert:hover::after,
+.tag-link:hover::after {
     transform: translate(-2px, -2px) scale(1.15);
 }
