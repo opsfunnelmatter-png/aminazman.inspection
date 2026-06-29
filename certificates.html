@@ -217,6 +217,10 @@
                 white-space: nowrap !important;
                 display: block;
             }
+            
+            .cert-card {
+                scroll-margin-top: 195px !important;
+            }
         }
     </style>
 </head>
@@ -513,6 +517,22 @@
     <!-- Robust Active Anchor Highlighting Script -->
     <script>
         window.addEventListener('DOMContentLoaded', () => {
+            // Dynamic Sticky Offset for Mobile Tag Bar
+            const adjustStickyOffset = () => {
+                const actionBar = document.querySelector('.action-bar');
+                const sidebarNav = document.querySelector('.sidebar-nav');
+                if (actionBar && sidebarNav) {
+                    if (window.innerWidth <= 992) {
+                        const barHeight = actionBar.offsetHeight;
+                        sidebarNav.style.top = `${barHeight}px`;
+                    } else {
+                        sidebarNav.style.top = ''; // Reset for desktop
+                    }
+                }
+            };
+            adjustStickyOffset();
+            window.addEventListener('resize', adjustStickyOffset);
+
             const sections = document.querySelectorAll('section.cert-card');
             const navLinks = document.querySelectorAll('.nav-list li a');
             
