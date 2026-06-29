@@ -421,14 +421,22 @@ a:hover {
 .safety-grid {
     display: flex;
     flex-direction: column;
-    gap: 14px;
+    gap: 0;
 }
 
 .safety-card {
-    background: rgba(0, 0, 0, 0.02);
-    border: 1px solid var(--border-color);
-    border-radius: 8px;
-    padding: 12px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid var(--border-color);
+    border-radius: 0;
+    padding: 8px 0;
+}
+.safety-card:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+.safety-card:first-child {
+    padding-top: 0;
 }
 
 .safety-card h4 {
@@ -1326,7 +1334,7 @@ footer.no-print {
     justify-content: space-between !important;
     align-items: center !important;
     gap: 15px !important;
-    padding: 10px 12px !important;
+    padding: 8px 0 !important;
 }
 
 .safety-info {
