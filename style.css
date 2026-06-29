@@ -1056,7 +1056,7 @@ footer.no-print {
    RESPONSIVE SCREEN MEDIA QUERIES (MOBILE VIEW)
    ============================================= */
 
-@media (max-width: 992px) {
+@media screen and (max-width: 992px) {
     /* 1. Main CV layout grid */
     .main-grid {
         grid-template-columns: 1fr !important;
@@ -1080,7 +1080,7 @@ footer.no-print {
     }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     /* 4. Action Bar (Screen Only) */
     .action-bar {
         padding: 10px 0 !important;
