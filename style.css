@@ -1426,61 +1426,38 @@ footer.no-print {
     }
 }
 
-/* --- CLICKABLE BUTTON HOVER ARROW INDICATORS --- */
+/* --- CLICKABLE BUTTON MOUSE CURSOR INDICATORS --- */
 .tag-link-btn, .btn-cert, .btn-cert-outline, .hub-btn, .inline-link {
     cursor: pointer !important;
 }
 
-/* Diagonal arrow for tag links */
-.tag-link-btn::after {
-    content: " ↗";
-    font-size: 0.8em;
-    margin-left: 3px;
-    display: inline-block;
-    transition: transform 0.2s ease;
-}
-
-.tag-link-btn:hover::after {
-    transform: translate(1px, -1px);
-}
-
-/* Horizontal arrow for navigation cards */
-.hub-btn::after {
-    content: " ➔";
-    font-size: 0.85em;
-    margin-left: 6px;
-    display: inline-block;
-    transition: transform 0.2s ease;
-}
-
-.hub-card:hover .hub-btn::after {
-    transform: translateX(4px);
-}
-
-/* Diagonal arrow for major actions */
+/* Classic mouse cursor pointer (points top-left, sits on right side of text) */
+.tag-link-btn::after,
 .btn-cert::after,
-.btn-cert-outline::after {
-    content: " ↗";
-    font-size: 0.85em;
-    margin-left: 5px;
-    display: inline-block;
-    transition: transform 0.2s ease;
-}
-
-.btn-cert:hover::after,
-.btn-cert-outline:hover::after {
-    transform: translate(1px, -1px);
-}
-
-/* Simple inline navigation links */
+.btn-cert-outline::after,
+.hub-btn::after,
 .inline-link::after {
-    content: " ➔";
-    font-size: 0.8em;
-    margin-left: 4px;
+    content: "";
     display: inline-block;
-    transition: transform 0.2s ease;
+    width: 11px;
+    height: 11px;
+    margin-left: 6px;
+    background-color: currentColor;
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M4.5 3v15.3l4.3-4.3 3.3 6.9 2.5-1.2-3.3-6.9 5.8-.4L4.5 3z'/%3E%3C/svg%3E");
+    mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M4.5 3v15.3l4.3-4.3 3.3 6.9 2.5-1.2-3.3-6.9 5.8-.4L4.5 3z'/%3E%3C/svg%3E");
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    vertical-align: middle;
+    transition: transform 0.15s ease;
 }
 
+/* Hover effect: nudge cursor top-left (pointing direction) to simulate hover/click */
+.tag-link-btn:hover::after,
+.btn-cert:hover::after,
+.btn-cert-outline:hover::after,
+.hub-card:hover .hub-btn::after,
 .inline-link:hover::after {
-    transform: translateX(3px);
+    transform: translate(-2px, -2px) scale(1.15);
 }
