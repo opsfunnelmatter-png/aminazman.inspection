@@ -1224,27 +1224,15 @@ footer.no-print {
 }
 
 .gallery-slide {
-    flex: 0 0 100%;
+    flex: 0 0 280px; /* Fixed compact width on all screens */
     scroll-snap-align: start;
-    border-radius: 12px;
+    border-radius: 10px;
     overflow: hidden;
     border: 1px solid var(--border-color);
     background: var(--bg-card);
     position: relative;
     box-shadow: var(--shadow);
-    aspect-ratio: 16/9;
-}
-
-@media (min-width: 576px) {
-    .gallery-slide {
-        flex: 0 0 calc(50% - 10px);
-    }
-}
-
-@media (min-width: 992px) {
-    .gallery-slide {
-        flex: 0 0 calc(33.333% - 13.33px);
-    }
+    aspect-ratio: 16/9; /* Automatically sets height to 157.5px */
 }
 
 .gallery-slide img {
