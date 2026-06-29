@@ -1264,3 +1264,132 @@ footer.no-print {
         display: none !important;
     }
 }
+
+/* =============================================
+   RESPONSIVE SCREEN MEDIA QUERIES (MOBILE VIEW)
+   ============================================= */
+
+@media (max-width: 992px) {
+    /* 1. Main CV layout grid */
+    .main-grid {
+        grid-template-columns: 1fr !important;
+        gap: 20px;
+    }
+    
+    /* 2. Duties grid (technical expertise cards) */
+    .duties-grid {
+        grid-template-columns: 1fr !important;
+        gap: 15px;
+    }
+    
+    .duties-grid .duty-card:nth-child(3) {
+        grid-column: auto !important;
+    }
+    
+    /* 3. Cover letter layout wrapper */
+    .content-layout {
+        grid-template-columns: 1fr !important;
+        gap: 25px;
+    }
+    
+    /* 4. Action Bar (Screen Only) */
+    .bar-content {
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+    }
+    
+    .action-bar .actions {
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 8px;
+    }
+    
+    .btn-print {
+        font-size: 0.82rem !important;
+        padding: 6px 12px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    /* 5. Header grid (Photo & Details) */
+    .header-grid {
+        grid-template-columns: 1fr !important;
+        gap: 20px;
+        text-align: center;
+        justify-items: center;
+    }
+    
+    .profile-photo-container {
+        margin: 0 auto;
+    }
+    
+    .contact-grid {
+        justify-content: center;
+        gap: 15px;
+    }
+    
+    /* 6. Layout adjustments */
+    .cv-wrapper {
+        padding: 20px 15px !important;
+        margin-top: 15px !important;
+        margin-bottom: 15px !important;
+    }
+    
+    .header-section {
+        padding-bottom: 20px !important;
+        margin-bottom: 20px !important;
+    }
+    
+    .header-info h1 {
+        font-size: 1.8rem !important;
+    }
+    
+    .header-info .subtitle {
+        font-size: 1.05rem !important;
+        margin-bottom: 10px !important;
+    }
+    
+    .cv-card {
+        padding: 16px !important;
+        margin-bottom: 16px !important;
+    }
+    
+    /* 7. Timeline elements */
+    .job-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+    }
+    
+    .job-duration {
+        align-self: flex-start;
+        font-size: 0.75rem !important;
+        padding: 2px 6px !important;
+        margin-bottom: 4px;
+    }
+    
+    .timeline-item {
+        padding-left: 30px !important;
+    }
+    
+    .timeline-badge {
+        width: 28px !important;
+        height: 28px !important;
+        left: -14px !important;
+        font-size: 0.7rem !important;
+    }
+    
+    /* 8. Particulars list */
+    .p-item {
+        grid-template-columns: 1fr !important;
+        gap: 4px;
+        padding-bottom: 8px;
+    }
+    
+    .p-label {
+        font-weight: 700;
+        color: var(--accent);
+    }
+}
