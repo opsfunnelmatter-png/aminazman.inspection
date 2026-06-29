@@ -194,7 +194,7 @@
             <section class="cover-letter-card" style="margin-bottom: 0;">
                 <div class="letter-header">
                     <div>
-                        <strong>Date:</strong> 29th June 2026<br>
+                        <strong>Date:</strong> <span id="current-date">29th June 2026</span><br>
                         <strong>Location:</strong> Subang Jaya, Selangor, Malaysia
                     </div>
                     <div style="text-align: right;">
@@ -333,5 +333,34 @@
         </div>
     </footer>
 
+    <!-- Dynamic Malaysia Date Script -->
+    <script>
+        function updateDate() {
+            const options = { timeZone: 'Asia/Kuala_Lumpur', year: 'numeric', month: 'long', day: 'numeric' };
+            const formatter = new Intl.DateTimeFormat('en-US', options);
+            const parts = formatter.formatToParts(new Date());
+            
+            let day = 0;
+            let month = "";
+            let year = "";
+            for (const part of parts) {
+                if (part.type === 'day') day = parseInt(part.value, 10);
+                else if (part.type === 'month') month = part.value;
+                else if (part.type === 'year') year = part.value;
+            }
+            
+            let suffix = "th";
+            if (day === 1 || day === 21 || day === 31) suffix = "st";
+            else if (day === 2 || day === 22) suffix = "nd";
+            else if (day === 3 || day === 23) suffix = "rd";
+            
+            const formattedDate = `${day}${suffix} ${month} ${year}`;
+            const dateEl = document.getElementById('current-date');
+            if (dateEl) {
+                dateEl.textContent = formattedDate;
+            }
+        }
+        document.addEventListener('DOMContentLoaded', updateDate);
+    </script>
 </body>
 </html>
