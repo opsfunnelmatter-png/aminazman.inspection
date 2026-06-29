@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Amin Azman | Documents & Certificates Viewer</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Link to Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        /* Custom Styles for Certificates Viewer */
+        .viewer-layout {
+            display: grid;
+            grid-template-columns: 280px 1fr;
+            gap: 30px;
+            margin-top: 30px;
+            align-items: start;
+        }
+        
+        .sidebar-nav {
+            position: sticky;
+            top: 90px;
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 20px;
+            max-height: calc(100vh - 120px);
+            overflow-y: auto;
+            box-shadow: var(--shadow);
+        }
+        
+        .sidebar-title {
+            font-family: var(--font-header);
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 15px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--border-color);
+        }
+        
+        .nav-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        
+        .nav-item a {
+            display: block;
+            padding: 8px 12px;
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-weight: 500;
+            border-radius: 6px;
+            transition: var(--transition);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        
+        .nav-item a:hover {
+            background: rgba(2, 132, 199, 0.08);
+            color: var(--accent);
+            padding-left: 16px;
+        }
+        
+        .cert-container {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+        
+        .cert-card {
+            background: var(--bg-content);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: var(--shadow);
+            scroll-margin-top: 90px; /* Offset for sticky header */
+        }
+        
+        .cert-card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .cert-card-title {
+            font-family: var(--font-header);
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+        
+        .cert-meta {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+        
+        .image-stack {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .cert-image {
+            max-width: 100%;
+            max-height: 85vh;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            transition: var(--transition);
+        }
+        
+        .cert-image:hover {
+            transform: scale(1.01);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+        }
+        
+        /* Multi-page scrollable box for long documents */
+        .scrollable-doc-box {
+            width: 100%;
+            max-height: 600px;
+            overflow-y: auto;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            background: #f1f5f9;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+        }
+        
+        .scrollable-doc-box .cert-image {
+            max-height: none;
+            width: 100%;
+            max-width: 750px;
+        }
+        
+        .scroll-note {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            font-style: italic;
+            margin-top: 6px;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        @media (max-width: 992px) {
+            .viewer-layout {
+                grid-template-columns: 1fr;
+            }
+            
+            .sidebar-nav {
+                position: relative;
+                top: 0;
+                max-height: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Action Bar -->
+    <header class="no-print action-bar">
+        <div class="container bar-content">
+            <span class="logo-text">Amin Azman &mdash; Subsea Hub</span>
+            <div class="actions" style="display: flex; gap: 10px;">
+                <a href="index.html" class="btn-print" style="background: var(--bg-card); color: var(--text-primary); border: 1px solid var(--border-color); text-decoration: none; display: inline-flex; align-items: center; justify-content: center; box-shadow: none;">Home</a>
+                <a href="cv_3page.html" class="btn-print" style="background: var(--bg-card); color: var(--text-primary); border: 1px solid var(--border-color); text-decoration: none; display: inline-flex; align-items: center; justify-content: center; box-shadow: none;">3-Page CV</a>
+                <a href="full_cv.html" class="btn-print" style="background: var(--bg-card); color: var(--text-primary); border: 1px solid var(--border-color); text-decoration: none; display: inline-flex; align-items: center; justify-content: center; box-shadow: none;">Full CV</a>
+                <a href="certificates.html" class="btn-print" style="background: var(--accent); color: #ffffff; border: none; text-decoration: none; display: inline-flex; align-items: center; justify-content: center;">Certificates</a>
+                <button onclick="window.print()" class="btn-print" style="margin-left: 10px;">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+                    Print Documents
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        
+        <div class="viewer-layout">
+            
+            <!-- Left Sidebar Navigation -->
+            <nav class="sidebar-nav no-print">
+                <div class="sidebar-title">Documents Index</div>
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#cswip">CSWIP 3.4U Certificate</a></li>
+                    <li class="nav-item"><a href="#degree">Degree Certificate</a></li>
+                    <li class="nav-item"><a href="#petronas-ccc">Petronas CCC</a></li>
+                    <li class="nav-item"><a href="#petronas-osp">Petronas OSP</a></li>
+                    <li class="nav-item"><a href="#bosiet">BOSIET with EBS / CA-EBS</a></li>
+                    <li class="nav-item"><a href="#adnoc-medical">ADNOC Medical Report</a></li>
+                    <li class="nav-item"><a href="#adnoc-hse">ADNOC HSE Induction</a></li>
+                    <li class="nav-item"><a href="#petronas-medical">Petronas & OEUK Medical</a></li>
+                    <li class="nav-item"><a href="#opito-h2s">OPITO H2S Cert</a></li>
+                    <li class="nav-item"><a href="#basic-h2s">Basic H2S Training</a></li>
+                    <li class="nav-item"><a href="#mercury">Mercury Awareness</a></li>
+                    <li class="nav-item"><a href="#appraisal">Appraisal / Rec Letter</a></li>
+                    <li class="nav-item"><a href="#seamans-book">Seaman's Book & Card</a></li>
+                    <li class="nav-item"><a href="#nric">NRIC (Identity Card)</a></li>
+                    <li class="nav-item"><a href="#passport-red">Passport (Red)</a></li>
+                    <li class="nav-item"><a href="#passport-blue">Passport (Blue)</a></li>
+                </ul>
+            </nav>
+            
+            <!-- Right Content Container -->
+            <main class="cert-container">
+                
+                <!-- CSWIP 3.4U -->
+                <section class="cert-card" id="cswip">
+                    <div class="cert-card-header">
+                        <h2 class="cert-card-title">CSWIP 3.4U Underwater Inspection Controller</h2>
+                        <span class="cert-meta">Cert No: 542968 | Exp: 25 Jul 2028</span>
+                    </div>
+                    <div class="image-stack">
+                        <img src="14. CSWIP 3.4u Certificate - Amin Azman_page_1.png" alt="CSWIP 3.4U Page 1" class="cert-image" loading="lazy">
+                        <img src="14. CSWIP 3.4u Certificate - Amin Azman_page_2.png" alt="CSWIP 3.4U Page 2" class="cert-image" loading="lazy">
+                    </div>
+                </section>
+                
+                <!-- Degree Certificate -->
+                <section class="cert-card" id="degree">
+                    <div class="cert-card-header">
+                        <h2 class="cert-card-title">Bachelor of Engineering (Petroleum)</h2>
+                        <span class="cert-meta">CGPA: 3.44 | Issued: 25 Sep 2010</span>
+                    </div>
+                    <div class="image-stack">
+                        <img src="16. Degree Certificate - Amin Azman_page_1.png" alt="Degree Page 1" class="cert-image" loading="lazy">
+                        <img src="16. Degree Certificate - Amin Azman_page_2.png" alt="Degree Page 2" class="cert-image" loading="lazy">
+                        <img src="16. Degree Certificate - Amin Azman_page_3.png" alt="Degree Page 3" class="cert-image" loading="lazy">
+                    </div>
+                </section>
+                
+                <!-- Petronas CCC -->
+                <section class="cert-card" id="petronas-ccc">
+                    <div class="cert-card-header">
+                        <h2 class="cert-card-title">Petronas Competency Card (CCC)</h2>
+                        <span class="cert-meta">Cert No: CCC20240045814 | Exp: 13 Mar 2026 (Renewal in Progress)</span>
+                    </div>
+                    <div class="image-stack">
+                        <img src="15. Petronas OSP and CCC - Amin Azman_page_2.png" alt="Petronas CCC" class="cert-image" loading="lazy">
+                    </div>
+                </section>
+
+                <!-- Petronas OSP -->
+                <section class="cert-card" id="petronas-osp">
+                    <div class="cert-card-header">
+                        <h2 class="cert-card-title">Petronas Offshore Safety Passport</h2>
+                        <span class="cert-meta">Cert No: OSP20240040915 | Exp: 16 Sep 2026</span>
+                    </div>
+                    <div class="image-stack">
+                        <img src="15. Petronas OSP and CCC - Amin Azman_page_1.png" alt="Petronas OSP" class="cert-image" loading="lazy">
+                    </div>
+                </section>
+                
+                <!-- BOSIET -->
+                <section class="cert-card" id="bosiet">
+                    <div class="cert-card-header">
+                        <h2 class="cert-card-title">BOSIET with EBS & CA-EBS</h2>
+                        <span class="cert-meta">OPITO 5707 / 5750 | Exp: 1 Dec 2026</span>
+                    </div>
+                    <div class="image-stack">
+                        <img src="4. BOSIET with EBS (5707) and with CAEBS (5750) - Amin Azman_page_1.png" alt="BOSIET Page 1" class="cert-image" loading="lazy">
+                        <img src="4. BOSIET with EBS (5707) and with CAEBS (5750) - Amin Azman_page_2.png" alt="BOSIET Page 2" class="cert-image" loading="lazy">
+                    </div>
+                </section>
+                
+                <!-- ADNOC Medical -->
+                <section class="cert-card" id="adnoc-medical">
+                    <div class="cert-card-header">
+                        <h2 class="cert-card-title">ADNOC Medical Fitness Certificate</h2>
+                        <span class="cert-meta">Exp: 27 Oct 2026 | 21 Pages Report</span>
+                    </div>
+                    <div class="scroll-note">🖱️ Scroll inside the box below to view all 21 pages of the medical report.</div>
+                    <div class="scrollable-doc-box" style="margin-top: 10px;">
+                        <!-- Pages 1 to 21 generated as PNGs -->
+                        <img src="3. ADNOC Medical OHMC000562 - Amin Azman_page_1.png" alt="ADNOC Medical Page 1" class="cert-image" loading="lazy">
+                        <img src="3. ADNOC Medical OHMC000562 - Amin Azman_page_2.png" alt="ADNOC Medical Page 2" class="cert-image" loading="lazy">
+                        <img src="3. ADNOC Medical OHMC000562 - Amin Azman_page_3.png" alt="ADNOC Medical Page 3" class="cert-image" loading="lazy">
+                        <img src="3. ADNOC Medical OHMC000562 - Amin Azman_page_4.png" alt="ADNOC Medical Page 4" class="cert-image" loading="lazy">
+                        <img src="3. ADNOC Medical OHMC000562 - Amin Azman_page_5.png" alt="ADNOC Medical Page 5" class="cert-image" loading="lazy">
+                        <img src="3. ADNOC Medical OHMC000562 - Amin Azman_page_6.png" alt="ADNOC Medical Page 6" class="cert-image" loading="lazy">
+                        <img src="3. ADNOC Medical OHMC000562 - Amin Azman_page_7.png" alt="ADNOC Medical Page 7" class="cert-image" loading="lazy">
+                        <img src="3. ADNOC Medical OHMC000562 - Amin Azman_page_8.png" alt="ADNOC Medical Page 8" class="cert-image" loading="lazy">
+                        <img src="3. ADNOC Medical OHMC000562 - Amin Azman_page_9.png" alt="ADNOC Medical Page 9" class="cert-image" loading="lazy">
+                        <img src="3. ADNOC Medical OHMC000562 - Amin Azman_page_10.png" alt="ADNOC Medical Page 10" class="cert-image" loading="lazy">
+                        <img src="3. ADNOC Medical OHMC000562 - Amin Azman_page_11.png" alt="ADNOC Medical Page 11" class="cert-image" loading="lazy">
+                        <img src="3. ADNOC Medical OHMC000562 - Amin Azman_page_12.png" alt="ADNOC Medical Page 12" class="cert-image" loading="lazy">
+                        <img src="3. ADNOC Medical OHMC000562 - Amin Azman_page_13.png" alt="ADNOC Medical Page 13" class="cert-image" loading="lazy">
+                        <img src="3. ADNOC Medical OHMC000562 - Amin Azman_page_14.png" alt="ADNOC Medical Page 14" class="cert-image" loading="lazy">
+                        <img src="3. ADNOC Medical OHMC000562 - Amin Azman_page_15.png" alt="ADNOC Medical Page 15" class="cert-image" loading="lazy">
+                        <img src="3. ADNOC Medical OHMC000562 - Amin Azman_page_16.png" alt="ADNOC Medical Page 16" class="cert-image" loading="lazy">
+                        <img src="3. ADNOC Medical OHMC000562 - Amin Azman_page_17.png" alt="ADNOC Medical Page 17" class="cert-image" loading="lazy">
+                        <img src="3. ADNOC Medical OHMC000562 - Amin Azman_page_18.png" alt="ADNOC Medical Page 18" class="cert-image" loading="lazy">
+                        <img src="3. ADNOC Medical OHMC000562 - Amin Azman_page_19.png" alt="ADNOC Medical Page 19" class="cert-image" loading="lazy">
+                        <img src="3. ADNOC Medical OHMC000562 - Amin Azman_page_20.png" alt="ADNOC Medical Page 20" class="cert-image" loading="lazy">
+                        <img src="3. ADNOC Medical OHMC000562 - Amin Azman_page_21.png" alt="ADNOC Medical Page 21" class="cert-image" loading="lazy">
+                    </div>
+                </section>
+                
+                <!-- ADNOC HSE -->
+                <section class="cert-card" id="adnoc-hse">
+                    <div class="cert-card-header">
+                        <h2 class="cert-card-title">ADNOC Offshore HSE Induction</h2>
+                        <span class="cert-meta">Exp: 30 Oct 2027 | GTSC Abu Dhabi</span>
+                    </div>
+                    <div class="image-stack">
+                        <img src="17. ADNOC Offshore HSE Induction - Amin Azman.png" alt="ADNOC HSE Induction" class="cert-image" loading="lazy">
+                    </div>
+                </section>
+                
+                <!-- Petronas & OEUK Medical -->
+                <section class="cert-card" id="petronas-medical">
+                    <div class="cert-card-header">
+                        <h2 class="cert-card-title">Petronas & OEUK Medical Report</h2>
+                        <span class="cert-meta">Exp: 16 Sep 2026 | Klinik Berkat Sentral</span>
+                    </div>
+                    <div class="scroll-note">🖱️ Scroll inside the box below to view all 21 pages of the medical report.</div>
+                    <div class="scrollable-doc-box" style="margin-top: 10px;">
+                        <img src="2. Petronas & OEUK Medical - Amin Azman_page_1.png" alt="Petronas Medical Page 1" class="cert-image" loading="lazy">
+                        <img src="2. Petronas & OEUK Medical - Amin Azman_page_2.png" alt="Petronas Medical Page 2" class="cert-image" loading="lazy">
+                        <img src="2. Petronas & OEUK Medical - Amin Azman_page_3.png" alt="Petronas Medical Page 3" class="cert-image" loading="lazy">
+                        <img src="2. Petronas & OEUK Medical - Amin Azman_page_4.png" alt="Petronas Medical Page 4" class="cert-image" loading="lazy">
+                        <img src="2. Petronas & OEUK Medical - Amin Azman_page_5.png" alt="Petronas Medical Page 5" class="cert-image" loading="lazy">
+                        <img src="2. Petronas & OEUK Medical - Amin Azman_page_6.png" alt="Petronas Medical Page 6" class="cert-image" loading="lazy">
+                        <img src="2. Petronas & OEUK Medical - Amin Azman_page_7.png" alt="Petronas Medical Page 7" class="cert-image" loading="lazy">
+                        <img src="2. Petronas & OEUK Medical - Amin Azman_page_8.png" alt="Petronas Medical Page 8" class="cert-image" loading="lazy">
+                        <img src="2. Petronas & OEUK Medical - Amin Azman_page_9.png" alt="Petronas Medical Page 9" class="cert-image" loading="lazy">
+                        <img src="2. Petronas & OEUK Medical - Amin Azman_page_10.png" alt="Petronas Medical Page 10" class="cert-image" loading="lazy">
+                        <img src="2. Petronas & OEUK Medical - Amin Azman_page_11.png" alt="Petronas Medical Page 11" class="cert-image" loading="lazy">
+                        <img src="2. Petronas & OEUK Medical - Amin Azman_page_12.png" alt="Petronas Medical Page 12" class="cert-image" loading="lazy">
+                        <img src="2. Petronas & OEUK Medical - Amin Azman_page_13.png" alt="Petronas Medical Page 13" class="cert-image" loading="lazy">
+                        <img src="2. Petronas & OEUK Medical - Amin Azman_page_14.png" alt="Petronas Medical Page 14" class="cert-image" loading="lazy">
+                        <img src="2. Petronas & OEUK Medical - Amin Azman_page_15.png" alt="Petronas Medical Page 15" class="cert-image" loading="lazy">
+                        <img src="2. Petronas & OEUK Medical - Amin Azman_page_16.png" alt="Petronas Medical Page 16" class="cert-image" loading="lazy">
+                        <img src="2. Petronas & OEUK Medical - Amin Azman_page_17.png" alt="Petronas Medical Page 17" class="cert-image" loading="lazy">
+                        <img src="2. Petronas & OEUK Medical - Amin Azman_page_18.png" alt="Petronas Medical Page 18" class="cert-image" loading="lazy">
+                        <img src="2. Petronas & OEUK Medical - Amin Azman_page_19.png" alt="Petronas Medical Page 19" class="cert-image" loading="lazy">
+                        <img src="2. Petronas & OEUK Medical - Amin Azman_page_20.png" alt="Petronas Medical Page 20" class="cert-image" loading="lazy">
+                        <img src="2. Petronas & OEUK Medical - Amin Azman_page_21.png" alt="Petronas Medical Page 21" class="cert-image" loading="lazy">
+                    </div>
+                </section>
+                
+                <!-- OPITO H2S -->
+                <section class="cert-card" id="opito-h2s">
+                    <div class="cert-card-header">
+                        <h2 class="cert-card-title">OPITO Basic H2S Training</h2>
+                        <span class="cert-meta">OPITO Cert No: OPITOEx8YnkGsH1f | Exp: 27 Oct 2027</span>
+                    </div>
+                    <div class="image-stack">
+                        <img src="11. OPITO H2S Cert - Amin Azman.png" alt="OPITO H2S Certificate" class="cert-image" loading="lazy">
+                    </div>
+                </section>
+                
+                <!-- Basic H2S Training (Solas) -->
+                <section class="cert-card" id="basic-h2s">
+                    <div class="cert-card-header">
+                        <h2 class="cert-card-title">Basic H2S Training (9014 Solas Marine)</h2>
+                        <span class="cert-meta">Solas Marine | Exp: 27 Oct 2027</span>
+                    </div>
+                    <div class="image-stack">
+                        <img src="10. H2S Basic Training 9014 Solas Marine - Amin Azman.png" alt="Basic H2S Training" class="cert-image" loading="lazy">
+                    </div>
+                </section>
+                
+                <!-- Mercury Awareness -->
+                <section class="cert-card" id="mercury">
+                    <div class="cert-card-header">
+                        <h2 class="cert-card-title">Mercury Awareness (Adaptive Course)</h2>
+                        <span class="cert-meta">RelyOn Nutec | Exp: 3 Jun 2027</span>
+                    </div>
+                    <div class="image-stack">
+                        <img src="13. Mercury Awareness Cert - Amin Azman.png" alt="Mercury Awareness Cert" class="cert-image" loading="lazy">
+                    </div>
+                </section>
+                
+                <!-- Appraisal Letter -->
+                <section class="cert-card" id="appraisal">
+                    <div class="cert-card-header">
+                        <h2 class="cert-card-title">Appraisal & Recommendation Letter</h2>
+                        <span class="cert-meta">Sirrihat Subsea Services & PTTEP Client Evaluation</span>
+                    </div>
+                    <div class="image-stack">
+                        <img src="18. Appraisal Letter Amin Azman_page_1.png" alt="Appraisal Page 1" class="cert-image" loading="lazy">
+                        <img src="18. Appraisal Letter Amin Azman_page_2.png" alt="Appraisal Page 2" class="cert-image" loading="lazy">
+                    </div>
+                </section>
+                
+                <!-- Seaman's Book -->
+                <section class="cert-card" id="seamans-book">
+                    <div class="cert-card-header">
+                        <h2 class="cert-card-title">Seaman's Book & Seaman Card</h2>
+                        <span class="cert-meta">No: 202423017202 | Exp: 20 Mar 2029</span>
+                    </div>
+                    <div class="image-stack">
+                        <img src="9. Seaman's Book & Card - Amin Azman_page_1.png" alt="Seaman's Book Page 1" class="cert-image" loading="lazy">
+                        <img src="9. Seaman's Book & Card - Amin Azman_page_2.png" alt="Seaman's Book Page 2" class="cert-image" loading="lazy">
+                    </div>
+                </section>
+                
+                <!-- NRIC -->
+                <section class="cert-card" id="nric">
+                    <div class="cert-card-header">
+                        <h2 class="cert-card-title">NRIC (Malaysian Identity Card)</h2>
+                        <span class="cert-meta">870217-02-5591</span>
+                    </div>
+                    <div class="image-stack">
+                        <img src="5. NRIC - Amin Azman_compressed.png" alt="Malaysian NRIC" class="cert-image" loading="lazy">
+                    </div>
+                </section>
+                
+                <!-- Passport Red -->
+                <section class="cert-card" id="passport-red">
+                    <div class="cert-card-header">
+                        <h2 class="cert-card-title">International Passport (Red)</h2>
+                        <span class="cert-meta">No: A70360403 | Exp: 13 Mar 2029</span>
+                    </div>
+                    <div class="image-stack">
+                        <img src="7. International Passport (Red) - Amin Azman.png" alt="International Passport" class="cert-image" loading="lazy">
+                    </div>
+                </section>
+                
+                <!-- Passport Blue -->
+                <section class="cert-card" id="passport-blue">
+                    <div class="cert-card-header">
+                        <h2 class="cert-card-title">Domestic Passport (Blue)</h2>
+                        <span class="cert-meta">Validity: Sarawak/Sabah Domestic Entry</span>
+                    </div>
+                    <div class="image-stack">
+                        <img src="6. Domestic Passport (Blue) - Amin Azman.png" alt="Domestic Passport" class="cert-image" loading="lazy">
+                    </div>
+                </section>
+                
+            </main>
+            
+        </div>
+        
+    </div>
+
+    <!-- Print Footer -->
+    <footer class="print-footer no-print">
+        <div class="container">
+            <p>&copy; 2026 Muhammad Amin bin Azman. All subsea credentials verified.</p>
+        </div>
+    </footer>
+
+    <!-- Simple Active Anchor Highlighting Script -->
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    const id = entry.target.getAttribute('id');
+                    if (entry.intersectionRatio > 0) {
+                        document.querySelectorAll('.nav-list li a').forEach(a => {
+                            if (a.getAttribute('href') === `#${id}`) {
+                                a.style.background = 'rgba(2, 132, 199, 0.08)';
+                                a.style.color = 'var(--accent)';
+                                a.style.fontWeight = '700';
+                            } else {
+                                a.style.background = 'none';
+                                a.style.color = 'var(--text-secondary)';
+                                a.style.fontWeight = '500';
+                            }
+                        });
+                    }
+                });
+            }, { rootMargin: '-20% 0px -60% 0px' });
+
+            document.querySelectorAll('section.cert-card').forEach(section => {
+                observer.observe(section);
+            });
+        });
+    </script>
+
+</body>
+</html>

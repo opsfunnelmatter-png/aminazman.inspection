@@ -1,0 +1,8 @@
+# System Files
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Temporary / Scratch Python scripts
+*.py
+*.log

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Amin Azman | Professional Hub & Cover Letter</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Link to Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        /* Cover Letter Page Specific Styles */
+        .cover-letter-card {
+            background: var(--bg-content);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 40px;
+            box-shadow: var(--shadow);
+            margin-bottom: 30px;
+        }
+        
+        .letter-header {
+            margin-bottom: 25px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 20px;
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        
+        .letter-body {
+            font-size: 1rem;
+            line-height: 1.8;
+            color: var(--text-primary);
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        .letter-signoff {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+        }
+        
+        .hub-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .hub-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 25px;
+            text-align: center;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            text-decoration: none;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .hub-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent);
+            box-shadow: 0 10px 25px rgba(2, 132, 199, 0.1);
+        }
+        
+        .hub-icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            color: var(--accent);
+        }
+        
+        .hub-title {
+            font-family: var(--font-header);
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 10px;
+        }
+        
+        .hub-desc {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+        
+        .hub-btn {
+            background: var(--accent);
+            color: #ffffff;
+            font-family: var(--font-header);
+            font-weight: 600;
+            padding: 8px 20px;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            transition: var(--transition);
+            width: 100%;
+        }
+        
+        .hub-card:hover .hub-btn {
+            background: var(--accent-hover);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Action Bar -->
+    <header class="no-print action-bar">
+        <div class="container bar-content">
+            <span class="logo-text">Amin Azman &mdash; Subsea Hub</span>
+            <div class="actions" style="display: flex; gap: 10px;">
+                <a href="index.html" class="btn-print" style="background: var(--accent); color: #ffffff; border: none; text-decoration: none; display: inline-flex; align-items: center; justify-content: center;">Home</a>
+                <a href="cv_3page.html" class="btn-print" style="background: var(--bg-card); color: var(--text-primary); border: 1px solid var(--border-color); text-decoration: none; display: inline-flex; align-items: center; justify-content: center; box-shadow: none;">3-Page CV</a>
+                <a href="full_cv.html" class="btn-print" style="background: var(--bg-card); color: var(--text-primary); border: 1px solid var(--border-color); text-decoration: none; display: inline-flex; align-items: center; justify-content: center; box-shadow: none;">Full CV</a>
+                <a href="certificates.html" class="btn-print" style="background: var(--bg-card); color: var(--text-primary); border: 1px solid var(--border-color); text-decoration: none; display: inline-flex; align-items: center; justify-content: center; box-shadow: none;">Certificates</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container cv-wrapper">
+        
+        <!-- SECTION 1: HEADER & PROFILE -->
+        <section class="cv-section header-section">
+            <div class="header-grid">
+                <div class="profile-photo-container">
+                    <img src="8. Passport Photo - Amin Azman.png" alt="Muhammad Amin bin Azman" class="profile-photo">
+                </div>
+                <div class="header-info">
+                    <span class="badge">CSWIP 3.4U Certified</span>
+                    <h1>Muhammad Amin bin Azman</h1>
+                    <p class="subtitle">3.4U Inspection Engineer / Data Recorder</p>
+                    
+                    <div class="contact-grid">
+                        <div class="contact-item">
+                            <span class="icon">📍</span>
+                            <span>Malaysia</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="icon">📞</span>
+                            <a href="tel:+60125065516">+60 12-506 5516</a>
+                        </div>
+                        <div class="contact-item">
+                            <span class="icon">📧</span>
+                            <a href="mailto:aminazman.inspection@gmail.com">aminazman.inspection@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- COVER LETTER CONTENT -->
+        <section class="cover-letter-card">
+            <div class="letter-header">
+                <div>
+                    <strong>Date:</strong> 29th June 2026<br>
+                    <strong>Location:</strong> Subang Jaya, Selangor, Malaysia
+                </div>
+                <div style="text-align: right;">
+                    <strong>Subject:</strong> Application for Freelance CSWIP 3.4U Inspection Engineer /<br>Offshore Data Recorder Opportunities
+                </div>
+            </div>
+            
+            <div class="letter-body">
+                <p>Dear Hiring Manager / Crew Coordinator,</p>
+                
+                <p>I am writing to express my strong interest in freelance opportunities as a <strong>CSWIP 3.4U Underwater Inspection Engineer</strong> or <strong>Offshore Data Recorder</strong> for your upcoming subsea IRM (Inspection, Repair, Maintenance), pipeline survey, or platform integrity campaigns.</p>
+                
+                <p>I hold an active <strong>CSWIP 3.4U Underwater Inspection Controller</strong> certification (valid until July 2028) and a Bachelor of Engineering in Petroleum. Throughout my offshore career, I have successfully executed roles as a Data Recorder and Inspection Engineer for premier energy operators, including <strong>ADNOC</strong>, <strong>Petronas Carigali</strong>, <strong>PTTEP</strong>, and <strong>Carigali Hess</strong>, across various vessels, jack-ups, and MOPUs.</p>
+                
+                <p>My technical expertise lies in managing real-time subsea data logging, QA/QC video and log verification, CAD drawing markups, and final client reporting. I have extensive experience operating industry-standard subsea technologies such as <strong>VOYIS Discovery</strong>, <strong>VSLAM Acquisition</strong>, and <strong>Fugro DVR</strong> systems, alongside inspection suites like <strong>Sirrihatt</strong> and <strong>IDAMS WinCairs</strong>.</p>
+                
+                <p>To facilitate immediate global mobilization, I maintain a comprehensive set of fully valid offshore safety credentials and medicals, including:
+                    <ul>
+                        <li><strong>BOSIET with EBS & CA-EBS</strong> (OPITO 5707 / 5750, valid until Dec 2026)</li>
+                        <li><strong>ADNOC Medical & HSE Induction</strong> (valid until late 2026 / 2027)</li>
+                        <li><strong>Petronas & OEUK Medical</strong> (valid until Sep 2026)</li>
+                        <li><strong>Basic H2S Training</strong> (OPITO 9014, valid until Oct 2027)</li>
+                        <li><strong>Seaman's Book & Seaman Card</strong> (valid until March 2029)</li>
+                    </ul>
+                </p>
+                
+                <p>As a freelancer, I pride myself on my adaptability, attention to detail, and ability to compile polished, audit-ready client reports with minimal onshore supervision. I am ready to mobilize at short notice for both local (Malaysia) and international offshore campaigns.</p>
+                
+                <p>Please find the links below to access my print-ready CV, complete campaign work history, and digital certificates. I welcome the opportunity to discuss how my credentials and experience align with your crew requirements.</p>
+                
+                <div class="letter-signoff">
+                    <p>Sincerely,</p>
+                    <strong>Muhammad Amin bin Azman</strong><br>
+                    <span style="font-size: 0.9rem; color: var(--text-secondary);">3.4U Inspection Engineer / Data Recorder</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- CENTRAL NAVIGATION HUB -->
+        <h2 style="font-family: var(--font-header); font-size: 1.5rem; font-weight: 800; color: var(--accent); margin-bottom: 20px; border-bottom: 2px solid var(--border-color); padding-bottom: 8px;">
+            Explore Professional Hub
+        </h2>
+        
+        <div class="hub-grid">
+            
+            <!-- 3-Page CV Link -->
+            <a href="cv_3page.html" class="hub-card">
+                <div class="hub-icon">📋</div>
+                <h3 class="hub-title">3-Page Printable CV</h3>
+                <p class="hub-desc">A clean, consolidated CV designed to format perfectly into exactly 3 pages of A4 paper when printed (Ctrl+P) for PDF submissions.</p>
+                <span class="hub-btn">View Print CV</span>
+            </a>
+            
+            <!-- Full CV Link -->
+            <a href="full_cv.html" class="hub-card">
+                <div class="hub-icon">💻</div>
+                <h3 class="hub-title">Full Interactive CV</h3>
+                <p class="hub-desc">An expanded, web-optimized profile detailing all 10 historical offshore campaigns, vessels, and complete technical scopes.</p>
+                <span class="hub-btn">View Full CV</span>
+            </a>
+            
+            <!-- Certificates Link -->
+            <a href="certificates.html" class="hub-card">
+                <div class="hub-icon">🎓</div>
+                <h3 class="hub-title">Certificates & Medicals</h3>
+                <p class="hub-desc">View and verify all original qualifications, safety certificates (BOSIET, H2S), seaman credentials, and medical reports online.</p>
+                <span class="hub-btn">View Credentials</span>
+            </a>
+            
+        </div>
+
+    </div>
+
+    <!-- Print Footer -->
+    <footer class="print-footer no-print">
+        <div class="container">
+            <p>&copy; 2026 Muhammad Amin bin Azman. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
