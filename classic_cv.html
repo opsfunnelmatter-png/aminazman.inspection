@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/png" href="favicon.png?v=1.7">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Amin Azman | Classic Format CV | 3.4U Inspection Engineer</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Link to Stylesheet -->
+    <link rel="stylesheet" href="style.css?v=8.1">
+
+    <style>
+        /* Classic CV Custom Styling */
+        .classic-container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 40px 50px;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .classic-header {
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 3px double var(--border-color);
+            padding-bottom: 20px;
+        }
+
+        .classic-name {
+            font-family: var(--font-header);
+            font-size: 2rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            color: var(--text-primary);
+            letter-spacing: 0.5px;
+            margin-bottom: 5px;
+        }
+
+        .classic-title-sub {
+            font-family: var(--font-body);
+            font-size: 1.1rem;
+            color: var(--accent);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .classic-section-title {
+            font-family: var(--font-header);
+            font-size: 1.15rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: var(--text-primary);
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 4px;
+            margin-top: 35px;
+            margin-bottom: 20px;
+            letter-spacing: 0.5px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        /* Personal Data Grid */
+        .personal-data-grid {
+            display: grid;
+            grid-template-columns: 180px 15px 1fr;
+            row-gap: 10px;
+            margin-bottom: 25px;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        .classic-label {
+            font-weight: 600;
+            color: var(--text-secondary);
+        }
+
+        .classic-sep {
+            color: var(--text-secondary);
+            text-align: center;
+        }
+
+        .classic-value {
+            color: var(--text-primary);
+        }
+
+        /* Lists */
+        .classic-list {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 25px 0;
+        }
+
+        .classic-list-item {
+            margin-bottom: 12px;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        .classic-list-item strong {
+            color: var(--text-primary);
+            display: block;
+            font-size: 0.98rem;
+        }
+
+        .classic-list-item span.meta-line {
+            display: block;
+            color: var(--text-secondary);
+            font-size: 0.88rem;
+            margin-top: 2px;
+        }
+
+        .classic-skills-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+
+        .classic-skill-row {
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        .classic-skill-row strong {
+            color: var(--text-primary);
+            font-weight: 600;
+            display: inline-block;
+            width: 200px;
+        }
+
+        /* Working & Campaign Layout */
+        .classic-job-block {
+            margin-bottom: 30px;
+            border-bottom: 1px dashed var(--border-color);
+            padding-bottom: 25px;
+        }
+
+        .classic-job-block:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .classic-company-header {
+            font-family: var(--font-header);
+            font-size: 1.05rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: var(--text-primary);
+            margin-bottom: 10px;
+            letter-spacing: 0.3px;
+        }
+
+        .classic-details-list {
+            margin-top: 10px;
+            padding-left: 20px;
+        }
+
+        .classic-details-list li {
+            margin-bottom: 6px;
+            font-size: 0.93rem;
+            line-height: 1.5;
+            color: var(--text-secondary);
+        }
+
+        /* Action Buttons for certs */
+        .classic-inline-actions {
+            display: inline-flex;
+            gap: 8px;
+            margin-left: 10px;
+            vertical-align: middle;
+        }
+
+        /* Print styles optimization */
+        @media print {
+            body {
+                background: #ffffff !important;
+                color: #000000 !important;
+            }
+            .classic-container {
+                border: none !important;
+                box-shadow: none !important;
+                padding: 0 !important;
+                margin: 0 !important;
+                max-width: 100% !important;
+            }
+            .classic-section-title {
+                border-bottom: 2px solid #000000 !important;
+                color: #000000 !important;
+                page-break-after: avoid;
+            }
+            .classic-job-block {
+                page-break-inside: avoid;
+            }
+            .classic-inline-actions, .badge-green, .badge {
+                display: none !important;
+            }
+            .classic-value a {
+                text-decoration: none !important;
+                color: #000000 !important;
+            }
+            a {
+                text-decoration: none !important;
+                color: #000000 !important;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Action Bar (hidden in print) -->
+    <header class="no-print action-bar">
+        <div class="container bar-content">
+            <div class="logo-container" style="display: flex; align-items: center; gap: 8px;">
+                <img src="logo.png" alt="Amin Azman Logo" style="height: 32px; width: auto; display: block;">
+                <span class="logo-text" style="font-family: var(--font-header); font-weight: 700; font-size: 1.2rem; color: var(--accent); letter-spacing: 0.5px;">Amin Azman</span>
+            </div>
+            <div class="actions">
+                <a href="index.html" class="btn-print" style="background: var(--bg-card); color: var(--text-primary); border: 1px solid var(--border-color); text-decoration: none; display: inline-flex; align-items: center; justify-content: center; box-shadow: none;">Home</a>
+                <a href="full_cv.html" class="btn-print" style="background: var(--bg-card); color: var(--text-primary); border: 1px solid var(--border-color); text-decoration: none; display: inline-flex; align-items: center; justify-content: center; box-shadow: none;">Full CV</a>
+                <a href="classic_cv.html" class="btn-print" style="background: var(--accent); color: #ffffff; border: none; text-decoration: none; display: inline-flex; align-items: center; justify-content: center;">Classic CV</a>
+                <a href="certificates.html" class="btn-print" style="background: var(--bg-card); color: var(--text-primary); border: 1px solid var(--border-color); text-decoration: none; display: inline-flex; align-items: center; justify-content: center; box-shadow: none;">Certificates</a>
+                <button onclick="window.print()" class="btn-print" style="background: var(--accent); color: #ffffff; border: none; text-decoration: none; display: inline-flex; align-items: center; justify-content: center; box-shadow: 0 4px 10px rgba(2, 132, 199, 0.15); gap: 6px; cursor: pointer;">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: block;"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+                    Print Classic CV
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="classic-container">
+        
+        <!-- HEADER -->
+        <header class="classic-header">
+            <h1 class="classic-name">Muhammad Amin bin Azman</h1>
+            <p class="classic-title-sub">3.4U Inspection Engineer / Data Recorder</p>
+        </header>
+
+        <!-- PERSONAL DATA -->
+        <section>
+            <h2 class="classic-section-title">Personal Data</h2>
+            <div class="personal-data-grid">
+                <div class="classic-label">Name</div>
+                <div class="classic-sep">:</div>
+                <div class="classic-value" style="text-transform: uppercase; font-weight: 700;">Muhammad Amin bin Azman</div>
+
+                <div class="classic-label">I/C No.</div>
+                <div class="classic-sep">:</div>
+                <div class="classic-value">
+                    870217-02-5591
+                    <span class="classic-inline-actions">
+                        <a href="certificates.html#nric" target="_blank" class="cert-link badge-cert" style="font-size: 0.7rem; padding: 2px 8px;">NRIC</a>
+                    </span>
+                </div>
+
+                <div class="classic-label">Date of Birth</div>
+                <div class="classic-sep">:</div>
+                <div class="classic-value">17th February 1987</div>
+
+                <div class="classic-label">Nationality</div>
+                <div class="classic-sep">:</div>
+                <div class="classic-value">MALAYSIAN</div>
+
+                <div class="classic-label">Marital Status</div>
+                <div class="classic-sep">:</div>
+                <div class="classic-value">MARRIED</div>
+
+                <div class="classic-label">Point of Hire</div>
+                <div class="classic-sep">:</div>
+                <div class="classic-value">PENANG, MALAYSIA</div>
+
+                <div class="classic-label">Contact No.</div>
+                <div class="classic-sep">:</div>
+                <div class="classic-value"><a href="tel:+60125065516">+60125065516</a></div>
+
+                <div class="classic-label">Email Address</div>
+                <div class="classic-sep">:</div>
+                <div class="classic-value"><a href="mailto:aminazman.inspection@gmail.com">aminazman.inspection@gmail.com</a></div>
+
+                <div class="classic-label">LinkedIn</div>
+                <div class="classic-sep">:</div>
+                <div class="classic-value"><a href="https://www.linkedin.com/in/aminazman-inspection" target="_blank">linkedin.com/in/aminazman-inspection</a></div>
+
+                <div class="classic-label">Website</div>
+                <div class="classic-sep">:</div>
+                <div class="classic-value"><a href="https://tinyurl.com/aminazman-inspection" target="_blank">tinyurl.com/aminazman-inspection</a></div>
+            </div>
+        </section>
+
+        <!-- PROFESSIONAL QUALIFICATIONS & COURSES ATTENDED -->
+        <section>
+            <h2 class="classic-section-title">Professional Qualifications & Courses Attended</h2>
+            <ul class="classic-list">
+                <li class="classic-list-item">
+                    <strong>Underwater Inspection Controller Grade CSWIP 3.4U
+                        <span class="classic-inline-actions">
+                            <a href="certificates.html#cswip" target="_blank" class="cert-link badge-cert" style="font-size: 0.7rem; padding: 2px 8px;">CSWIP Cert</a>
+                        </span>
+                    </strong>
+                    <span class="meta-line">Cert No: 542968 | Issued: 24 Oct 2023 | Date of Expiry: 25th July 2028</span>
+                </li>
+                <li class="classic-list-item">
+                    <strong>Petronas Offshore Safety Passport
+                        <span class="classic-inline-actions">
+                            <a href="certificates.html#petronas-osp" target="_blank" class="cert-link badge-cert" style="font-size: 0.7rem; padding: 2px 8px;">Petronas OSP</a>
+                        </span>
+                    </strong>
+                    <span class="meta-line">Cert No: OSP20240040915 | Date of Expiry: 16th September 2026</span>
+                </li>
+                <li class="classic-list-item">
+                    <strong>FOET & Travel Safely By Boat with CA-EBS (OPITO approved / BOSIET)
+                        <span class="classic-inline-actions">
+                            <a href="certificates.html#bosiet" target="_blank" class="cert-link badge-cert" style="font-size: 0.7rem; padding: 2px 8px;">BOSIET Certs</a>
+                        </span>
+                    </strong>
+                    <span class="meta-line">OPITO Standard: 5707 / 5750 | Date of Expiry: 1st December 2026</span>
+                </li>
+                <li class="classic-list-item">
+                    <strong>Offshore Medical Examination (ADNOC Approved)
+                        <span class="classic-inline-actions">
+                            <a href="certificates.html#adnoc-medical" target="_blank" class="cert-link badge-cert" style="font-size: 0.7rem; padding: 2px 8px;">Medical Cert</a>
+                        </span>
+                    </strong>
+                    <span class="meta-line">Date of Expiry: 27th October 2026</span>
+                </li>
+                <li class="classic-list-item">
+                    <strong>ADNOC HSE Induction
+                        <span class="classic-inline-actions">
+                            <a href="certificates.html#adnoc-hse" target="_blank" class="cert-link badge-cert" style="font-size: 0.7rem; padding: 2px 8px;">HSE Cert</a>
+                        </span>
+                    </strong>
+                    <span class="meta-line">Date of Expiry: 30th October 2027</span>
+                </li>
+                <li class="classic-list-item">
+                    <strong>Offshore Medical Examination (OEUK & Petronas Approved)
+                        <span class="classic-inline-actions">
+                            <a href="certificates.html#petronas-medical" target="_blank" class="cert-link badge-cert" style="font-size: 0.7rem; padding: 2px 8px;">Medical Cert</a>
+                        </span>
+                    </strong>
+                    <span class="meta-line">Clinic: Klinik Berkat Sentral | Date of Expiry: 16th September 2026</span>
+                </li>
+                <li class="classic-list-item">
+                    <strong>Basic H2S Training (OPITO Approved / Solas)
+                        <span class="classic-inline-actions">
+                            <a href="certificates.html#basic-h2s" target="_blank" class="cert-link badge-cert" style="font-size: 0.7rem; padding: 2px 8px;">H2S Cert</a>
+                        </span>
+                    </strong>
+                    <span class="meta-line">OPITO Course Code: 9014 | Date of Expiry: 27th October 2027</span>
+                </li>
+                <li class="classic-list-item">
+                    <strong>Mercury Awareness Training (CLBSADL012)
+                        <span class="classic-inline-actions">
+                            <a href="certificates.html#mercury" target="_blank" class="cert-link badge-cert" style="font-size: 0.7rem; padding: 2px 8px;">Mercury Cert</a>
+                        </span>
+                    </strong>
+                    <span class="meta-line">Date of Expiry: 3rd June 2027</span>
+                </li>
+                <li class="classic-list-item">
+                    <strong>Petronas Carigali Sdn Bhd Permit to Work (PCSB PTW Level 1)</strong>
+                    <span class="meta-line">Date of Expiry: 13th October 2027</span>
+                </li>
+                <li class="classic-list-item">
+                    <strong>International Passport
+                        <span class="classic-inline-actions">
+                            <a href="certificates.html#passport-red" target="_blank" class="cert-link badge-cert" style="font-size: 0.7rem; padding: 2px 8px;">Red</a>
+                            <a href="certificates.html#passport-blue" target="_blank" class="cert-link badge-cert" style="font-size: 0.7rem; padding: 2px 8px;">Blue</a>
+                        </span>
+                    </strong>
+                    <span class="meta-line">Passport No: A70360403</span>
+                </li>
+                <li class="classic-list-item">
+                    <strong>Bachelor of Engineering (Honours) Petroleum Engineering
+                        <span class="classic-inline-actions">
+                            <a href="certificates.html#degree" target="_blank" class="cert-link badge-cert" style="font-size: 0.7rem; padding: 2px 8px;">Degree Cert</a>
+                        </span>
+                    </strong>
+                    <span class="meta-line">Issued by: Universiti Teknologi Malaysia (UTM) | CGPA: 3.44 | Graduation Date: 25th September 2010</span>
+                </li>
+            </ul>
+        </section>
+
+        <!-- TECHNICAL SKILLS -->
+        <section>
+            <h2 class="classic-section-title">Technical Skills</h2>
+            <div class="classic-skills-grid">
+                <div class="classic-skill-row">
+                    <strong>Subsea Inspection Suites:</strong>
+                    <span>Sirrihatt SirOnline, IDAMS WinCairs, OBS Studio</span>
+                </div>
+                <div class="classic-skill-row">
+                    <strong>Corporate & Manufacturer Trained:</strong>
+                    <span>Fugro DVR & Fugro Sense Structures (Trained under Fugro HQ, JAFZA, Dubai), Voyis Discovery, VSLAM Acquisition, Agisoft Photogrammetry (Officially Trained by Voyis Canada)</span>
+                </div>
+                <div class="classic-skill-row">
+                    <strong>Platform Familiarity:</strong>
+                    <span>Digital Edge (EdgeDVR) Workflows, FET VisualSoft (VisualDVR & VisualEvent)</span>
+                </div>
+                <div class="classic-skill-row">
+                    <strong>NDT & Operations:</strong>
+                    <span>Impact Subsea FMD Oceanscan, FMD Gamm@scan, ISIS & IICORR CP Logging, Buckleys Bathycorrometer CP, Underwater MPI, GVI, CVI, Cygnus UT Thickness, Welding Inspection, RT/MT/PT/UT</span>
+                </div>
+                <div class="classic-skill-row">
+                    <strong>CAD & Utilities:</strong>
+                    <span>AutoCAD 2D/3D, SketchUp, MS Office (Word, Excel, Access, PowerPoint, Project, Visio)</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- WORKING EXPERIENCE -->
+        <section>
+            <h2 class="classic-section-title">Working Experience</h2>
+            
+            <!-- JOB 1 -->
+            <div class="classic-job-block">
+                <div class="classic-company-header">Fugro Middle East</div>
+                <div class="classic-grid" style="margin-bottom: 10px;">
+                    <div class="classic-label">Position Title</div>
+                    <div class="classic-sep">:</div>
+                    <div class="classic-value" style="font-weight: 600;">3.4U Inspection Engineer (Advanced Technology Onboarding)</div>
+
+                    <div class="classic-label">Duration</div>
+                    <div class="classic-sep">:</div>
+                    <div class="classic-value">December 2025</div>
+                </div>
+                <div style="font-size: 0.95rem; font-weight: 600; color: var(--text-primary); margin-top: 10px;">Job Scope:</div>
+                <ul class="classic-details-list">
+                    <li><strong>Systems Mastery & Onboarding:</strong> Completed comprehensive corporate training at Fugro HQ, JAFZA, mastering VOYIS Live Discovery, VSLAM Acquisition, Agisoft Photogrammetry, and FDVR & Sense Structures data acquisition suites.</li>
+                    <li><strong>Tech Configuration:</strong> Assisted in setting up subsea 3D photogrammetry and optical modeling software configurations, conducting simulated remote data acquisition workflows to ensure campaign readiness.</li>
+                </ul>
+            </div>
+
+            <!-- JOB 2 -->
+            <div class="classic-job-block">
+                <div class="classic-company-header">Fugro Middle East</div>
+                <div class="classic-grid" style="margin-bottom: 10px;">
+                    <div class="classic-label">Position Title</div>
+                    <div class="classic-sep">:</div>
+                    <div class="classic-value" style="font-weight: 600;">3.4U Inspection Engineer (Project Readiness & Scoping)</div>
+
+                    <div class="classic-label">Duration</div>
+                    <div class="classic-sep">:</div>
+                    <div class="classic-value">October 2025</div>
+                </div>
+                <div style="font-size: 0.95rem; font-weight: 600; color: var(--text-primary); margin-top: 10px;">Job Scope:</div>
+                <ul class="classic-details-list">
+                    <li><strong>Project Readiness:</strong> Mobilized to Fugro HQ, JAFZA for initial framework preparation, executing detailed work pack reviews and asset scoping for the Upper Zakum jacket inspection and crossing survey.</li>
+                    <li><strong>Engineering Support:</strong> Assisted in preliminary subsea 3D photogrammetry software setup, performing data-readiness checks on engineering drawings and jacket node mapping.</li>
+                </ul>
+            </div>
+
+            <!-- JOB 3 -->
+            <div class="classic-job-block">
+                <div class="classic-company-header">Sirrihat Subsea Services Sdn Bhd</div>
+                <div class="classic-grid" style="margin-bottom: 10px;">
+                    <div class="classic-label">Position Title</div>
+                    <div class="classic-sep">:</div>
+                    <div class="classic-value" style="font-weight: 600;">Data QA/QC Coordinator</div>
+
+                    <div class="classic-label">Duration</div>
+                    <div class="classic-sep">:</div>
+                    <div class="classic-value">November 2022 – September 2023</div>
+                </div>
+                <div style="font-size: 0.95rem; font-weight: 600; color: var(--text-primary); margin-top: 10px;">Job Scope:</div>
+                <ul class="classic-details-list">
+                    <li><strong>Final Reporting:</strong> Converted rough daily logs from offshore operations into polished, formal client reports.</li>
+                    <li><strong>Data QA/QC:</strong> Verified accuracy of subsea video footage, timestamps, and anomaly descriptions against physical logs.</li>
+                    <li><strong>Database Management:</strong> Uploaded validated offshore data and inspection logs into integrity software systems.</li>
+                    <li><strong>Drawing Updates:</strong> Marked up CAD and "As-Built" drawings to reflect new subsea findings and anomalies.</li>
+                    <li><strong>Work Pack Creation:</strong> Wrote detailed, step-by-step inspection procedures and checklists for upcoming subsea campaigns.</li>
+                    <li><strong>Desktop Studies:</strong> Reviewed historical integrity reports to identify targeted areas of interest for future monitoring.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- OFFSHORE/SITE EXPERIENCE -->
+        <section>
+            <h2 class="classic-section-title">Offshore/Site Experience</h2>
+
+            <!-- CAMPAIGN 1 -->
+            <div class="classic-job-block">
+                <div class="classic-company-header">Sapura Subsea Services Sdn Bhd</div>
+                <div class="classic-grid" style="margin-bottom: 10px;">
+                    <div class="classic-label">Client</div>
+                    <div class="classic-sep">:</div>
+                    <div class="classic-value">Petronas Carigali Sdn Bhd</div>
+
+                    <div class="classic-label">Project</div>
+                    <div class="classic-sep">:</div>
+                    <div class="classic-value">Major Platform Inspection at Tangga Barat Field by Mini ROV</div>
+
+                    <div class="classic-label">Duration</div>
+                    <div class="classic-sep">:</div>
+                    <div class="classic-value">Apr 2026</div>
+
+                    <div class="classic-label">Platform</div>
+                    <div class="classic-sep">:</div>
+                    <div class="classic-value">Platform TBCP</div>
+
+                    <div class="classic-label">Position Title</div>
+                    <div class="classic-sep">:</div>
+                    <div class="classic-value" style="font-weight: 600;">3.4U Inspection Engineer / Data Recorder (Offshore)</div>
+                </div>
+                <div style="font-size: 0.95rem; font-weight: 600; color: var(--text-primary); margin-top: 10px;">Scope/Details:</div>
+                <ul class="classic-details-list">
+                    <li>Executed subsea structural inspections on TBCP platform utilizing Mini ROV systems for visual and data capture.</li>
+                    <li>Logged real-time inspection data, reviewed mini ROV video logs, and performed QA/QC checks on subsea structural anomalies.</li>
+                    <li>Compiled and finalized subsea inspection logs and anomaly records into draft client reports for Petronas Carigali.</li>
+                </ul>
+            </div>
+
+            <!-- CAMPAIGN 2 -->
+            <div class="classic-job-block">
+                <div class="classic-company-header">Tanjung Offshore Services Sdn Bhd</div>
+                <div class="classic-grid" style="margin-bottom: 10px;">
+                    <div class="classic-label">Client</div>
+                    <div class="classic-sep">:</div>
+                    <div class="classic-value">RINA Malaysia</div>
+
+                    <div class="classic-label">Project</div>
+                    <div class="classic-sep">:</div>
+                    <div class="classic-value">Subsea intermediate inspection for Class & Statutory Certification</div>
+
+                    <div class="classic-label">Duration</div>
+                    <div class="classic-sep">:</div>
+                    <div class="classic-value">18 Aug 2025 – 26 Aug 2025</div>
+
+                    <div class="classic-label">Platform/Vessel</div>
+                    <div class="classic-sep">:</div>
+                    <div class="classic-value">T7 Elise MOPU (4-Legged Jack-Up), Bayan Field, Sarawak Waters</div>
+
+                    <div class="classic-label">Position Title</div>
+                    <div class="classic-sep">:</div>
+                    <div class="classic-value" style="font-weight: 600;">3.4U Inspection Engineer / Data Recorder (Offshore)</div>
+                </div>
+                <div style="font-size: 0.95rem; font-weight: 600; color: var(--text-primary); margin-top: 10px;">Scope/Details:</div>
+                <ul class="classic-details-list">
+                    <li>Performed subsea intermediate inspection for Class & Statutory Certification for Permanent Offshore Installation by RINA Malaysia.</li>
+                    <li>Utilized <strong>SEAMOR ROV Chinook</strong> with real-time data capture via Sirrihatt Inspection Suite.</li>
+                    <li>Conducted General Visual Inspection (GVI) and Ultrasonic Testing (UT) wall thickness survey on MOPU jack-up legs to evaluate structural integrity.</li>
+                </ul>
+            </div>
+
+            <!-- CAMPAIGN 3 -->
+            <div class="classic-job-block">
+                <div class="classic-company-header">Sirrihat Subsea Services Sdn Bhd</div>
+                <div class="classic-grid" style="margin-bottom: 10px;">
+                    <div class="classic-label">Client</div>
+                    <div class="classic-sep">:</div>
+                    <div class="classic-value">Technip MMHE JV</div>
+
+                    <div class="classic-label">Project</div>
+                    <div class="classic-sep">:</div>
+                    <div class="classic-value">Platform Baseline Inspection Campaign</div>
+
+                    <div class="classic-label">Duration</div>
+                    <div class="classic-sep">:</div>
+                    <div class="classic-value">24 Jun 2025 – 11 Aug 2025</div>
+
+                    <div class="classic-label">Platform/Vessel</div>
+                    <div class="classic-sep">:</div>
+                    <div class="classic-value">KSCPP & KSDP-A Platforms, Kasawari Field, Sarawak Waters</div>
+
+                    <div class="classic-label">Position Title</div>
+                    <div class="classic-sep">:</div>
+                    <div class="classic-value" style="font-weight: 600;">3.4U Inspection Engineer / Data Recorder (Offshore)</div>
+                </div>
+                <div style="font-size: 0.95rem; font-weight: 600; color: var(--text-primary); margin-top: 10px;">Scope/Details:</div>
+                <ul class="classic-details-list">
+                    <li>Performed baseline platform structural inspections using <strong>ROV Oceanus Pro Defender</strong> & <strong>ROV Videoray Defender</strong> with real-time logging via Sirrihatt Inspection Suite.</li>
+                    <li>Conducted Flooded Member Detection (FMD) surveys utilizing Impact Subsea FMD Oceanscan on structural members.</li>
+                    <li>Carried out GVI, CVI, anode surveys, caisson and conductor inspections, and riser/support clamp assessments on the platform structure.</li>
+                </ul>
+            </div>
+
+            <!-- CAMPAIGN 4 -->
+            <div class="classic-job-block">
+                <div class="classic-company-header">Sapura Subsea Services</div>
+                <div class="classic-grid" style="margin-bottom: 10px;">
+                    <div class="classic-label">Client</div>
+                    <div class="classic-sep">:</div>
+                    <div class="classic-value">PTTEP Sarawak Oil Ltd</div>
+
+                    <div class="classic-label">Project</div>
+                    <div class="classic-sep">:</div>
+                    <div class="classic-value">Subsea Inspections & Operations Support</div>
+
+                    <div class="classic-label">Duration</div>
+                    <div class="classic-sep">:</div>
+                    <div class="classic-value">26 Jan 2025 – 21 Mar 2025</div>
+
+                    <div class="classic-label">Platform/Vessel</div>
+                    <div class="classic-sep">:</div>
+                    <div class="classic-value">Sapura Conquest (Vessel), SKA Sarawak Waters</div>
+
+                    <div class="classic-label">Position Title</div>
+                    <div class="classic-sep">:</div>
+                    <div class="classic-value" style="font-weight: 600;">3.4U Inspection Engineer / Data Recorder (Offshore)</div>
+                </div>
+                <div style="font-size: 0.95rem; font-weight: 600; color: var(--text-primary); margin-top: 10px;">Scope/Details:</div>
+                <ul class="classic-details-list">
+                    <li>Conducted subsea inspections using <strong>Air Dive</strong> and <strong>WROV (SMD Atom A6)</strong> with real-time reporting via the Sirrihatt inspection suite.</li>
+                    <li>Performed platform inspections (PE-SA, BE-SA, SA-SA), monitored FSO propeller and clamp installations for leaks.</li>
+                    <li>Supervised subsea anchor wire cutting/retrieval operations and verified subsea valve isolation status.</li>
+                    <li>Conducted Magnetic Particle Inspection (MPI) on jacket structural members and assisted in the setup and execution of Alternating Current Field Measurement (ACFM) inspections.</li>
+                </ul>
+            </div>
+
+            <!-- CAMPAIGN 5 -->
+            <div class="classic-job-block">
+                <div class="classic-company-header">Alam Maritim Resources Berhad</div>
+                <div class="classic-grid" style="margin-bottom: 10px;">
+                    <div class="classic-label">Client</div>
+                    <div class="classic-sep">:</div>
+                    <div class="classic-value">Petronas Carigali</div>
+
+                    <div class="classic-label">Project</div>
+                    <div class="classic-sep">:</div>
+                    <div class="classic-value">Major Platform & Pipeline Inspection Campaign</div>
+
+                    <div class="classic-label">Duration</div>
+                    <div class="classic-sep">:</div>
+                    <div class="classic-value">23 Oct 2024 – 28 Nov 2024</div>
+
+                    <div class="classic-label">Platform/Vessel</div>
+                    <div class="classic-sep">:</div>
+                    <div class="classic-value">Meo Resolution (Vessel), SKA Sarawak Waters</div>
+
+                    <div class="classic-label">Position Title</div>
+                    <div class="classic-sep">:</div>
+                    <div class="classic-value" style="font-weight: 600;">3.4U Inspection Engineer / Data Recorder (Offshore)</div>
+                </div>
+                <div style="font-size: 0.95rem; font-weight: 600; color: var(--text-primary); margin-top: 10px;">Scope/Details:</div>
+                <ul class="classic-details-list">
+                    <li>Conducted major platform and pipeline surveys using <strong>WROV Jerung 01</strong> & <strong>ROV Seaeye Tiger</strong> with real-time data capture via OBS Studio and IDAMS Wincair.</li>
+                    <li>Completed inspections on platforms (TEDP-B, TEJT-C, BNP-B, BN14).</li>
+                    <li>Inspected subsea pipelines (SKAPL329, 397, 400, 220) to ensure asset integrity.</li>
+                </ul>
+            </div>
+
+            <!-- CAMPAIGN 6 -->
+            <div class="classic-job-block">
+                <div class="classic-company-header">KL Petrogas & Surya Nautika</div>
+                <div class="classic-grid" style="margin-bottom: 10px;">
+                    <div class="classic-label">Client</div>
+                    <div class="classic-sep">:</div>
+                    <div class="classic-value">Carigali Hess</div>
+
+                    <div class="classic-label">Project</div>
+                    <div class="classic-sep">:</div>
+                    <div class="classic-value">Subsea Inspections & Operations Support</div>
+
+                    <div class="classic-label">Duration</div>
+                    <div class="classic-sep">:</div>
+                    <div class="classic-value">9 Oct – 19 Oct 2024</div>
+
+                    <div class="classic-label">Platform/Vessel</div>
+                    <div class="classic-sep">:</div>
+                    <div class="classic-value">Mermaid Sapphire (Vessel), MTJDA Malaysia-Thai Waters</div>
+
+                    <div class="classic-label">Position Title</div>
+                    <div class="classic-sep">:</div>
+                    <div class="classic-value" style="font-weight: 600;">3.4U Inspection Engineer / Data Recorder (Offshore)</div>
+                </div>
+                <div style="font-size: 0.95rem; font-weight: 600; color: var(--text-primary); margin-top: 10px;">Scope/Details:</div>
+                <ul class="classic-details-list">
+                    <li>Performed subsea inspections using <strong>WROV Quasar 06</strong> via Sirrihat Inspection Suite.</li>
+                    <li>Supervised subsea debris removal (B11DR-A), jack-up approach monitoring, and subsea footprint surveys in Malaysia–Thailand Joint Development Area.</li>
+                </ul>
+            </div>
+
+            <!-- CAMPAIGN 7 -->
+            <div class="classic-job-block">
+                <div class="classic-company-header">T7 Global Bhd</div>
+                <div class="classic-grid" style="margin-bottom: 10px;">
+                    <div class="classic-label">Client</div>
+                    <div class="classic-sep">:</div>
+                    <div class="classic-value">Petronas Carigali</div>
+
+                    <div class="classic-label">Project</div>
+                    <div class="classic-sep">:</div>
+                    <div class="classic-value">Dulang PMA Major Platform Inspection</div>
+
+                    <div class="classic-label">Duration</div>
+                    <div class="classic-sep">:</div>
+                    <div class="classic-value">21 Aug 2024 – 6 Sep 2024</div>
+
+                    <div class="classic-label">Platform/Vessel</div>
+                    <div class="classic-sep">:</div>
+                    <div class="classic-value">AWB Petra (Vessel), Dulang PMA Field, Terengganu Waters, Malaysia</div>
+
+                    <div class="classic-label">Position Title</div>
+                    <div class="classic-sep">:</div>
+                    <div class="classic-value" style="font-weight: 600;">3.4U Inspection Engineer / Data Recorder (Offshore)</div>
+                </div>
+                <div style="font-size: 0.95rem; font-weight: 600; color: var(--text-primary); margin-top: 10px;">Scope/Details:</div>
+                <ul class="classic-details-list">
+                    <li>Performed subsea inspections using <strong>ROV Argos</strong> with real-time data capture via Sirrihatt Inspection Suite.</li>
+                    <li>Carried out platform inspections covering GVI, CVI, anode inspections, caisson and conductors inspection, and riser/support clamp assessments on the Dulang platform structure.</li>
+                </ul>
+            </div>
+
+            <!-- CAMPAIGN 8 -->
+            <div class="classic-job-block">
+                <div class="classic-company-header">T7 Global Bhd</div>
+                <div class="classic-grid" style="margin-bottom: 10px;">
+                    <div class="classic-label">Client</div>
+                    <div class="classic-sep">:</div>
+                    <div class="classic-value">Petronas Carigali</div>
+
+                    <div class="classic-label">Project</div>
+                    <div class="classic-sep">:</div>
+                    <div class="classic-value">EWDP-Gas Platform Inspection</div>
+
+                    <div class="classic-label">Duration</div>
+                    <div class="classic-sep">:</div>
+                    <div class="classic-value">13 Jun 2024 – 6 Jul 2024</div>
+
+                    <div class="classic-label">Platform/Vessel</div>
+                    <div class="classic-sep">:</div>
+                    <div class="classic-value">AWB Perdana Excelsior (Vessel), ERB West Field, Sabah Waters, Malaysia</div>
+
+                    <div class="classic-label">Position Title</div>
+                    <div class="classic-sep">:</div>
+                    <div class="classic-value" style="font-weight: 600;">3.4U Inspection Engineer / Data Recorder (Offshore)</div>
+                </div>
+                <div style="font-size: 0.95rem; font-weight: 600; color: var(--text-primary); margin-top: 10px;">Scope/Details:</div>
+                <ul class="classic-details-list">
+                    <li>Performed subsea inspections using <strong>ROV Chinook</strong> with real-time data capture via Sirrihatt Inspection Suite and IDAMS Wincair.</li>
+                    <li>Inspected ERB West field (EWDP-Gas Platform), including GVI, CVI, anode, caisson & conductors, and riser/support clamp inspections.</li>
+                </ul>
+            </div>
+
+            <!-- CAMPAIGN 9 -->
+            <div class="classic-job-block">
+                <div class="classic-company-header">T7 Global Bhd</div>
+                <div class="classic-grid" style="margin-bottom: 10px;">
+                    <div class="classic-label">Client</div>
+                    <div class="classic-sep">:</div>
+                    <div class="classic-value">Petronas Carigali</div>
+
+                    <div class="classic-label">Project</div>
+                    <div class="classic-sep">:</div>
+                    <div class="classic-value">EWDP-Production Platform Inspection</div>
+
+                    <div class="classic-label">Duration</div>
+                    <div class="classic-sep">:</div>
+                    <div class="classic-value">16 Apr 2024 – 1 Jun 2024</div>
+
+                    <div class="classic-label">Platform/Vessel</div>
+                    <div class="classic-sep">:</div>
+                    <div class="classic-value">SK Marco Polo (Vessel), ERB West Field, Sabah Waters, Malaysia</div>
+
+                    <div class="classic-label">Position Title</div>
+                    <div class="classic-sep">:</div>
+                    <div class="classic-value" style="font-weight: 600;">3.4U Inspection Engineer / Data Recorder (Offshore)</div>
+                </div>
+                <div style="font-size: 0.95rem; font-weight: 600; color: var(--text-primary); margin-top: 10px;">Scope/Details:</div>
+                <ul class="classic-details-list">
+                    <li>Performed subsea inspections using <strong>ROV Chinook</strong> with real-time data capture via Sirrihatt Inspection Suite and IDAMS Wincair.</li>
+                    <li>Carried out major platform inspections at ERB West (EWDP-Production Platform), covering GVI, CVI, anode, caisson & conductors, and clamp inspection tasks.</li>
+                </ul>
+            </div>
+
+            <!-- CAMPAIGN 10 -->
+            <div class="classic-job-block">
+                <div class="classic-company-header">Sapura Subsea Services Sdn Bhd</div>
+                <div class="classic-grid" style="margin-bottom: 10px;">
+                    <div class="classic-label">Client</div>
+                    <div class="classic-sep">:</div>
+                    <div class="classic-value">PTTEP Sabah Oil Limited</div>
+
+                    <div class="classic-label">Project</div>
+                    <div class="classic-sep">:</div>
+                    <div class="classic-value">BLOCK H and K Deepwater Inspection by ROV</div>
+
+                    <div class="classic-label">Duration</div>
+                    <div class="classic-sep">:</div>
+                    <div class="classic-value">January 2023 – February 2023</div>
+
+                    <div class="classic-label">Platform/Vessel</div>
+                    <div class="classic-sep">:</div>
+                    <div class="classic-value">DP2DSV Sapura Jane (Vessel), Block H & K Deepwater Field, Sabah Waters, Malaysia</div>
+
+                    <div class="classic-label">Position Title</div>
+                    <div class="classic-sep">:</div>
+                    <div class="classic-value" style="font-weight: 600;">Field Engineer (Offshore)</div>
+                </div>
+                <div style="font-size: 0.95rem; font-weight: 600; color: var(--text-primary); margin-top: 10px;">Scope/Details:</div>
+                <ul class="classic-details-list">
+                    <li>Supported deepwater ROV inspection operations on Block H & K subsea assets, ensuring data QA/QC and structural integrity compliance.</li>
+                    <li>Coordinated dive and ROV logs, verified subsea survey data, and drafted daily progress reports (DPR) onboard DP2DSV Sapura Jane.</li>
+                    <li>Monitored real-time ROV video feeds and logged anomalies, ensuring strict QA/QC standards for client PTTEP.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- TECHNICAL EXPERTISE SUMMARY -->
+        <section>
+            <h2 class="classic-section-title">Technical Expertise Summary</h2>
+            <div class="classic-skills-grid">
+                <div class="classic-skill-row">
+                    <strong>Underwater inspection & NDT:</strong>
+                    <span>Planning and executing NDT and visual examinations on jacket structures. Experienced in CP surveys (Buckleys Bathycorrometer, ISIS/IICORR), UT (Cygnus UT gauge), FMD (Impact Subsea / Gamm@scan), ACFM, MPI, and GVI/CVI. Experienced in coordinating subsea debris removal using ROVs and diving teams.</span>
+                </div>
+                <div class="classic-skill-row">
+                    <strong>Pipeline Integrity Inspections:</strong>
+                    <span>Conducting subsea pipeline inspections using ROV and diving teams. Expertise includes subsea gooseneck, spool, flanges, sleepers, buckling initiators, valve isolation status, encapsulation clamp installation, leak detection, and removing subsea obstructions (e.g. anchor wire cutting).</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROFESSIONAL EVALUATION / APPRAISAL -->
+        <section style="margin-top: 30px; border-top: 1px solid var(--border-color); padding-top: 20px;">
+            <p style="font-size: 0.92rem; line-height: 1.5; color: var(--text-secondary); font-style: italic;">
+                <strong>Professional Evaluation:</strong> Muhammad Amin has been recognized for his reliability, performance quality, and meticulous subsea reporting. RINA and Petronas clients have commended his data recorder workflows.
+            </p>
+            <div style="margin-top: 10px;">
+                <a href="certificates.html#appraisal" target="_blank" class="cert-link btn-cert-outline" style="font-size: 0.8rem; padding: 4px 12px; display: inline-flex; align-items: center; gap: 6px; text-decoration: none;">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                    View Recommendation / Appraisal Letter
+                </a>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Print Footer -->
+    <footer class="print-footer no-print">
+        <div class="container">
+            <p>&copy; 2026 Muhammad Amin bin Azman. CSWIP 3.4U Inspection Engineer &mdash; Classic Format CV.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
