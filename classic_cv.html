@@ -249,9 +249,9 @@
             .print-page-header {
                 display: flex !important;
                 position: fixed;
-                top: 12mm;
-                left: 15mm;
-                right: 15mm;
+                top: -14mm;
+                left: 0;
+                right: 0;
                 justify-content: space-between;
                 font-size: 9pt;
                 font-family: Arial, sans-serif;
@@ -270,18 +270,21 @@
             .print-page-border {
                 display: block !important;
                 position: fixed;
-                top: 10mm;
-                bottom: 10mm;
-                left: 10mm;
-                right: 10mm;
+                top: -15mm;
+                bottom: -5mm;
+                left: -5mm;
+                right: -5mm;
                 border: 1px solid #000000;
                 pointer-events: none;
                 z-index: 9999;
             }
             
-            /* Shift container slightly down to clear the fixed header on each printed page */
             .classic-container {
-                margin-top: 5mm !important;
+                margin-top: 0 !important;
+                border: none !important;
+                box-shadow: none !important;
+                padding: 0 !important;
+                max-width: 100% !important;
             }
         
             body {
