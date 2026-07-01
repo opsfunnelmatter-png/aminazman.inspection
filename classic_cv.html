@@ -237,6 +237,32 @@
             }
         }
 
+
+        .quals-data-grid {
+            display: grid;
+            grid-template-columns: 1fr 20px 1fr;
+            row-gap: 12px;
+            margin-bottom: 25px;
+            font-size: 0.95rem;
+            line-height: 1.55;
+        }
+
+        @media (max-width: 768px) {
+            .quals-data-grid {
+                grid-template-columns: 1fr;
+                row-gap: 4px;
+            }
+            .quals-data-grid .classic-sep {
+                display: none;
+            }
+            .quals-data-grid .classic-label {
+                font-weight: 700;
+                margin-top: 10px;
+            }
+            .quals-data-grid .classic-label:first-child {
+                margin-top: 0;
+            }
+        }
         .print-page-header, .print-page-border {
             display: none;
         }
@@ -408,7 +434,7 @@
         <!-- PROFESSIONAL QUALIFICATIONS & COURSES ATTENDED -->
         <section>
             <h2 class="classic-section-title">Professional Qualifications & Courses Attended</h2>
-            <div class="skills-data-grid">
+            <div class="quals-data-grid">
                 <div class="classic-label">Underwater Inspection Controller Grade CSWIP 3.4U</div>
                 <div class="classic-sep">:</div>
                 <div class="classic-value">Cert No: 542968 | Issued: 24 Oct 2023 | Date of Expiry: 25th July 2028</div>
