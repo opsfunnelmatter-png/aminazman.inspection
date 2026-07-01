@@ -27,10 +27,42 @@
         }
 
         .classic-header {
-            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             margin-bottom: 30px;
             border-bottom: 3px double var(--border-color);
             padding-bottom: 20px;
+            gap: 20px;
+        }
+
+        .classic-header-text {
+            text-align: left;
+            flex: 1;
+        }
+
+        .classic-header-photo {
+            width: 105px;
+            height: 130px;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            object-fit: cover;
+            box-shadow: var(--shadow-sm);
+        }
+
+        @media (max-width: 600px) {
+            .classic-header {
+                flex-direction: column-reverse;
+                text-align: center;
+                gap: 15px;
+            }
+            .classic-header-text {
+                text-align: center;
+            }
+            .classic-header-photo {
+                width: 95px;
+                height: 120px;
+            }
         }
 
         .classic-name {
@@ -240,8 +272,11 @@
         
         <!-- HEADER -->
         <header class="classic-header">
-            <h1 class="classic-name">Muhammad Amin bin Azman</h1>
-            <p class="classic-title-sub">3.4U Inspection Engineer / Data Recorder</p>
+            <div class="classic-header-text">
+                <h1 class="classic-name">Muhammad Amin bin Azman</h1>
+                <p class="classic-title-sub">3.4U Inspection Engineer / Data Recorder (Offshore)</p>
+            </div>
+            <img src="8. Passport Photo - Amin Azman.png" alt="Muhammad Amin bin Azman" class="classic-header-photo">
         </header>
 
         <!-- PERSONAL DATA -->
