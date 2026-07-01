@@ -237,8 +237,53 @@
             }
         }
 
+        .print-page-header, .print-page-border {
+            display: none;
+        }
+
         /* Print styles optimization */
         @media print {
+            @page {
+                margin: 25mm 15mm 15mm 15mm;
+            }
+            .print-page-header {
+                display: flex !important;
+                position: fixed;
+                top: 12mm;
+                left: 15mm;
+                right: 15mm;
+                justify-content: space-between;
+                font-size: 9pt;
+                font-family: Arial, sans-serif;
+                color: #000000;
+                border-bottom: 1px solid #000000;
+                padding-bottom: 4px;
+                z-index: 10000;
+            }
+            .print-page-header::before {
+                content: "Muhammad Amin bin Azman";
+                font-weight: bold;
+            }
+            .print-page-header::after {
+                content: counter(page);
+            }
+            .print-page-border {
+                display: block !important;
+                position: fixed;
+                top: 10mm;
+                bottom: 10mm;
+                left: 10mm;
+                right: 10mm;
+                border: 1px solid #000000;
+                pointer-events: none;
+                z-index: 9999;
+            }
+            
+            /* Shift container slightly down to clear the fixed header on each printed page */
+            .classic-container {
+                margin-top: 5mm !important;
+            }
+        
             body {
                 background: #ffffff !important;
                 color: #000000 !important;
@@ -273,6 +318,10 @@
     </style>
 </head>
 <body>
+    <!-- Print-only repeating elements -->
+    <div class="print-page-header"></div>
+    <div class="print-page-border"></div>
+
 
     <!-- Top Action Bar (hidden in print) -->
     <header class="no-print action-bar">
