@@ -263,12 +263,26 @@
                 margin-top: 0;
             }
         }
+        .page-break {
+            display: none;
+        }
+
         .print-page-header, .print-page-border {
             display: none;
         }
 
         /* Print styles optimization */
         @media print {
+            .page-break {
+                display: block !important;
+                page-break-before: always !important;
+                break-before: page !important;
+                height: 0 !important;
+                margin: 0 !important;
+                padding: 0 !important;
+                border: none !important;
+            }
+        
             @page {
                 margin: 25mm 15mm 15mm 15mm;
             }
@@ -509,6 +523,7 @@
         
         <!-- OFFSHORE/SITE EXPERIENCE -->
         <section>
+            <div class="page-break"></div>
             <h2 class="classic-section-title">Detailed Campaign & Employment Timeline</h2>
 
             <!-- CAMPAIGN -->
@@ -596,6 +611,7 @@
                 </ul>
             </div>
 
+            <div class="page-break"></div>
             <!-- CAMPAIGN -->
             <div class="classic-job-block">
                 <div class="personal-data-grid" style="margin-bottom: 10px;">
@@ -717,6 +733,7 @@
                 </ul>
             </div>
 
+            <div class="page-break"></div>
             <!-- CAMPAIGN -->
             <div class="classic-job-block">
                 <div class="personal-data-grid" style="margin-bottom: 10px;">
@@ -891,6 +908,7 @@
             </div>
 
         </section>
+        <div class="page-break"></div>
         <!-- TECHNICAL EXPERTISE SUMMARY -->
         <section>
             <h2 class="classic-section-title">Technical Expertise Summary</h2>
