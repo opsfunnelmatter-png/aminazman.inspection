@@ -211,6 +211,32 @@
             vertical-align: middle;
         }
 
+        .skills-data-grid {
+            display: grid;
+            grid-template-columns: 210px 15px 1fr;
+            row-gap: 12px;
+            margin-bottom: 25px;
+            font-size: 0.95rem;
+            line-height: 1.55;
+        }
+
+        @media (max-width: 768px) {
+            .skills-data-grid {
+                grid-template-columns: 1fr;
+                row-gap: 4px;
+            }
+            .skills-data-grid .classic-sep {
+                display: none;
+            }
+            .skills-data-grid .classic-label {
+                font-weight: 700;
+                margin-top: 10px;
+            }
+            .skills-data-grid .classic-label:first-child {
+                margin-top: 0;
+            }
+        }
+
         /* Print styles optimization */
         @media print {
             body {
@@ -391,30 +417,29 @@
         <!-- TECHNICAL SKILLS -->
         <section>
             <h2 class="classic-section-title">Technical Skills</h2>
-            <div class="classic-skills-grid">
-                <div class="classic-skill-row">
-                    <strong>Subsea Inspection Suites:</strong>
-                    <span>Sirrihatt SirOnline, IDAMS WinCairs, OBS Studio</span>
-                </div>
-                <div class="classic-skill-row">
-                    <strong>Corporate & Manufacturer Trained:</strong>
-                    <span>Fugro DVR & Fugro Sense Structures (Trained under Fugro HQ, JAFZA, Dubai), Voyis Discovery, VSLAM Acquisition, Agisoft Photogrammetry (Officially Trained by Voyis Canada)</span>
-                </div>
-                <div class="classic-skill-row">
-                    <strong>Platform Familiarity:</strong>
-                    <span>Digital Edge (EdgeDVR) Workflows, FET VisualSoft (VisualDVR & VisualEvent)</span>
-                </div>
-                <div class="classic-skill-row">
-                    <strong>NDT & Operations:</strong>
-                    <span>Impact Subsea FMD Oceanscan, FMD Gamm@scan, ISIS & IICORR CP Logging, Buckleys Bathycorrometer CP, Underwater MPI, GVI, CVI, Cygnus UT Thickness, Welding Inspection, RT/MT/PT/UT</span>
-                </div>
-                <div class="classic-skill-row">
-                    <strong>CAD & Utilities:</strong>
-                    <span>AutoCAD 2D/3D, SketchUp, MS Office (Word, Excel, Access, PowerPoint, Project, Visio)</span>
-                </div>
+            <div class="skills-data-grid">
+                <div class="classic-label">Subsea Inspection Suites</div>
+                <div class="classic-sep">:</div>
+                <div class="classic-value">Sirrihatt SirOnline, IDAMS WinCairs, OBS Studio</div>
+
+                <div class="classic-label">Corporate & Manufacturer Trained</div>
+                <div class="classic-sep">:</div>
+                <div class="classic-value">Fugro DVR & Fugro Sense Structures (Trained under Fugro HQ, JAFZA, Dubai), Voyis Discovery, VSLAM Acquisition, Agisoft Photogrammetry (Officially Trained by Voyis Canada)</div>
+
+                <div class="classic-label">Platform Familiarity</div>
+                <div class="classic-sep">:</div>
+                <div class="classic-value">Digital Edge (EdgeDVR) Workflows, FET VisualSoft (VisualDVR & VisualEvent)</div>
+
+                <div class="classic-label">NDT & Operations</div>
+                <div class="classic-sep">:</div>
+                <div class="classic-value">Impact Subsea FMD Oceanscan, FMD Gamm@scan, ISIS & IICORR CP Logging, Buckleys Bathycorrometer CP, Underwater MPI, GVI, CVI, Cygnus UT Thickness, Welding Inspection, RT/MT/PT/UT</div>
+
+                <div class="classic-label">CAD & Utilities</div>
+                <div class="classic-sep">:</div>
+                <div class="classic-value">AutoCAD 2D/3D, SketchUp, MS Office (Word, Excel, Access, PowerPoint, Project, Visio)</div>
             </div>
         </section>
-
+        
         <!-- OFFSHORE/SITE EXPERIENCE -->
         <section>
             <h2 class="classic-section-title">Detailed Campaign & Employment Timeline</h2>
@@ -802,18 +827,17 @@
         <!-- TECHNICAL EXPERTISE SUMMARY -->
         <section>
             <h2 class="classic-section-title">Technical Expertise Summary</h2>
-            <div class="classic-skills-grid">
-                <div class="classic-skill-row">
-                    <strong>Underwater inspection & NDT:</strong>
-                    <span>Planning and executing NDT and visual examinations on jacket structures. Experienced in CP surveys (Buckleys Bathycorrometer, ISIS/IICORR), UT (Cygnus UT gauge), FMD (Impact Subsea / Gamm@scan), ACFM, MPI, and GVI/CVI. Experienced in coordinating subsea debris removal using ROVs and diving teams.</span>
-                </div>
-                <div class="classic-skill-row">
-                    <strong>Pipeline Integrity Inspections:</strong>
-                    <span>Conducting subsea pipeline inspections using ROV and diving teams. Expertise includes subsea gooseneck, spool, flanges, sleepers, buckling initiators, valve isolation status, encapsulation clamp installation, leak detection, and removing subsea obstructions (e.g. anchor wire cutting).</span>
-                </div>
+            <div class="skills-data-grid">
+                <div class="classic-label">Underwater inspection & NDT</div>
+                <div class="classic-sep">:</div>
+                <div class="classic-value">Planning and executing NDT and visual examinations on jacket structures. Experienced in CP surveys (Buckleys Bathycorrometer, ISIS/IICORR), UT (Cygnus UT gauge), FMD (Impact Subsea / Gamm@scan), ACFM, MPI, and GVI/CVI. Experienced in coordinating subsea debris removal using ROVs and diving teams.</div>
+
+                <div class="classic-label">Pipeline Integrity Inspections</div>
+                <div class="classic-sep">:</div>
+                <div class="classic-value">Conducting subsea pipeline inspections using ROV and diving teams. Expertise includes subsea gooseneck, spool, flanges, sleepers, buckling initiators, valve isolation status, encapsulation clamp installation, leak detection, and removing subsea obstructions (e.g. anchor wire cutting).</div>
             </div>
         </section>
-
+        
         <!-- PROFESSIONAL EVALUATION / APPRAISAL -->
         <section style="margin-top: 30px; border-top: 1px solid var(--border-color); padding-top: 20px;">
             <p style="font-size: 0.92rem; line-height: 1.5; color: var(--text-secondary); font-style: italic;">
