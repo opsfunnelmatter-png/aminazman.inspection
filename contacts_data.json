@@ -160,8 +160,8 @@
     "sent_date": "2026-08-04 01:30"
   },
   {
-    "sent": "FALSE",
-    "status": "\ud83d\udd25 HOT LEAD",
+    "sent": "TRUE",
+    "status": "SENT / PENDING",
     "company": "Hi, We are looking for inspection e",
     "company_type": "Subsea Contractor",
     "pic_name": "Crewing Lead / Subsea Recruiter",
@@ -172,7 +172,8 @@
     "country": "Global",
     "source": "Facebook Group + Enriched",
     "remark": "Freelancer Inspection engineer required at Pipavav Port, Gujarat. ... Email : info@eiservices.in. / eispune1@gmail.com A [Verified Mail Server]",
-    "is_invalid": false
+    "is_invalid": false,
+    "sent_date": "2026-08-04 01:35"
   },
   {
     "sent": "FALSE",
