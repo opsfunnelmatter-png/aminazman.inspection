@@ -895,8 +895,8 @@
     "sent_date": "2026-08-04 05:32"
   },
   {
-    "sent": "FALSE",
-    "status": "\ud83d\udd25 HOT LEAD",
+    "sent": "TRUE",
+    "status": "SENT / PENDING",
     "company": "DEIDRE DANIEL's Post",
     "company_type": "Subsea Contractor",
     "pic_name": "Crewing Lead / Subsea Recruiter",
@@ -907,7 +907,8 @@
     "country": "Global",
     "source": "LinkedIn Post + Enriched",
     "remark": "Hiring CSWIP 3.4u Inspection Coordinators *** Details and ... Email CVs and Certs to deidre.d@mermaid-group.com #3.4u#of [Verified Mail Server]",
-    "is_invalid": false
+    "is_invalid": false,
+    "sent_date": "2026-08-04 05:39"
   },
   {
     "sent": "FALSE",
