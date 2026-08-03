@@ -48,8 +48,8 @@
     "sent_date": "2026-08-04 00:45"
   },
   {
-    "sent": "FALSE",
-    "status": "\ud83d\udd25 HOT LEAD",
+    "sent": "TRUE",
+    "status": "SENT / PENDING",
     "company": "\ud835\udddd\ud835\udde2\ud835\uddd5 \ud835\udde2\ud835\udde3\ud835\udde3\ud835\udde2\ud835\udde5\ud835\udde7\ud835\udde8\ud835\udde1\ud835\udddc\ud835\udde7\ud835\uddec \ud835\ude3c\ud835\ude57\ud835\ude64\ud835\ude6a\ud835\ude69 \ud835\ude4a\ud835\ude58\ud835\ude5a\ud835\ude56\ud835\ude63\ud835\ude5a\ud835\ude5a\ud835\ude67\ud835\ude5e\ud835\ude63\ud835\ude5c .",
     "company_type": "Crewing / Manpower Agency",
     "pic_name": "Crewing Lead / Subsea Recruiter",
@@ -60,11 +60,12 @@
     "country": "Global",
     "source": "Facebook Group + Enriched",
     "remark": "Any queries, please contact our HR team via email at recruitment@caltechtimor.com Applications close on 26 August 2024.  [Verified Mail Server]",
-    "is_invalid": false
+    "is_invalid": false,
+    "sent_date": "2026-08-04 00:54"
   },
   {
-    "sent": "FALSE",
-    "status": "\ud83d\udd25 HOT LEAD",
+    "sent": "TRUE",
+    "status": "SENT / PENDING",
     "company": "3.4U Inspection Engineers required ",
     "company_type": "Subsea Contractor",
     "pic_name": "Crewing Lead / Subsea Recruiter",
@@ -75,11 +76,12 @@
     "country": "Global",
     "source": "Facebook Group + Enriched",
     "remark": "Inspection Engineer 0. Senior Inspection Coordinator 0. Senior Plant ... email: Lewis.walker1@altrad.com \u00b7 No photo desc [Verified Mail Server]",
-    "is_invalid": false
+    "is_invalid": false,
+    "sent_date": "2026-08-04 00:58"
   },
   {
-    "sent": "FALSE",
-    "status": "\ud83d\udd25 HOT LEAD",
+    "sent": "TRUE",
+    "status": "SENT / PENDING",
     "company": "Greetings ROV Pilot CSWIP 3.2U or C",
     "company_type": "Subsea Contractor",
     "pic_name": "Crewing Lead / Subsea Recruiter",
@@ -90,11 +92,12 @@
     "country": "Global",
     "source": "Facebook Group + Enriched",
     "remark": "Greetings ROV Pilot CSWIP 3.2U or CWIP 3.4U Inspector/Technician! Immediate available candidates Email me on admin@synig [Verified Mail Server]",
-    "is_invalid": false
+    "is_invalid": false,
+    "sent_date": "2026-08-04 01:05"
   },
   {
-    "sent": "FALSE",
-    "status": "\ud83d\udd25 HOT LEAD",
+    "sent": "TRUE",
+    "status": "SENT / PENDING",
     "company": "\ud83d\ude80 BRD Technocrats is Hiring! \ud83c\udf1f We h",
     "company_type": "Subsea Contractor",
     "pic_name": "Crewing Lead / Subsea Recruiter",
@@ -105,11 +108,12 @@
     "country": "Global",
     "source": "Facebook Group + Enriched",
     "remark": "... Email your CV: career@brdts.co.in WhatsApp ... We have an urgent requirement for the position of Inspection Engineer [Verified Mail Server]",
-    "is_invalid": false
+    "is_invalid": false,
+    "sent_date": "2026-08-04 01:11"
   },
   {
-    "sent": "FALSE",
-    "status": "\ud83d\udd25 HOT LEAD",
+    "sent": "TRUE",
+    "status": "SENT / PENDING",
     "company": "Opening for Inspection Engineer on ",
     "company_type": "Subsea Contractor",
     "pic_name": "Crewing Lead / Subsea Recruiter",
@@ -120,11 +124,12 @@
     "country": "Global",
     "source": "Facebook Group + Enriched",
     "remark": "... Inspection Engineer* for Tanks, Pressure Vessels, and Heat Exchangers. ... Email: gulf. hropening@gmail.com Our repr [Verified Mail Server]",
-    "is_invalid": false
+    "is_invalid": false,
+    "sent_date": "2026-08-04 01:16"
   },
   {
-    "sent": "FALSE",
-    "status": "\ud83d\udd25 HOT LEAD",
+    "sent": "TRUE",
+    "status": "SENT / PENDING",
     "company": "Position: Inspection Engineer Clien",
     "company_type": "Subsea Contractor",
     "pic_name": "Crewing Lead / Subsea Recruiter",
@@ -135,11 +140,12 @@
     "country": "Global",
     "source": "Facebook Group + Enriched",
     "remark": "... Inspection Engineer* for Tanks, Pressure Vessels, and Heat Exchangers. ... Inspection Engineer ... Email: careers@ch [Verified Mail Server]",
-    "is_invalid": false
+    "is_invalid": false,
+    "sent_date": "2026-08-04 01:20"
   },
   {
-    "sent": "FALSE",
-    "status": "\ud83d\udd25 HOT LEAD",
+    "sent": "TRUE",
+    "status": "SENT / PENDING",
     "company": "Hi, We are looking for inspection e",
     "company_type": "Subsea Contractor",
     "pic_name": "Crewing Lead / Subsea Recruiter",
@@ -150,7 +156,8 @@
     "country": "Global",
     "source": "Facebook Group + Enriched",
     "remark": "Freelancer Inspection engineer required at Pipavav Port, Gujarat. ... Email : info@eiservices.in. / eispune1@gmail.com A [Verified Mail Server]",
-    "is_invalid": false
+    "is_invalid": false,
+    "sent_date": "2026-08-04 01:30"
   },
   {
     "sent": "FALSE",
