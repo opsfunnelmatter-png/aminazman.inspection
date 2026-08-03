@@ -847,8 +847,8 @@
     "sent_date": "2026-08-04 05:17"
   },
   {
-    "sent": "FALSE",
-    "status": "\ud83d\udd25 HOT LEAD",
+    "sent": "TRUE",
+    "status": "SENT / PENDING",
     "company": "Ksa long term 2 ree recruitmnt",
     "company_type": "Subsea Contractor",
     "pic_name": "Crewing Lead / Subsea Recruiter",
@@ -859,7 +859,8 @@
     "country": "Global",
     "source": "Facebook Group + Enriched",
     "remark": "... INSPECTION ENGINEER LIFTING MOBILE EQUIPMENT INSTRUMENT ENGINNER ... Email: jobs@brightinternational.in OR 771591400 [Verified Mail Server]",
-    "is_invalid": false
+    "is_invalid": false,
+    "sent_date": "2026-08-04 05:22"
   },
   {
     "sent": "FALSE",
