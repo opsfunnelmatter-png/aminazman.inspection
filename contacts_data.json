@@ -303,8 +303,8 @@
     "sent_date": "2026-08-04 02:16"
   },
   {
-    "sent": "FALSE",
-    "status": "\ud83d\udd25 HOT LEAD",
+    "sent": "TRUE",
+    "status": "SENT / PENDING",
     "company": "5+ years of solid experience in ind",
     "company_type": "Subsea Contractor",
     "pic_name": "Crewing Lead / Subsea Recruiter",
@@ -315,7 +315,8 @@
     "country": "Global",
     "source": "Facebook Group",
     "remark": "Mohamed Abdallah Inspection Engineer SANMAR CHEM... 4h Job ... email subject line to: mohamed.ashraf@land-fleet.com.Read",
-    "is_invalid": false
+    "is_invalid": false,
+    "sent_date": "2026-08-04 02:22"
   },
   {
     "sent": "FALSE",
