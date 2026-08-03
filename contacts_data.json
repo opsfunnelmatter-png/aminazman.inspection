@@ -815,8 +815,8 @@
     "sent_date": "2026-08-04 05:04"
   },
   {
-    "sent": "FALSE",
-    "status": "\ud83d\udd25 HOT LEAD",
+    "sent": "TRUE",
+    "status": "SENT / PENDING",
     "company": "Atheel Contracting Company Hiring F",
     "company_type": "Subsea Contractor",
     "pic_name": "Crewing Lead / Subsea Recruiter",
@@ -827,7 +827,8 @@
     "country": "Global",
     "source": "Facebook Group + Enriched",
     "remark": "... Inspection Engineer Architectural inspection engineer Electrical ... Email\uff1asales1@hbbfgg.com if you need build steel [Verified Mail Server]",
-    "is_invalid": false
+    "is_invalid": false,
+    "sent_date": "2026-08-04 05:11"
   },
   {
     "sent": "FALSE",
