@@ -671,8 +671,8 @@
     "sent_date": "2026-08-04 04:18"
   },
   {
-    "sent": "FALSE",
-    "status": "\ud83d\udd25 HOT LEAD",
+    "sent": "TRUE",
+    "status": "SENT / PENDING",
     "company": "Vacancy",
     "company_type": "Subsea Contractor",
     "pic_name": "Crewing Lead / Subsea Recruiter",
@@ -683,7 +683,8 @@
     "country": "Global",
     "source": "Facebook Group + Enriched",
     "remark": "... Subsea Inspection \u25aa\ufe0fCorrosion Engineers \u25aa\ufe0fSubsea and Pipelines ... Interested, send cv to Jobs.edensrpeople@gmail.co [Verified Mail Server]",
-    "is_invalid": false
+    "is_invalid": false,
+    "sent_date": "2026-08-04 04:23"
   },
   {
     "sent": "FALSE",
