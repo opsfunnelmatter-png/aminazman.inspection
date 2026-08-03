@@ -351,8 +351,8 @@
     "sent_date": "2026-08-04 02:31"
   },
   {
-    "sent": "FALSE",
-    "status": "\ud83d\udd25 HOT LEAD",
+    "sent": "TRUE",
+    "status": "SENT / PENDING",
     "company": "Senior lifting inspection engineer ",
     "company_type": "Subsea Contractor",
     "pic_name": "Crewing Lead / Subsea Recruiter",
@@ -363,7 +363,8 @@
     "country": "Global",
     "source": "Facebook Group + Enriched",
     "remark": "OCR: TRAINING TRAININGCENTRE CENTRE We Are HIRING Join Our Team Sr. Lifting Inspection Engineer info@agoratrainingservic [Verified Mail Server]",
-    "is_invalid": false
+    "is_invalid": false,
+    "sent_date": "2026-08-04 02:37"
   },
   {
     "sent": "FALSE",
