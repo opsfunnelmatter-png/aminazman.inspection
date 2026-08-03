@@ -335,8 +335,8 @@
     "sent_date": "2026-08-04 02:26"
   },
   {
-    "sent": "FALSE",
-    "status": "\ud83d\udd25 HOT LEAD",
+    "sent": "TRUE",
+    "status": "SENT / PENDING",
     "company": "\ud83d\udea8 We're Hiring!",
     "company_type": "Subsea Contractor",
     "pic_name": "Crewing Lead / Subsea Recruiter",
@@ -347,7 +347,8 @@
     "country": "Global",
     "source": "Facebook Group + Enriched",
     "remark": "Position: Inspection Engineer Client: IGL Location: Muzaffarnagar Eligibility Criteria: B. ... email: jdlchrd2023@gmail. [Verified Mail Server]",
-    "is_invalid": false
+    "is_invalid": false,
+    "sent_date": "2026-08-04 02:31"
   },
   {
     "sent": "FALSE",
