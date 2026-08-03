@@ -176,8 +176,8 @@
     "sent_date": "2026-08-04 01:35"
   },
   {
-    "sent": "FALSE",
-    "status": "\ud83d\udd25 HOT LEAD",
+    "sent": "TRUE",
+    "status": "SENT / PENDING",
     "company": "*Greetings from T\u00dcV S\u00dcD* *Urgent Hi",
     "company_type": "Subsea Contractor",
     "pic_name": "Crewing Lead / Subsea Recruiter",
@@ -188,7 +188,8 @@
     "country": "Global",
     "source": "Facebook Group + Enriched",
     "remark": "... Inspection Engineer \u2013 Jamnagar. WhatsApp Job Updates: CHAT.WHATSAPP.COM. chat ... Email: [AGupta@tectonicengineering [Verified Mail Server]",
-    "is_invalid": false
+    "is_invalid": false,
+    "sent_date": "2026-08-04 01:42"
   },
   {
     "sent": "FALSE",
