@@ -192,8 +192,8 @@
     "sent_date": "2026-08-04 01:42"
   },
   {
-    "sent": "FALSE",
-    "status": "\ud83d\udd25 HOT LEAD",
+    "sent": "TRUE",
+    "status": "SENT / PENDING",
     "company": "RESOURCES.COM COATING INSPECTOR Ens",
     "company_type": "Subsea Contractor",
     "pic_name": "Crewing Lead / Subsea Recruiter",
@@ -204,7 +204,8 @@
     "country": "Global",
     "source": "Facebook Group + Enriched",
     "remark": "... email your CV and Valid Certification Course ... send cv to ) mit.technology. mm@gmail.com, 09 ... subsea Inspection [Verified Mail Server]",
-    "is_invalid": false
+    "is_invalid": false,
+    "sent_date": "2026-08-04 01:46"
   },
   {
     "sent": "FALSE",
