@@ -863,8 +863,8 @@
     "sent_date": "2026-08-04 05:22"
   },
   {
-    "sent": "FALSE",
-    "status": "\ud83d\udd25 HOT LEAD",
+    "sent": "TRUE",
+    "status": "SENT / PENDING",
     "company": "\ud83d\udea8 INTERTEK \u2013 URGENT HIRING",
     "company_type": "Subsea Contractor",
     "pic_name": "Crewing Lead / Subsea Recruiter",
@@ -875,7 +875,8 @@
     "country": "Global",
     "source": "LinkedIn Post + Enriched",
     "remark": "INTERTEK \u2013 URGENT HIRING | INSPECTION ENGINEER | BAHRAIN Work ... Email: sunita@aasthaconsulting.com Call / WhatsApp: +9 [Verified Mail Server]",
-    "is_invalid": false
+    "is_invalid": false,
+    "sent_date": "2026-08-04 05:28"
   },
   {
     "sent": "FALSE",
