@@ -223,8 +223,8 @@
     "is_invalid": false
   },
   {
-    "sent": "FALSE",
-    "status": "\ud83d\udd25 HOT LEAD",
+    "sent": "TRUE",
+    "status": "SENT / PENDING",
     "company": "Survey Engineering Services * FSV O",
     "company_type": "Subsea Contractor",
     "pic_name": "Crewing Lead / Subsea Recruiter",
@@ -235,7 +235,8 @@
     "country": "Global",
     "source": "Facebook Group",
     "remark": "... send Cv to : olgamatos@nvs-angola.com \u00b7 Za Gi and 11 others. 12 ... Subsea Inspection *Methods Topsides Inspection *",
-    "is_invalid": false
+    "is_invalid": false,
+    "sent_date": "2026-08-04 01:52"
   },
   {
     "sent": "FALSE",
