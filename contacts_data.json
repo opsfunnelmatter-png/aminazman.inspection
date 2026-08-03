@@ -719,8 +719,8 @@
     "sent_date": "2026-08-04 04:34"
   },
   {
-    "sent": "FALSE",
-    "status": "\ud83d\udd25 HOT LEAD",
+    "sent": "TRUE",
+    "status": "SENT / PENDING",
     "company": "#vacancyalert Position: Head, Healt",
     "company_type": "Subsea Contractor",
     "pic_name": "Crewing Lead / Subsea Recruiter",
@@ -731,7 +731,8 @@
     "country": "Global",
     "source": "Facebook Group + Enriched",
     "remark": "... Send CV to: H_hiring@hotmail.com Please mention the job title in ... Subsea Inspection Engineer 9. Lead Engineer, Ro [Verified Mail Server]",
-    "is_invalid": false
+    "is_invalid": false,
+    "sent_date": "2026-08-04 04:40"
   },
   {
     "sent": "FALSE",
