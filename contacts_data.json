@@ -543,8 +543,8 @@
     "sent_date": "2026-08-04 03:34"
   },
   {
-    "sent": "FALSE",
-    "status": "\ud83d\udd25 HOT LEAD",
+    "sent": "TRUE",
+    "status": "SENT / PENDING",
     "company": "wanted CIVIL engineer or site inspe",
     "company_type": "Subsea Contractor",
     "pic_name": "Crewing Lead / Subsea Recruiter",
@@ -555,7 +555,8 @@
     "country": "Global",
     "source": "Facebook Group + Enriched",
     "remark": "... CIVIL engineer or site inspection engineer. ... email to giselli.antonino@gmail.com. Resume is not required\u00a0...Read  [Verified Mail Server]",
-    "is_invalid": false
+    "is_invalid": false,
+    "sent_date": "2026-08-04 03:39"
   },
   {
     "sent": "FALSE",
