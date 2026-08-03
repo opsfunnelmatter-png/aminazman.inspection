@@ -559,8 +559,8 @@
     "sent_date": "2026-08-04 03:39"
   },
   {
-    "sent": "FALSE",
-    "status": "\ud83d\udd25 HOT LEAD",
+    "sent": "TRUE",
+    "status": "SENT / PENDING",
     "company": "Job Title: Inspection Engineer Loca",
     "company_type": "Subsea Contractor",
     "pic_name": "Crewing Lead / Subsea Recruiter",
@@ -571,7 +571,8 @@
     "country": "Global",
     "source": "Facebook Group + Enriched",
     "remark": "Job Title: Inspection Engineer Location: Karachi Job Type: Full-Time ... email: Pantherinspection@gmail.com An electroni [Verified Mail Server]",
-    "is_invalid": false
+    "is_invalid": false,
+    "sent_date": "2026-08-04 03:45"
   },
   {
     "sent": "FALSE",
