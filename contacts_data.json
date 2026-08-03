@@ -287,8 +287,8 @@
     "sent_date": "2026-08-04 02:10"
   },
   {
-    "sent": "FALSE",
-    "status": "\ud83d\udd25 HOT LEAD",
+    "sent": "TRUE",
+    "status": "SENT / PENDING",
     "company": "Lifting equipment inspection engine",
     "company_type": "Subsea Contractor",
     "pic_name": "Crewing Lead / Subsea Recruiter",
@@ -299,7 +299,8 @@
     "country": "Global",
     "source": "Facebook Group + Enriched",
     "remark": "Hi Everyone,** If you are interested in an exciting** Lifting Equipment Inspection Engineer ... To Apply: Email your CV  [Verified Mail Server]",
-    "is_invalid": false
+    "is_invalid": false,
+    "sent_date": "2026-08-04 02:16"
   },
   {
     "sent": "FALSE",
