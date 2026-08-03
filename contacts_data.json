@@ -751,8 +751,8 @@
     "sent_date": "2026-08-04 04:44"
   },
   {
-    "sent": "FALSE",
-    "status": "\ud83d\udd25 HOT LEAD",
+    "sent": "TRUE",
+    "status": "SENT / PENDING",
     "company": "Hi, Greetings for DAIS!!! We are lo",
     "company_type": "Subsea Contractor",
     "pic_name": "Crewing Lead / Subsea Recruiter",
@@ -763,7 +763,8 @@
     "country": "Global",
     "source": "Facebook Group + Enriched",
     "remark": "Freelancer Inspection engineer required at Pipavav Port, Gujarat. ... Email to : D.Ganesh@irclass.org. Mobile No:+91-994 [Verified Mail Server]",
-    "is_invalid": false
+    "is_invalid": false,
+    "sent_date": "2026-08-04 04:50"
   },
   {
     "sent": "FALSE",
