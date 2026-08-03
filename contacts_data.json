@@ -271,8 +271,8 @@
     "sent_date": "2026-08-04 02:05"
   },
   {
-    "sent": "FALSE",
-    "status": "\ud83d\udd25 HOT LEAD",
+    "sent": "TRUE",
+    "status": "SENT / PENDING",
     "company": "Sea Tech Rwanda Ltd: Call for Expre",
     "company_type": "Subsea Contractor",
     "pic_name": "Crewing Lead / Subsea Recruiter",
@@ -283,7 +283,8 @@
     "country": "Global",
     "source": "Facebook Group",
     "remark": "... CSWIP 3.4U (Nat) Interested and qualified candidates should send their CVs and valid certifications to: HR@mukabsyne",
-    "is_invalid": false
+    "is_invalid": false,
+    "sent_date": "2026-08-04 02:10"
   },
   {
     "sent": "FALSE",
