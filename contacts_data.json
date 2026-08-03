@@ -623,8 +623,8 @@
     "sent_date": "2026-08-04 04:04"
   },
   {
-    "sent": "FALSE",
-    "status": "\ud83d\udd25 HOT LEAD",
+    "sent": "TRUE",
+    "status": "SENT / PENDING",
     "company": "JOB VACANCIES AT GENESIS TECHNICAL ",
     "company_type": "Subsea Contractor",
     "pic_name": "Crewing Lead / Subsea Recruiter",
@@ -635,7 +635,8 @@
     "country": "Global",
     "source": "Facebook Group + Enriched",
     "remark": "Send CV to careers@elvaridah.com Odoo Technical Lead and Developer ... Subsea Inspection Engineer 9. Lead Engineer, Rota [Verified Mail Server]",
-    "is_invalid": false
+    "is_invalid": false,
+    "sent_date": "2026-08-04 04:09"
   },
   {
     "sent": "FALSE",
