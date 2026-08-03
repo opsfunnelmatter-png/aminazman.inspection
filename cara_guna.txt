@@ -23,7 +23,7 @@ atau yang dah balas (Replied):
 
 1. Buka terminal (PowerShell / Command Prompt).
 2. Jalankan arahan ini:
-   cd c:\Users\amin8\Desktop\AG-Offshore\job-crm
+   cd "C:\Users\amin8\Desktop\AG Projects\AG-Offshore\job-crm"
    python 04_dashboard.py
 
 --------------------------------------------------------------------------

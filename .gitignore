@@ -3,6 +3,24 @@ Thumbs.db
 Desktop.ini
 .DS_Store
 
-# Temporary / Scratch Python scripts
+# Environment & Secrets
+.env
+
+# Temporary / Scratch Python scripts & log files
 *.py
 *.log
+*.png
+!logo.png
+!8. Passport Photo - Amin Azman.png
+!linkedin_profile.png
+!favicon.png
+!15. Petronas OSP and CCC - Amin Azman_page_1.png
+!15. Petronas OSP and CCC - Amin Azman_page_2.png
+!19. Certificate of Appreciation KL Petrogas - Amin Azman.png
+*.json
+!contacts_data.json
+generate_pdf.js
+render_pdf.js
+node_modules/
+.gemini/
+

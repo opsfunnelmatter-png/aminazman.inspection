@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/png" href="favicon.png?v=1.7">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subsea Contacts & Crewing CRM v2 | Amin Azman</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Link to Stylesheet -->
+    <link rel="stylesheet" href="style.css?v=2.6">
+    
+    <style>
+        .crm-container {
+            margin-top: 30px;
+            margin-bottom: 50px;
+            max-width: 1400px;
+        }
+
+        .crm-summary-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+
+        .summary-card {
+            background: var(--bg-content);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 16px 20px;
+            box-shadow: var(--shadow);
+        }
+
+        .summary-card .title {
+            font-size: 0.82rem;
+            color: var(--text-secondary);
+            font-weight: 500;
+            margin-bottom: 6px;
+        }
+
+        .summary-card .number {
+            font-size: 1.6rem;
+            font-weight: 700;
+            font-family: var(--font-header);
+            color: var(--text-primary);
+        }
+
+        .crm-controls {
+            background: var(--bg-content);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 20px 25px;
+            box-shadow: var(--shadow);
+            margin-bottom: 25px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .search-box {
+            flex: 1;
+            min-width: 280px;
+            position: relative;
+        }
+
+        .search-box input {
+            width: 100%;
+            padding: 12px 18px 12px 42px;
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            color: var(--text-primary);
+            font-size: 0.95rem;
+            outline: none;
+            transition: all 0.2s ease;
+        }
+
+        .search-box input:focus {
+            border-color: var(--accent);
+            box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.15);
+        }
+
+        .search-icon {
+            position: absolute;
+            left: 14px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--text-secondary);
+        }
+
+        .filter-group {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            padding: 8px 14px;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            background: var(--bg-card);
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .filter-btn:hover, .filter-btn.active {
+            background: var(--accent);
+            color: #ffffff;
+            border-color: var(--accent);
+        }
+
+        .table-responsive {
+            background: var(--bg-content);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            overflow-x: auto;
+            box-shadow: var(--shadow);
+        }
+
+        .crm-table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+            font-size: 0.88rem;
+        }
+
+        .crm-table th {
+            background: rgba(15, 23, 42, 0.7);
+            padding: 14px 16px;
+            font-weight: 600;
+            color: var(--text-primary);
+            border-bottom: 1px solid var(--border-color);
+            white-space: nowrap;
+        }
+
+        .crm-table td {
+            padding: 12px 16px;
+            border-bottom: 1px solid var(--border-color);
+            color: var(--text-primary);
+            vertical-align: middle;
+        }
+
+        .crm-table tr:hover {
+            background: rgba(255, 255, 255, 0.02);
+        }
+
+        .status-select {
+            padding: 5px 10px;
+            border-radius: 6px;
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            color: var(--text-primary);
+            font-size: 0.8rem;
+            font-weight: 600;
+            cursor: pointer;
+            outline: none;
+        }
+
+        .badge-status {
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 0.76rem;
+            font-weight: 600;
+            display: inline-block;
+            white-space: nowrap;
+        }
+
+        .status-hot { background: #FEE2E2; color: #991B1B; border: 1px solid #FCA5A5; }
+        .status-replied { background: #FEF3C7; color: #92400E; border: 1px solid #FCD34D; }
+        .status-interview { background: #D1FAE5; color: #065F46; border: 1px solid #6EE7B7; }
+        .status-sent { background: #E0F2FE; color: #0369A1; border: 1px solid #BAE6FD; }
+        .status-active { background: rgba(255,255,255,0.05); color: var(--text-secondary); border: 1px solid var(--border-color); }
+
+        .btn-copy {
+            padding: 6px 10px;
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            color: var(--text-primary);
+            cursor: pointer;
+            font-size: 0.78rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            transition: all 0.2s ease;
+        }
+
+        .btn-copy:hover {
+            background: var(--accent);
+            color: #ffffff;
+            border-color: var(--accent);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Action Bar -->
+    <header class="no-print action-bar">
+        <div class="container bar-content">
+            <div class="logo-container" style="display: flex; align-items: center; gap: 8px;">
+                <img src="logo.png" alt="Amin Azman Logo" style="height: 32px; width: auto; display: block;">
+                <span class="logo-text" style="font-family: var(--font-header); font-weight: 700; font-size: 1.2rem; color: var(--accent); letter-spacing: 0.5px;">Amin Azman</span>
+            </div>
+            <div class="actions">
+                <a href="index.html" class="btn-print" style="background: var(--bg-card); color: var(--text-primary); border: 1px solid var(--border-color); text-decoration: none; display: inline-flex; align-items: center; justify-content: center; box-shadow: none;">Home</a>
+                <a href="full_cv.html" class="btn-print" style="background: var(--bg-card); color: var(--text-primary); border: 1px solid var(--border-color); text-decoration: none; display: inline-flex; align-items: center; justify-content: center; box-shadow: none;">Full CV</a>
+                <a href="classic_cv.html" class="btn-print" style="background: var(--bg-card); color: var(--text-primary); border: 1px solid var(--border-color); text-decoration: none; display: inline-flex; align-items: center; justify-content: center; box-shadow: none;">Classic CV</a>
+                <a href="certificates.html" class="btn-print" style="background: var(--bg-card); color: var(--text-primary); border: 1px solid var(--border-color); text-decoration: none; display: inline-flex; align-items: center; justify-content: center; box-shadow: none;">Certificates</a>
+                <a href="contacts.html" class="btn-print" style="background: var(--accent); color: #ffffff; border: none; text-decoration: none; display: inline-flex; align-items: center; justify-content: center; gap: 6px;">
+                    🎯 Subsea CRM
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container cv-wrapper crm-container">
+        <div style="margin-bottom: 20px;">
+            <h1 style="font-family: var(--font-header); font-size: 2rem; color: var(--text-primary); margin-bottom: 8px;">Subsea Campaign & Reply Tracking CRM</h1>
+            <p style="color: var(--text-secondary); font-size: 0.95rem;">Track application status, email replies, interviews, and lead activities across 345 verified subsea contractors.</p>
+        </div>
+
+        <!-- Summary Metric Cards -->
+        <div class="crm-summary-cards">
+            <div class="summary-card">
+                <div class="title">Total Active Leads</div>
+                <div class="number" id="statTotal">345</div>
+            </div>
+            <div class="summary-card">
+                <div class="title">🔥 Hot Leads</div>
+                <div class="number" style="color: #ef4444;" id="statHot">61</div>
+            </div>
+            <div class="summary-card">
+                <div class="title">📨 Emails Sent</div>
+                <div class="number" style="color: #0284c7;" id="statSent">0</div>
+            </div>
+            <div class="summary-card">
+                <div class="title">💬 Replies Received</div>
+                <div class="number" style="color: #f59e0b;" id="statReplies">0</div>
+            </div>
+            <div class="summary-card">
+                <div class="title">📅 Interviews / Jobs</div>
+                <div class="number" style="color: #22c55e;" id="statInterviews">0</div>
+            </div>
+        </div>
+
+        <!-- Controls & Filters -->
+        <div class="crm-controls">
+            <div class="search-box">
+                <span class="search-icon">🔍</span>
+                <input type="text" id="searchInput" placeholder="Search company, email, status, country..." onkeyup="filterContacts()">
+            </div>
+            
+            <div class="filter-group">
+                <button class="filter-btn active" onclick="setFilter('ALL', this)">All (345)</button>
+                <button class="filter-btn" onclick="setFilter('HOT', this)">🔥 Hot Leads</button>
+                <button class="filter-btn" onclick="setFilter('REPLIED', this)">💬 Replied</button>
+                <button class="filter-btn" onclick="setFilter('INTERVIEW', this)">📅 Interview</button>
+                <button class="filter-btn" onclick="setFilter('MY', this)">🇲🇾 Malaysia</button>
+                <button class="filter-btn" onclick="setFilter('ME', this)">🇦🇪 Middle East</button>
+            </div>
+
+            <div class="stats-counter" id="statsCount">Showing 345 contacts</div>
+        </div>
+
+        <!-- Data Table -->
+        <div class="table-responsive">
+            <table class="crm-table">
+                <thead>
+                    <tr>
+                        <th>Status Tracker</th>
+                        <th>Company Name</th>
+                        <th>PIC Name & Role</th>
+                        <th>Email Contact</th>
+                        <th>Country</th>
+                        <th>Region</th>
+                        <th>Remark / Reply Log</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="contactsTableBody">
+                    <!-- Populated via JavaScript -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        let allContacts = [];
+        let currentFilter = 'ALL';
+
+        async function loadContacts() {
+            try {
+                const response = await fetch('contacts_data.json');
+                allContacts = await response.json();
+                updateSummaryStats();
+                renderTable(allContacts);
+            } catch (error) {
+                console.error('Error loading contacts_data.json:', error);
+            }
+        }
+
+        function updateSummaryStats() {
+            let total = allContacts.length;
+            let hot = allContacts.filter(c => c.status === '🔥 HOT LEAD').length;
+            let sent = allContacts.filter(c => c.sent === 'TRUE' || c.status === 'SENT').length;
+            let replies = allContacts.filter(c => c.status === '💬 REPLIED').length;
+            let interviews = allContacts.filter(c => c.status === '📅 INTERVIEW').length;
+
+            document.getElementById('statTotal').innerText = total;
+            document.getElementById('statHot').innerText = hot;
+            document.getElementById('statSent').innerText = sent;
+            document.getElementById('statReplies').innerText = replies;
+            document.getElementById('statInterviews').innerText = interviews;
+        }
+
+        function renderTable(data) {
+            const tbody = document.getElementById('contactsTableBody');
+            tbody.innerHTML = '';
+
+            data.forEach((item, index) => {
+                const tr = document.createElement('tr');
+
+                const emailLink = item.email ? `<a href="mailto:${item.email}" style="color: var(--accent); text-decoration: none; font-weight: 500;">${item.email}</a>` : '<span style="color: var(--text-secondary);">-</span>';
+                
+                const picInfo = item.pic_name ? `<strong>${item.pic_name}</strong><br><span style="font-size:0.78rem; color:var(--text-secondary);">${item.job_title || ''}</span>` : `<span style="color:var(--text-secondary); font-size:0.82rem;">${item.job_title || 'Crewing Dept'}</span>`;
+
+                tr.innerHTML = `
+                    <td>
+                        <select class="status-select" onchange="updateStatus(${index}, this.value)">
+                            <option value="ACTIVE" ${item.status === 'ACTIVE' ? 'selected' : ''}>ACTIVE</option>
+                            <option value="🔥 HOT LEAD" ${item.status === '🔥 HOT LEAD' ? 'selected' : ''}>🔥 HOT LEAD</option>
+                            <option value="⏳ SENT / PENDING" ${item.status.includes('SENT') ? 'selected' : ''}>⏳ SENT / PENDING</option>
+                            <option value="💬 REPLIED" ${item.status === '💬 REPLIED' ? 'selected' : ''}>💬 REPLIED</option>
+                            <option value="📅 INTERVIEW" ${item.status === '📅 INTERVIEW' ? 'selected' : ''}>📅 INTERVIEW</option>
+                            <option value="❌ NO NCA" ${item.status.includes('NO NCA') ? 'selected' : ''}>❌ NO NCA</option>
+                        </select>
+                    </td>
+                    <td><strong>${item.company}</strong></td>
+                    <td>${picInfo}</td>
+                    <td>${emailLink}</td>
+                    <td><span style="font-weight: 500;">${item.country || 'Global'}</span></td>
+                    <td><span style="font-weight: 600; font-size:0.82rem;">${item.region}</span></td>
+                    <td style="max-width: 250px; white-space: normal; color: var(--text-secondary); font-size: 0.85rem;">${item.remark || '-'}</td>
+                    <td>
+                        ${item.email ? `<button class="btn-copy" onclick="copyToClipboard('${item.email}', this)">📋 Copy</button>` : ''}
+                    </td>
+                `;
+                tbody.appendChild(tr);
+            });
+
+            document.getElementById('statsCount').innerText = `Showing ${data.length} active contacts`;
+        }
+
+        function updateStatus(index, newStatus) {
+            allContacts[index].status = newStatus;
+            updateSummaryStats();
+            console.log(`Updated index ${index} status to ${newStatus}`);
+        }
+
+        function filterContacts() {
+            const query = document.getElementById('searchInput').value.toLowerCase();
+            
+            const filtered = allContacts.filter(item => {
+                const matchesQuery = 
+                    (item.company && item.company.toLowerCase().includes(query)) ||
+                    (item.email && item.email.toLowerCase().includes(query)) ||
+                    (item.pic_name && item.pic_name.toLowerCase().includes(query)) ||
+                    (item.country && item.country.toLowerCase().includes(query)) ||
+                    (item.status && item.status.toLowerCase().includes(query)) ||
+                    (item.remark && item.remark.toLowerCase().includes(query));
+
+                let matchesFilter = true;
+                if (currentFilter === 'HOT') matchesFilter = item.status === '🔥 HOT LEAD';
+                else if (currentFilter === 'REPLIED') matchesFilter = item.status === '💬 REPLIED';
+                else if (currentFilter === 'INTERVIEW') matchesFilter = item.status === '📅 INTERVIEW';
+                else if (currentFilter === 'MY') matchesFilter = item.country === 'Malaysia' || item.region === 'SEA';
+                else if (currentFilter === 'ME') matchesFilter = item.region === 'Middle East';
+
+                return matchesQuery && matchesFilter;
+            });
+
+            renderTable(filtered);
+        }
+
+        function setFilter(filterType, btn) {
+            currentFilter = filterType;
+            document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            filterContacts();
+        }
+
+        function copyToClipboard(text, btn) {
+            navigator.clipboard.writeText(text);
+            const orig = btn.innerHTML;
+            btn.innerHTML = '✅ Copied!';
+            btn.style.background = '#22c55e';
+            btn.style.color = '#ffffff';
+            setTimeout(() => {
+                btn.innerHTML = orig;
+                btn.style.background = '';
+                btn.style.color = '';
+            }, 2000);
+        }
+
+        window.onload = loadContacts;
+    </script>
+</body>
+</html>

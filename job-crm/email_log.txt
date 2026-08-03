@@ -1,0 +1,4 @@
+[2026-07-25 20:48:37] SENT (VACANCY AD) → Hannah Rodger <hannah@elevateoffshore.com> (Elevate Offshore)
+[2026-07-25 20:48:37] FAILED (VACANCY AD) → Hannah Rodger <hannah@elevateoffshore.com> (Elevate Offshore) | Error: 'charmap' codec can't encode character '\u2192' in position 40: character maps to <undefined>
+[2026-07-25 20:49:06] SENT (VACANCY AD) -> Hannah Rodger <hannah@elevateoffshore.com> (Elevate Offshore)
+[2026-07-25 20:50:18] SENT (VACANCY AD) -> Ange Noella <hr@awoffshore.com> (AW Offshore)
