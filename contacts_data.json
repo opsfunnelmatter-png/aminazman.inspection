@@ -703,8 +703,8 @@
     "sent_date": "2026-08-04 04:29"
   },
   {
-    "sent": "FALSE",
-    "status": "\ud83d\udd25 HOT LEAD",
+    "sent": "TRUE",
+    "status": "SENT / PENDING",
     "company": "We have not yet found suitable cand",
     "company_type": "Subsea Contractor",
     "pic_name": "Crewing Lead / Subsea Recruiter",
@@ -715,7 +715,8 @@
     "country": "Global",
     "source": "Facebook Group + Enriched",
     "remark": "Subsea Inspection Engineer 14. ROV Superintendent, Supervisor, Pilot ... Send CV to cvs@flexilube.com Company looking fo [Verified Mail Server]",
-    "is_invalid": false
+    "is_invalid": false,
+    "sent_date": "2026-08-04 04:34"
   },
   {
     "sent": "FALSE",
