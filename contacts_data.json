@@ -495,8 +495,8 @@
     "sent_date": "2026-08-04 03:18"
   },
   {
-    "sent": "FALSE",
-    "status": "\ud83d\udd25 HOT LEAD",
+    "sent": "TRUE",
+    "status": "SENT / PENDING",
     "company": "Senior Materials Corrosion and Insp",
     "company_type": "Subsea Contractor",
     "pic_name": "Crewing Lead / Subsea Recruiter",
@@ -507,7 +507,8 @@
     "country": "Global",
     "source": "Facebook Group",
     "remark": "To apply please send cv to angie. m@admiralplacements.co.za. 0 ... Subsea Inspection \u25aa\ufe0fCorrosion Engineers \u25aa\ufe0fSubsea and ",
-    "is_invalid": false
+    "is_invalid": false,
+    "sent_date": "2026-08-04 03:22"
   },
   {
     "sent": "FALSE",
