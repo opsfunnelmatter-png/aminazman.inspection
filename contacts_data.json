@@ -591,8 +591,8 @@
     "sent_date": "2026-08-04 03:51"
   },
   {
-    "sent": "FALSE",
-    "status": "\ud83d\udd25 HOT LEAD",
+    "sent": "TRUE",
+    "status": "SENT / PENDING",
     "company": "VACANCY ENGEN NAMIBIA (PTY) LTD. In",
     "company_type": "Crewing / Manpower Agency",
     "pic_name": "Crewing Lead / Subsea Recruiter",
@@ -603,7 +603,8 @@
     "country": "Global",
     "source": "Facebook Group + Enriched",
     "remark": "... send CV to recruitment@wendernek.com using the job title as the ... Subsea Inspection \u25aa\ufe0fCorrosion Engineers \u25aa\ufe0fSubsea [Verified Mail Server]",
-    "is_invalid": false
+    "is_invalid": false,
+    "sent_date": "2026-08-04 03:58"
   },
   {
     "sent": "FALSE",
