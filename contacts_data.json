@@ -447,8 +447,8 @@
     "sent_date": "2026-08-04 03:01"
   },
   {
-    "sent": "FALSE",
-    "status": "\ud83d\udd25 HOT LEAD",
+    "sent": "TRUE",
+    "status": "SENT / PENDING",
     "company": "We have the following vacancies. If",
     "company_type": "Subsea Contractor",
     "pic_name": "Crewing Lead / Subsea Recruiter",
@@ -459,7 +459,8 @@
     "country": "Global",
     "source": "Facebook Group + Enriched",
     "remark": "Subsea Inspection Engineer 14. ROV Superintendent, Supervisor, Pilot ... Send CV's to cv@louwill.co.za Interviews will t [Verified Mail Server]",
-    "is_invalid": false
+    "is_invalid": false,
+    "sent_date": "2026-08-04 03:06"
   },
   {
     "sent": "FALSE",
