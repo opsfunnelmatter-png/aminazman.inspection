@@ -831,8 +831,8 @@
     "sent_date": "2026-08-04 05:11"
   },
   {
-    "sent": "FALSE",
-    "status": "\ud83d\udd25 HOT LEAD",
+    "sent": "TRUE",
+    "status": "SENT / PENDING",
     "company": "Red Sea Global Project NEOM",
     "company_type": "Subsea Contractor",
     "pic_name": "Crewing Lead / Subsea Recruiter",
@@ -843,7 +843,8 @@
     "country": "Global",
     "source": "Facebook Group + Enriched",
     "remark": "... Inspection Engineer Architectural inspection engineer Electrical ... email Send your CV to hr@saraya.sa \u00b7 \u0634\u0631\u0643\u0629 \u0622\u0644 \u062d\u0633 [Verified Mail Server]",
-    "is_invalid": false
+    "is_invalid": false,
+    "sent_date": "2026-08-04 05:17"
   },
   {
     "sent": "FALSE",
