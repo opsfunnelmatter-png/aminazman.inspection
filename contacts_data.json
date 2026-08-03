@@ -511,8 +511,8 @@
     "sent_date": "2026-08-04 03:22"
   },
   {
-    "sent": "FALSE",
-    "status": "\ud83d\udd25 HOT LEAD",
+    "sent": "TRUE",
+    "status": "SENT / PENDING",
     "company": "LEEA certified lifting inspection e",
     "company_type": "Subsea Contractor",
     "pic_name": "Crewing Lead / Subsea Recruiter",
@@ -523,7 +523,8 @@
     "country": "Global",
     "source": "Facebook Group + Enriched",
     "remark": "Lifting Inspection Engineer Are you a certified professional ... Email Address: firapply@yahoo.com Contact Person: Ms. J [Verified Mail Server]",
-    "is_invalid": false
+    "is_invalid": false,
+    "sent_date": "2026-08-04 03:28"
   },
   {
     "sent": "FALSE",
