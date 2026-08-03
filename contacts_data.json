@@ -927,8 +927,8 @@
     "sent_date": "2026-08-04 05:43"
   },
   {
-    "sent": "FALSE",
-    "status": "\ud83d\udd25 HOT LEAD",
+    "sent": "TRUE",
+    "status": "SENT / PENDING",
     "company": "Tabish Abbasi's Post",
     "company_type": "Subsea Contractor",
     "pic_name": "Crewing Lead / Subsea Recruiter",
@@ -939,7 +939,8 @@
     "country": "Global",
     "source": "LinkedIn Post + Enriched",
     "remark": "... Email: tabish@aasthaconsulting.com Call/WhatsApp: + ... #hiring #inspection #oil #gas #petrochemical #refinery. Like [Verified Mail Server]",
-    "is_invalid": false
+    "is_invalid": false,
+    "sent_date": "2026-08-04 05:49"
   },
   {
     "sent": "FALSE",
