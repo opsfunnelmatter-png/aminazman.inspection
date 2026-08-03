@@ -735,8 +735,8 @@
     "sent_date": "2026-08-04 04:40"
   },
   {
-    "sent": "FALSE",
-    "status": "\ud83d\udd25 HOT LEAD",
+    "sent": "TRUE",
+    "status": "SENT / PENDING",
     "company": "MANPOWER VIETNAM IS HIRING",
     "company_type": "Subsea Contractor",
     "pic_name": "Crewing Lead / Subsea Recruiter",
@@ -747,7 +747,8 @@
     "country": "Global",
     "source": "Facebook Group + Enriched",
     "remark": "... Inspection Engineer - Maintenance Corrosion Engineer - Mechanical ... Ho\u00e0ng: 0909 808 875 Email: tuyendungRPO@manpow [Verified Mail Server]",
-    "is_invalid": false
+    "is_invalid": false,
+    "sent_date": "2026-08-04 04:44"
   },
   {
     "sent": "FALSE",
