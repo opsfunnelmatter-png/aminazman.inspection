@@ -463,8 +463,8 @@
     "sent_date": "2026-08-04 03:06"
   },
   {
-    "sent": "FALSE",
-    "status": "\ud83d\udd25 HOT LEAD",
+    "sent": "TRUE",
+    "status": "SENT / PENDING",
     "company": "We're Hiring! Bulk Plant Supervisor",
     "company_type": "Crewing / Manpower Agency",
     "pic_name": "Crewing Lead / Subsea Recruiter",
@@ -475,7 +475,8 @@
     "country": "Global",
     "source": "Facebook Group + Enriched",
     "remark": "... subsea Inspection Repair & Maintenance work, new subsea project ... Send cv to: cvtorecruitment@gmail.com Deadline:  [Verified Mail Server]",
-    "is_invalid": false
+    "is_invalid": false,
+    "sent_date": "2026-08-04 03:12"
   },
   {
     "sent": "FALSE",
