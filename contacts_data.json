@@ -655,8 +655,8 @@
     "sent_date": "2026-08-04 04:14"
   },
   {
-    "sent": "FALSE",
-    "status": "\ud83d\udd25 HOT LEAD",
+    "sent": "TRUE",
+    "status": "SENT / PENDING",
     "company": "VACANCY! Materials Analyst Apply to",
     "company_type": "Crewing / Manpower Agency",
     "pic_name": "Crewing Lead / Subsea Recruiter",
@@ -667,7 +667,8 @@
     "country": "Global",
     "source": "Facebook Group + Enriched",
     "remark": "Send CV to imalahugo@gmail.com This is my last and final ... Subsea Inspection \u25aa\ufe0fCorrosion Engineers \u25aa\ufe0fSubsea and Pipeli [Verified Mail Server]",
-    "is_invalid": false
+    "is_invalid": false,
+    "sent_date": "2026-08-04 04:18"
   },
   {
     "sent": "FALSE",
