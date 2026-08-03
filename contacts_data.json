@@ -255,8 +255,8 @@
     "sent_date": "2026-08-04 01:59"
   },
   {
-    "sent": "FALSE",
-    "status": "\ud83d\udd25 HOT LEAD",
+    "sent": "TRUE",
+    "status": "SENT / PENDING",
     "company": "Worley Hyderabad Recruitment Drive ",
     "company_type": "Crewing / Manpower Agency",
     "pic_name": "Crewing Lead / Subsea Recruiter",
@@ -267,7 +267,8 @@
     "country": "Global",
     "source": "Facebook Group + Enriched",
     "remark": "... CSWIP 3.4U Inspection Controller ROV Auditor Support Roles ... Email: Qatar.recruitment@worley.com \u00b7 No photo descri [Verified Mail Server]",
-    "is_invalid": false
+    "is_invalid": false,
+    "sent_date": "2026-08-04 02:05"
   },
   {
     "sent": "FALSE",
