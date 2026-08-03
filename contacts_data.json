@@ -239,8 +239,8 @@
     "sent_date": "2026-08-04 01:52"
   },
   {
-    "sent": "FALSE",
-    "status": "\ud83d\udd25 HOT LEAD",
+    "sent": "TRUE",
+    "status": "SENT / PENDING",
     "company": "Certificate in BGAS Painting Inspec",
     "company_type": "Crewing / Manpower Agency",
     "pic_name": "Crewing Lead / Subsea Recruiter",
@@ -251,7 +251,8 @@
     "country": "Global",
     "source": "Facebook Group",
     "remark": "After the huge success of our April Training on BGAS- CSWIP Coating inspector and CSWIP 3.4U ... recruitment@freelander-",
-    "is_invalid": false
+    "is_invalid": false,
+    "sent_date": "2026-08-04 01:59"
   },
   {
     "sent": "FALSE",
