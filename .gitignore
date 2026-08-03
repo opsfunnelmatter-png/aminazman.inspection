@@ -24,3 +24,5 @@ render_pdf.js
 node_modules/
 .gemini/
 
+
+.vercel
