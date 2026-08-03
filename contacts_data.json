@@ -575,8 +575,8 @@
     "sent_date": "2026-08-04 03:45"
   },
   {
-    "sent": "FALSE",
-    "status": "\ud83d\udd25 HOT LEAD",
+    "sent": "TRUE",
+    "status": "SENT / PENDING",
     "company": "Atheelco Hiring For Neom City",
     "company_type": "Subsea Contractor",
     "pic_name": "Crewing Lead / Subsea Recruiter",
@@ -587,7 +587,8 @@
     "country": "Global",
     "source": "Facebook Group + Enriched",
     "remark": "... Inspection Engineer Architectural inspection engineer Electrical ... email:cxing2936@gmail.com whatsapp:+86 13357214 [Verified Mail Server]",
-    "is_invalid": false
+    "is_invalid": false,
+    "sent_date": "2026-08-04 03:51"
   },
   {
     "sent": "FALSE",
