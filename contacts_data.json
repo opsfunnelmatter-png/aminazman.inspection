@@ -767,8 +767,8 @@
     "sent_date": "2026-08-04 04:50"
   },
   {
-    "sent": "FALSE",
-    "status": "\ud83d\udd25 HOT LEAD",
+    "sent": "TRUE",
+    "status": "SENT / PENDING",
     "company": "VACANCY: 10x Site Engineers/Quality",
     "company_type": "Crewing / Manpower Agency",
     "pic_name": "Crewing Lead / Subsea Recruiter",
@@ -779,7 +779,8 @@
     "country": "Global",
     "source": "Facebook Group + Enriched",
     "remark": "... CSWIP 3.4U Inspection Controller ROV Auditor Support Roles ... 222 Email: BSB-MNL-RECRUITMENT@wilhelmsen.com POEA Li [Verified Mail Server]",
-    "is_invalid": false
+    "is_invalid": false,
+    "sent_date": "2026-08-04 04:56"
   },
   {
     "sent": "FALSE",
