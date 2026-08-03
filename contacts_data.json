@@ -527,8 +527,8 @@
     "sent_date": "2026-08-04 03:28"
   },
   {
-    "sent": "FALSE",
-    "status": "\ud83d\udd25 HOT LEAD",
+    "sent": "TRUE",
+    "status": "SENT / PENDING",
     "company": "standpro.hr@gmail.com \ud83d\udccd Location: 4",
     "company_type": "Subsea Contractor",
     "pic_name": "Crewing Lead / Subsea Recruiter",
@@ -539,7 +539,8 @@
     "country": "Global",
     "source": "Facebook Group + Enriched",
     "remark": "... Inspection Engineer \u2728 With or ... For your questions/inquiries you can message me on messenger and/or email me using [Verified Mail Server]",
-    "is_invalid": false
+    "is_invalid": false,
+    "sent_date": "2026-08-04 03:34"
   },
   {
     "sent": "FALSE",
