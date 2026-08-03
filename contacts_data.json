@@ -799,8 +799,8 @@
     "sent_date": "2026-08-04 05:00"
   },
   {
-    "sent": "FALSE",
-    "status": "\ud83d\udd25 HOT LEAD",
+    "sent": "TRUE",
+    "status": "SENT / PENDING",
     "company": "Inspection Engineer #Damietta",
     "company_type": "Subsea Contractor",
     "pic_name": "Crewing Lead / Subsea Recruiter",
@@ -811,7 +811,8 @@
     "country": "Global",
     "source": "Facebook Group + Enriched",
     "remark": "Inspection Engineer #Damietta. ... email: constructionhse1@gmail.com kindly note that non-relevant CVs\u00a0...Read more [Verified Mail Server]",
-    "is_invalid": false
+    "is_invalid": false,
+    "sent_date": "2026-08-04 05:04"
   },
   {
     "sent": "FALSE",
