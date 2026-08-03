@@ -431,8 +431,8 @@
     "sent_date": "2026-08-04 02:55"
   },
   {
-    "sent": "FALSE",
-    "status": "\ud83d\udd25 HOT LEAD",
+    "sent": "TRUE",
+    "status": "SENT / PENDING",
     "company": "Company Site Representative (CSR) l",
     "company_type": "Subsea Contractor",
     "pic_name": "Crewing Lead / Subsea Recruiter",
@@ -443,7 +443,8 @@
     "country": "Global",
     "source": "LinkedIn Post",
     "remark": "... send Cv to hrcenter@amarit.co.th scope of work : x Supervision: Oversee the contractor's activities during each subs",
-    "is_invalid": false
+    "is_invalid": false,
+    "sent_date": "2026-08-04 03:01"
   },
   {
     "sent": "FALSE",
