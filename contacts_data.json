@@ -607,8 +607,8 @@
     "sent_date": "2026-08-04 03:58"
   },
   {
-    "sent": "FALSE",
-    "status": "\ud83d\udd25 HOT LEAD",
+    "sent": "TRUE",
+    "status": "SENT / PENDING",
     "company": "JOB OPENING",
     "company_type": "Subsea Contractor",
     "pic_name": "Crewing Lead / Subsea Recruiter",
@@ -619,7 +619,8 @@
     "country": "Global",
     "source": "Facebook Group + Enriched",
     "remark": "Send CV to: e.gregorio@brunel.net Open Positions & Clients: 1 ... Subsea Inspection \u25aa\ufe0fCorrosion Engineers \u25aa\ufe0fSubsea and P [Verified Mail Server]",
-    "is_invalid": false
+    "is_invalid": false,
+    "sent_date": "2026-08-04 04:04"
   },
   {
     "sent": "FALSE",
