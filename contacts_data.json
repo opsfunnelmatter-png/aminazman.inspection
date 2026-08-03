@@ -319,8 +319,8 @@
     "sent_date": "2026-08-04 02:22"
   },
   {
-    "sent": "FALSE",
-    "status": "\ud83d\udd25 HOT LEAD",
+    "sent": "TRUE",
+    "status": "SENT / PENDING",
     "company": "Lifting Equipment inspection and ce",
     "company_type": "Subsea Contractor",
     "pic_name": "Crewing Lead / Subsea Recruiter",
@@ -331,7 +331,8 @@
     "country": "Global",
     "source": "Facebook Group + Enriched",
     "remark": "If you meet the following requirements, we invite you to apply -Position: Inspection Engineer ... Email: gulf.hropening@ [Verified Mail Server]",
-    "is_invalid": false
+    "is_invalid": false,
+    "sent_date": "2026-08-04 02:26"
   },
   {
     "sent": "FALSE",
