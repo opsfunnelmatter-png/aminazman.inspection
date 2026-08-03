@@ -783,8 +783,8 @@
     "sent_date": "2026-08-04 04:56"
   },
   {
-    "sent": "FALSE",
-    "status": "\ud83d\udd25 HOT LEAD",
+    "sent": "TRUE",
+    "status": "SENT / PENDING",
     "company": "We are looking for Mates and Office",
     "company_type": "Crewing / Manpower Agency",
     "pic_name": "Crewing Lead / Subsea Recruiter",
@@ -795,7 +795,8 @@
     "country": "Global",
     "source": "Facebook Group + Enriched",
     "remark": "... CSWIP 3.4U Inspection ... Please forward your CV for review to the following email: recruitment.training@ambrey.com  [Verified Mail Server]",
-    "is_invalid": false
+    "is_invalid": false,
+    "sent_date": "2026-08-04 05:00"
   },
   {
     "sent": "FALSE",
