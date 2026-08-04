@@ -1003,8 +1003,8 @@
     "sender_email": "aminazman.inspection@gmail.com"
   },
   {
-    "sent": "FALSE",
-    "status": "\ud83d\udd25 HOT LEAD",
+    "sent": "TRUE",
+    "status": "SENT / PENDING",
     "company": "Intertek \u2013 Inspection Engineer",
     "company_type": "Crewing / Manpower Agency",
     "pic_name": "Crewing Lead / Subsea Recruiter",
@@ -1015,7 +1015,9 @@
     "country": "Global",
     "source": "LinkedIn Post + Enriched",
     "remark": "... Email: mavia@aasthaconsulting.com Call/WhatsApp: +91-9667113950 | 11 ... SMP Mega Recruitment Campaign at Delhi for  [Verified Mail Server]",
-    "is_invalid": false
+    "is_invalid": false,
+    "sent_date": "2026-08-04 09:25",
+    "sender_email": "amin87.azman@gmail.com"
   },
   {
     "sent": "FALSE",
