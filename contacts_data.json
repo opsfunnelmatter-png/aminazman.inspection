@@ -2,6 +2,35 @@
   {
     "sent": "TRUE",
     "status": "SENT / PENDING",
+    "company": "Tectonic Engineering",
+    "email": "amustafa@tectonicengineering.com",
+    "country": "Overseas",
+    "region": "Overseas",
+    "remark": "Redirected from AGupta",
+    "sent_date": "2026-08-05 02:11",
+    "sender_email": "amin87.azman@gmail.com"
+  },
+  {
+    "sent": "FALSE",
+    "status": "\ud83d\udd25 HOT LEAD",
+    "company": "Altrad Sparrows UK",
+    "email": "sparrows.careers@altrad.com",
+    "country": "United Kingdom",
+    "region": "Europe",
+    "remark": "Redirected from Lewis Walker"
+  },
+  {
+    "sent": "FALSE",
+    "status": "\ud83d\udd25 HOT LEAD",
+    "company": "Mermaid Subsea Services (KSA)",
+    "email": "ksa.recruitment@mermaid-group.com",
+    "country": "Saudi Arabia",
+    "region": "Middle East",
+    "remark": "Redirected from Deidre Daniel"
+  },
+  {
+    "sent": "TRUE",
+    "status": "SENT / PENDING",
     "company": "Oiler",
     "company_type": "Crewing / Manpower Agency",
     "pic_name": "Crewing Lead / Subsea Recruiter",
@@ -68,8 +97,8 @@
     "sender_email": "aminazman.inspection@gmail.com"
   },
   {
-    "sent": "REDIRECTED",
-    "status": "\ud83d\udd04 AUTO-REDIRECT",
+    "sent": "TRUE",
+    "status": "SENT / PENDING",
     "company": "3.4U Inspection Engineers required ",
     "company_type": "Subsea Contractor",
     "pic_name": "Crewing Lead / Subsea Recruiter",
@@ -79,11 +108,10 @@
     "region": "Overseas",
     "country": "Global",
     "source": "Facebook Group + Enriched",
-    "remark": "Auto-reply: Email no longer in service / Out of office. Redirect to sparrows.careers@altrad.com",
+    "remark": "Inspection Engineer 0. Senior Inspection Coordinator 0. Senior Plant ... email: Lewis.walker1@altrad.com \u00b7 No photo desc [Verified Mail Server]",
     "is_invalid": false,
     "sent_date": "2026-08-04 00:58",
-    "sender_email": "aminazman.inspection@gmail.com",
-    "replacement_email": "sparrows.careers@altrad.com"
+    "sender_email": "aminazman.inspection@gmail.com"
   },
   {
     "sent": "TRUE",
@@ -188,8 +216,8 @@
     "sender_email": "aminazman.inspection@gmail.com"
   },
   {
-    "sent": "REDIRECTED",
-    "status": "\ud83d\udd04 AUTO-REDIRECT",
+    "sent": "TRUE",
+    "status": "SENT / PENDING",
     "company": "*Greetings from T\u00dcV S\u00dcD* *Urgent Hi",
     "company_type": "Subsea Contractor",
     "pic_name": "Crewing Lead / Subsea Recruiter",
@@ -199,11 +227,10 @@
     "region": "Overseas",
     "country": "Global",
     "source": "Facebook Group + Enriched",
-    "remark": "Auto-reply: Email no longer in service / Out of office. Redirect to amustafa@tectonicengineering.com",
+    "remark": "... Inspection Engineer \u2013 Jamnagar. WhatsApp Job Updates: CHAT.WHATSAPP.COM. chat ... Email: [AGupta@tectonicengineering [Verified Mail Server]",
     "is_invalid": false,
     "sent_date": "2026-08-04 01:42",
-    "sender_email": "aminazman.inspection@gmail.com",
-    "replacement_email": "amustafa@tectonicengineering.com"
+    "sender_email": "aminazman.inspection@gmail.com"
   },
   {
     "sent": "BOUNCED",
@@ -965,7 +992,7 @@
     "region": "Middle East",
     "country": "Global",
     "source": "LinkedIn Post + Enriched",
-    "remark": "Auto-reply: Email no longer in service / Out of office. Redirect to ksa.recruitment@mermaid-group.com",
+    "remark": "Auto-reply: Email no longer in service. Redirect to ksa.recruitment@mermaid-group.com",
     "is_invalid": false,
     "sent_date": "2026-08-04 05:39",
     "sender_email": "aminazman.inspection@gmail.com",
