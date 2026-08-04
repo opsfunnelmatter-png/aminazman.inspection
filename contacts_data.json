@@ -67,8 +67,8 @@
     "sender_email": "aminazman.inspection@gmail.com"
   },
   {
-    "sent": "BOUNCED",
-    "status": "\u274c INVALID / BOUNCED",
+    "sent": "TRUE",
+    "status": "SENT / PENDING",
     "company": "Minimum 3 years of offshore QC insp",
     "company_type": "Crewing / Manpower Agency",
     "pic_name": "Crewing Lead / Subsea Recruiter",
@@ -80,8 +80,8 @@
     "source": "Facebook Group + Enriched",
     "remark": "Address not found / Mailbox unavailable (Bounce)",
     "is_invalid": true,
-    "sent_date": "2026-08-04 00:45",
-    "sender_email": "aminazman.inspection@gmail.com"
+    "sent_date": "2026-08-05 02:52",
+    "sender_email": "amin87.azman@gmail.com"
   },
   {
     "sent": "TRUE",
