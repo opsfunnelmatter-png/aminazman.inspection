@@ -313,7 +313,7 @@
         function updateSummaryStats() {
             let total = allContacts.length;
             let hot = allContacts.filter(c => c.status === '🔥 HOT LEAD').length;
-            let sent = allContacts.filter(c => c.sent === 'TRUE' || (c.status && c.status.includes('SENT'))).length;
+            let sent = allContacts.filter(c => String(c.sent).toUpperCase() === 'TRUE').length;
             let replies = allContacts.filter(c => c.status === '💬 REPLIED').length;
             let interviews = allContacts.filter(c => c.status === '📅 INTERVIEW').length;
 
