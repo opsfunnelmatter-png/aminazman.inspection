@@ -1038,7 +1038,7 @@
   },
   {
     "sent": "FALSE",
-    "status": "ACTIVE",
+    "status": "\u23f3 SENT / PENDING",
     "company": "Alam Maritim Resources Berhad",
     "company_type": "Subsea Contractor",
     "pic_name": "Kalai Ganes",
@@ -1053,7 +1053,7 @@
   },
   {
     "sent": "FALSE",
-    "status": "ACTIVE",
+    "status": "\u23f3 SENT / PENDING",
     "company": "Alam Maritim Resources Berhad",
     "company_type": "Subsea Contractor",
     "pic_name": "Norfian",
@@ -1068,7 +1068,7 @@
   },
   {
     "sent": "FALSE",
-    "status": "ACTIVE",
+    "status": "\u23f3 SENT / PENDING",
     "company": "Alam Maritim Resources Berhad",
     "company_type": "Subsea Contractor",
     "pic_name": "Crewing Lead / Subsea Recruiter",
@@ -1082,8 +1082,8 @@
     "is_invalid": false
   },
   {
-    "sent": "FALSE",
-    "status": "ACTIVE",
+    "sent": "TRUE",
+    "status": "SENT / PENDING",
     "company": "Bermuda Subsea (M) Sdn Bhd",
     "company_type": "Subsea Contractor",
     "pic_name": "Crewing Lead / Subsea Recruiter",
@@ -1094,11 +1094,13 @@
     "country": "Malaysia",
     "source": "Existing Master Database + Enriched",
     "remark": "[Verified Mail Server]",
-    "is_invalid": false
+    "is_invalid": false,
+    "sent_date": "2026-08-04 09:51",
+    "sender_email": "amin87.azman@gmail.com"
   },
   {
     "sent": "FALSE",
-    "status": "ACTIVE",
+    "status": "\u23f3 SENT / PENDING",
     "company": "Bintang Subsea Ventures Sdn Bhd",
     "company_type": "Subsea Contractor",
     "pic_name": "Crewing Lead / Subsea Recruiter",
@@ -1113,7 +1115,7 @@
   },
   {
     "sent": "FALSE",
-    "status": "ACTIVE",
+    "status": "\u23f3 SENT / PENDING",
     "company": "Bintang Subsea Ventures Sdn Bhd",
     "company_type": "Subsea Contractor",
     "pic_name": "Crewing Lead / Subsea Recruiter",
@@ -1128,7 +1130,7 @@
   },
   {
     "sent": "FALSE",
-    "status": "ACTIVE",
+    "status": "\u23f3 SENT / PENDING",
     "company": "Blackpearl Subsea Services (M) Sdn Bhd",
     "company_type": "Subsea Contractor",
     "pic_name": "Crewing Lead / Subsea Recruiter",
@@ -1143,7 +1145,7 @@
   },
   {
     "sent": "FALSE",
-    "status": "ACTIVE",
+    "status": "\u23f3 SENT / PENDING",
     "company": "Borneo Subsea Services (M) Sdn Bhd",
     "company_type": "Subsea Contractor",
     "pic_name": "Crewing Lead / Subsea Recruiter",
@@ -1158,7 +1160,7 @@
   },
   {
     "sent": "FALSE",
-    "status": "ACTIVE",
+    "status": "\u23f3 SENT / PENDING",
     "company": "Borneo Subsea Services (M) Sdn Bhd",
     "company_type": "Subsea Contractor",
     "pic_name": "Randy Davis",
@@ -1173,7 +1175,7 @@
   },
   {
     "sent": "FALSE",
-    "status": "ACTIVE",
+    "status": "\u23f3 SENT / PENDING",
     "company": "Borneo Subsea Services (M) Sdn Bhd",
     "company_type": "Subsea Contractor",
     "pic_name": "Crewing Lead / Subsea Recruiter",
@@ -1188,7 +1190,7 @@
   },
   {
     "sent": "FALSE",
-    "status": "ACTIVE",
+    "status": "\u23f3 SENT / PENDING",
     "company": "Clockwise Subsea Sdn Bhd",
     "company_type": "Subsea Contractor",
     "pic_name": "Crewing Lead / Subsea Recruiter",
@@ -1203,7 +1205,7 @@
   },
   {
     "sent": "FALSE",
-    "status": "ACTIVE",
+    "status": "\u23f3 SENT / PENDING",
     "company": "Clockwise Subsea Sdn Bhd",
     "company_type": "Subsea Contractor",
     "pic_name": "Crewing Lead / Subsea Recruiter",
@@ -1218,7 +1220,7 @@
   },
   {
     "sent": "FALSE",
-    "status": "ACTIVE",
+    "status": "\u23f3 SENT / PENDING",
     "company": "cornerstone-offshore",
     "company_type": "Subsea Contractor",
     "pic_name": "Crewing Lead / Subsea Recruiter",
@@ -1233,7 +1235,7 @@
   },
   {
     "sent": "FALSE",
-    "status": "ACTIVE",
+    "status": "\u23f3 SENT / PENDING",
     "company": "Dalamair",
     "company_type": "Subsea Contractor",
     "pic_name": "Afizudeen Hj. Ahmad",
@@ -1248,7 +1250,7 @@
   },
   {
     "sent": "FALSE",
-    "status": "ACTIVE",
+    "status": "\u23f3 SENT / PENDING",
     "company": "Dive Resources Sdn Bhd",
     "company_type": "Subsea Contractor",
     "pic_name": "Nicole",
@@ -1263,7 +1265,7 @@
   },
   {
     "sent": "FALSE",
-    "status": "ACTIVE",
+    "status": "\u23f3 SENT / PENDING",
     "company": "EET Oil & Gas",
     "company_type": "Subsea Contractor",
     "pic_name": "Crewing Lead / Subsea Recruiter",
@@ -1278,7 +1280,7 @@
   },
   {
     "sent": "FALSE",
-    "status": "ACTIVE",
+    "status": "\u23f3 SENT / PENDING",
     "company": "Fugro Malaysia",
     "company_type": "Subsea Contractor",
     "pic_name": "Crewing Lead / Subsea Recruiter",
@@ -1293,7 +1295,7 @@
   },
   {
     "sent": "FALSE",
-    "status": "ACTIVE",
+    "status": "\u23f3 SENT / PENDING",
     "company": "Fugro Malaysia",
     "company_type": "Subsea Contractor",
     "pic_name": "Crewing Lead / Subsea Recruiter",
@@ -1308,7 +1310,7 @@
   },
   {
     "sent": "FALSE",
-    "status": "ACTIVE",
+    "status": "\u23f3 SENT / PENDING",
     "company": "Gulf Subsea",
     "company_type": "Subsea Contractor",
     "pic_name": "Crewing Lead / Subsea Recruiter",
@@ -1323,7 +1325,7 @@
   },
   {
     "sent": "FALSE",
-    "status": "ACTIVE",
+    "status": "\u23f3 SENT / PENDING",
     "company": "JC Subsea Services Sdn. Bhd.",
     "company_type": "Subsea Contractor",
     "pic_name": "Crewing Lead / Subsea Recruiter",
@@ -1338,7 +1340,7 @@
   },
   {
     "sent": "FALSE",
-    "status": "ACTIVE",
+    "status": "\u23f3 SENT / PENDING",
     "company": "KL ENERGY GROUP SDN BHD",
     "company_type": "Subsea Contractor",
     "pic_name": "Crewing Lead / Subsea Recruiter",
@@ -1353,7 +1355,7 @@
   },
   {
     "sent": "FALSE",
-    "status": "ACTIVE",
+    "status": "\u23f3 SENT / PENDING",
     "company": "MAG Subsea Sdn Bhd",
     "company_type": "Subsea Contractor",
     "pic_name": "Crewing Lead / Subsea Recruiter",
@@ -1368,7 +1370,7 @@
   },
   {
     "sent": "FALSE",
-    "status": "ACTIVE",
+    "status": "\u23f3 SENT / PENDING",
     "company": "Mola Subsea",
     "company_type": "Subsea Contractor",
     "pic_name": "Hassan Khan",
@@ -1383,7 +1385,7 @@
   },
   {
     "sent": "FALSE",
-    "status": "ACTIVE",
+    "status": "\u23f3 SENT / PENDING",
     "company": "OCEANCARE CORPORATION SDN BHD",
     "company_type": "Subsea Contractor",
     "pic_name": "Crewing Lead / Subsea Recruiter",
@@ -1398,7 +1400,7 @@
   },
   {
     "sent": "FALSE",
-    "status": "ACTIVE",
+    "status": "\u23f3 SENT / PENDING",
     "company": "PIONEER PEGASUS SDN BHD",
     "company_type": "Subsea Contractor",
     "pic_name": "Crewing Lead / Subsea Recruiter",
@@ -1413,7 +1415,7 @@
   },
   {
     "sent": "FALSE",
-    "status": "ACTIVE",
+    "status": "\u23f3 SENT / PENDING",
     "company": "Proceanic",
     "company_type": "Subsea Contractor",
     "pic_name": "Ahamad Mustaqim",
@@ -1428,7 +1430,7 @@
   },
   {
     "sent": "FALSE",
-    "status": "ACTIVE",
+    "status": "\u23f3 SENT / PENDING",
     "company": "Proceanic",
     "company_type": "Subsea Contractor",
     "pic_name": "Louise Loh",
@@ -1443,7 +1445,7 @@
   },
   {
     "sent": "FALSE",
-    "status": "ACTIVE",
+    "status": "\u23f3 SENT / PENDING",
     "company": "Proceanic Engineering",
     "company_type": "Inspection & NDT Specialist",
     "pic_name": "Crewing Lead / Subsea Recruiter",
@@ -1458,7 +1460,7 @@
   },
   {
     "sent": "FALSE",
-    "status": "ACTIVE",
+    "status": "\u23f3 SENT / PENDING",
     "company": "REDTECH OFFSHORE SDN BHD",
     "company_type": "Subsea Contractor",
     "pic_name": "Crewing Lead / Subsea Recruiter",
@@ -1473,7 +1475,7 @@
   },
   {
     "sent": "FALSE",
-    "status": "ACTIVE",
+    "status": "\u23f3 SENT / PENDING",
     "company": "RELIANT OILFIELD SDN BHD",
     "company_type": "Subsea Contractor",
     "pic_name": "Crewing Lead / Subsea Recruiter",
@@ -1488,7 +1490,7 @@
   },
   {
     "sent": "FALSE",
-    "status": "ACTIVE",
+    "status": "\u23f3 SENT / PENDING",
     "company": "Satu Teknik Sdn Bhd",
     "company_type": "Subsea Contractor",
     "pic_name": "Crewing Lead / Subsea Recruiter",
@@ -1503,7 +1505,7 @@
   },
   {
     "sent": "FALSE",
-    "status": "ACTIVE",
+    "status": "\u23f3 SENT / PENDING",
     "company": "Subsea Worldwide Solutions Sdn Bhd",
     "company_type": "Subsea Contractor",
     "pic_name": "Crewing Lead / Subsea Recruiter",
@@ -1518,7 +1520,7 @@
   },
   {
     "sent": "FALSE",
-    "status": "ACTIVE",
+    "status": "\u23f3 SENT / PENDING",
     "company": "Tr\u00e9senergy Technology Solution Sdn Bhd",
     "company_type": "Subsea Contractor",
     "pic_name": "Crewing Lead / Subsea Recruiter",
@@ -1533,7 +1535,7 @@
   },
   {
     "sent": "FALSE",
-    "status": "ACTIVE",
+    "status": "\u23f3 SENT / PENDING",
     "company": "Tr\u00e9senergy Technology Solution Sdn Bhd",
     "company_type": "Subsea Contractor",
     "pic_name": "Dato\u2019 Mohd Hafidz Safari",
@@ -1548,7 +1550,7 @@
   },
   {
     "sent": "FALSE",
-    "status": "ACTIVE",
+    "status": "\u23f3 SENT / PENDING",
     "company": "Vantris Energy",
     "company_type": "Subsea Contractor",
     "pic_name": "Crewing Lead / Subsea Recruiter",
@@ -1563,7 +1565,7 @@
   },
   {
     "sent": "FALSE",
-    "status": "ACTIVE",
+    "status": "\u23f3 SENT / PENDING",
     "company": "Vantris Energy",
     "company_type": "Subsea Contractor",
     "pic_name": "Mohammad Farhan Mohd Zain",
@@ -1578,7 +1580,7 @@
   },
   {
     "sent": "FALSE",
-    "status": "ACTIVE",
+    "status": "\u23f3 SENT / PENDING",
     "company": "Vantris Energy",
     "company_type": "Subsea Contractor",
     "pic_name": "Tan Meng Loon",
@@ -1593,7 +1595,7 @@
   },
   {
     "sent": "FALSE",
-    "status": "ACTIVE",
+    "status": "\u23f3 SENT / PENDING",
     "company": "WC Underwater",
     "company_type": "Subsea Contractor",
     "pic_name": "Crewing Lead / Subsea Recruiter",
@@ -1608,7 +1610,7 @@
   },
   {
     "sent": "FALSE",
-    "status": "ACTIVE",
+    "status": "\u23f3 SENT / PENDING",
     "company": "Accord BPS",
     "company_type": "Subsea Contractor",
     "pic_name": "Crewing Lead / Subsea Recruiter",
@@ -1623,7 +1625,7 @@
   },
   {
     "sent": "FALSE",
-    "status": "ACTIVE",
+    "status": "\u23f3 SENT / PENDING",
     "company": "Accord BPS",
     "company_type": "Subsea Contractor",
     "pic_name": "Crewing Lead / Subsea Recruiter",
@@ -1638,7 +1640,7 @@
   },
   {
     "sent": "FALSE",
-    "status": "ACTIVE",
+    "status": "\u23f3 SENT / PENDING",
     "company": "Acteon Group",
     "company_type": "Subsea Contractor",
     "pic_name": "Crewing Lead / Subsea Recruiter",
@@ -1653,7 +1655,7 @@
   },
   {
     "sent": "FALSE",
-    "status": "ACTIVE",
+    "status": "\u23f3 SENT / PENDING",
     "company": "Adinin Group",
     "company_type": "Subsea Contractor",
     "pic_name": "Crewing Lead / Subsea Recruiter",
@@ -1668,7 +1670,7 @@
   },
   {
     "sent": "FALSE",
-    "status": "ACTIVE",
+    "status": "\u23f3 SENT / PENDING",
     "company": "Adinin Group of Companies",
     "company_type": "Subsea Contractor",
     "pic_name": "Crewing Lead / Subsea Recruiter",
@@ -1683,7 +1685,7 @@
   },
   {
     "sent": "FALSE",
-    "status": "ACTIVE",
+    "status": "\u23f3 SENT / PENDING",
     "company": "AGR",
     "company_type": "Subsea Contractor",
     "pic_name": "Crewing Lead / Subsea Recruiter",
@@ -1698,7 +1700,7 @@
   },
   {
     "sent": "FALSE",
-    "status": "ACTIVE",
+    "status": "\u23f3 SENT / PENDING",
     "company": "AGR Group",
     "company_type": "Subsea Contractor",
     "pic_name": "Ellaine Malinao",
@@ -1713,7 +1715,7 @@
   },
   {
     "sent": "FALSE",
-    "status": "ACTIVE",
+    "status": "\u23f3 SENT / PENDING",
     "company": "AGR Group",
     "company_type": "Subsea Contractor",
     "pic_name": "Crewing Lead / Subsea Recruiter",
@@ -1728,7 +1730,7 @@
   },
   {
     "sent": "FALSE",
-    "status": "ACTIVE",
+    "status": "\u23f3 SENT / PENDING",
     "company": "AGR Group",
     "company_type": "Subsea Contractor",
     "pic_name": "Crewing Lead / Subsea Recruiter",
@@ -1743,7 +1745,7 @@
   },
   {
     "sent": "FALSE",
-    "status": "ACTIVE",
+    "status": "\u23f3 SENT / PENDING",
     "company": "AGR Group",
     "company_type": "Subsea Contractor",
     "pic_name": "Sharmella Geron",
@@ -1758,7 +1760,7 @@
   },
   {
     "sent": "FALSE",
-    "status": "ACTIVE",
+    "status": "\u23f3 SENT / PENDING",
     "company": "AIM Control Group",
     "company_type": "Inspection & NDT Specialist",
     "pic_name": "Crewing Lead / Subsea Recruiter",
@@ -1773,7 +1775,7 @@
   },
   {
     "sent": "FALSE",
-    "status": "ACTIVE",
+    "status": "\u23f3 SENT / PENDING",
     "company": "AIM Control Group",
     "company_type": "Inspection & NDT Specialist",
     "pic_name": "Crewing Lead / Subsea Recruiter",
