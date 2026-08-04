@@ -2998,8 +2998,8 @@
     "is_invalid": false
   },
   {
-    "sent": "FALSE",
-    "status": "ACTIVE",
+    "sent": "TRUE",
+    "status": "\ud83d\udd25 HOT LEAD (APPLIED)",
     "company": "HPR UK",
     "company_type": "Subsea Contractor",
     "pic_name": "Diane Ritchie",
@@ -3009,8 +3009,9 @@
     "region": "Europe",
     "country": "United Kingdom",
     "source": "Existing Master Database",
-    "remark": "",
-    "is_invalid": false
+    "remark": "Applied via amin87.azman@gmail.com for Turkey 3.4U Senior position",
+    "is_invalid": false,
+    "sent_date": "2026-08-04 08:54"
   },
   {
     "sent": "FALSE",
