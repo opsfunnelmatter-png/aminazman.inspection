@@ -221,8 +221,8 @@
     "sender_email": "aminazman.inspection@gmail.com"
   },
   {
-    "sent": "FALSE",
-    "status": "\ud83d\udd25 HOT LEAD",
+    "sent": "TRUE",
+    "status": "SENT / PENDING",
     "company": "Vacancy For A Subsea Inspection & A",
     "company_type": "Crewing / Manpower Agency",
     "pic_name": "Crewing Lead / Subsea Recruiter",
@@ -233,7 +233,9 @@
     "country": "Global",
     "source": "Web Search + Enriched",
     "remark": "Vacancy For A Subsea Inspection & Asset Integrity Engineer (10 Yrs ... send CV's to recruitment@amaidenenergy.com with t [Verified Mail Server]",
-    "is_invalid": false
+    "is_invalid": false,
+    "sent_date": "2026-08-04 09:13",
+    "sender_email": "amin87.azman@gmail.com"
   },
   {
     "sent": "TRUE",
