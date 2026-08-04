@@ -278,6 +278,7 @@
                 <thead>
                     <tr>
                         <th>Status Tracker</th>
+                        <th>Sender Account</th>
                         <th>Company Name</th>
                         <th>PIC Name & Role</th>
                         <th>Email Contact</th>
@@ -312,7 +313,7 @@
         function updateSummaryStats() {
             let total = allContacts.length;
             let hot = allContacts.filter(c => c.status === '🔥 HOT LEAD').length;
-            let sent = allContacts.filter(c => c.sent === 'TRUE' || c.status === 'SENT').length;
+            let sent = allContacts.filter(c => c.sent === 'TRUE' || (c.status && c.status.includes('SENT'))).length;
             let replies = allContacts.filter(c => c.status === '💬 REPLIED').length;
             let interviews = allContacts.filter(c => c.status === '📅 INTERVIEW').length;
 
@@ -334,17 +335,20 @@
                 
                 const picInfo = item.pic_name ? `<strong>${item.pic_name}</strong><br><span style="font-size:0.78rem; color:var(--text-secondary);">${item.job_title || ''}</span>` : `<span style="color:var(--text-secondary); font-size:0.82rem;">${item.job_title || 'Crewing Dept'}</span>`;
 
+                const senderAcc = item.sender_email ? `<span style="font-size:0.78rem; font-weight:600; color:#0284c7; background:rgba(2,132,199,0.08); padding:3px 8px; border-radius:4px; border:1px solid rgba(2,132,199,0.2);">${item.sender_email}</span>` : '<span style="color:var(--text-secondary); font-size:0.8rem;">-</span>';
+
                 tr.innerHTML = `
                     <td>
                         <select class="status-select" onchange="updateStatus(${index}, this.value)">
                             <option value="ACTIVE" ${item.status === 'ACTIVE' ? 'selected' : ''}>ACTIVE</option>
                             <option value="🔥 HOT LEAD" ${item.status === '🔥 HOT LEAD' ? 'selected' : ''}>🔥 HOT LEAD</option>
-                            <option value="⏳ SENT / PENDING" ${item.status.includes('SENT') ? 'selected' : ''}>⏳ SENT / PENDING</option>
+                            <option value="⏳ SENT / PENDING" ${item.status && item.status.includes('SENT') ? 'selected' : ''}>⏳ SENT / PENDING</option>
                             <option value="💬 REPLIED" ${item.status === '💬 REPLIED' ? 'selected' : ''}>💬 REPLIED</option>
                             <option value="📅 INTERVIEW" ${item.status === '📅 INTERVIEW' ? 'selected' : ''}>📅 INTERVIEW</option>
-                            <option value="❌ NO NCA" ${item.status.includes('NO NCA') ? 'selected' : ''}>❌ NO NCA</option>
+                            <option value="❌ NO NCA" ${item.status && item.status.includes('NO NCA') ? 'selected' : ''}>❌ NO NCA</option>
                         </select>
                     </td>
+                    <td>${senderAcc}</td>
                     <td><strong>${item.company}</strong></td>
                     <td>${picInfo}</td>
                     <td>${emailLink}</td>
