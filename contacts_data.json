@@ -11,13 +11,15 @@
     "sender_email": "amin87.azman@gmail.com"
   },
   {
-    "sent": "FALSE",
-    "status": "\ud83d\udd25 HOT LEAD",
+    "sent": "TRUE",
+    "status": "SENT / PENDING",
     "company": "Altrad Sparrows UK",
     "email": "sparrows.careers@altrad.com",
     "country": "United Kingdom",
     "region": "Europe",
-    "remark": "Redirected from Lewis Walker"
+    "remark": "Redirected from Lewis Walker",
+    "sent_date": "2026-08-05 02:22",
+    "sender_email": "amin87.azman@gmail.com"
   },
   {
     "sent": "FALSE",
