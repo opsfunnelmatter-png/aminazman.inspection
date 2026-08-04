@@ -1201,8 +1201,8 @@
     "sender_email": "amin87.azman@gmail.com"
   },
   {
-    "sent": "FALSE",
-    "status": "\u23f3 SENT / PENDING",
+    "sent": "TRUE",
+    "status": "SENT / PENDING",
     "company": "Clockwise Subsea Sdn Bhd",
     "company_type": "Subsea Contractor",
     "pic_name": "Crewing Lead / Subsea Recruiter",
@@ -1213,7 +1213,9 @@
     "country": "Malaysia",
     "source": "Existing Master Database + Enriched",
     "remark": "[Verified Mail Server]",
-    "is_invalid": false
+    "is_invalid": false,
+    "sent_date": "2026-08-04 11:19",
+    "sender_email": "amin87.azman@gmail.com"
   },
   {
     "sent": "FALSE",
