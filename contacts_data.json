@@ -22,13 +22,15 @@
     "sender_email": "amin87.azman@gmail.com"
   },
   {
-    "sent": "FALSE",
-    "status": "\ud83d\udd25 HOT LEAD",
+    "sent": "TRUE",
+    "status": "SENT / PENDING",
     "company": "Mermaid Subsea Services (KSA)",
     "email": "ksa.recruitment@mermaid-group.com",
     "country": "Saudi Arabia",
     "region": "Middle East",
-    "remark": "Redirected from Deidre Daniel"
+    "remark": "Redirected from Deidre Daniel",
+    "sent_date": "2026-08-05 02:36",
+    "sender_email": "amin87.azman@gmail.com"
   },
   {
     "sent": "TRUE",
