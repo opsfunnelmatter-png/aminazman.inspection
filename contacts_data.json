@@ -1453,8 +1453,8 @@
     "sender_email": "amin87.azman@gmail.com"
   },
   {
-    "sent": "FALSE",
-    "status": "\u23f3 SENT / PENDING",
+    "sent": "TRUE",
+    "status": "SENT / PENDING",
     "company": "Mola Subsea",
     "company_type": "Subsea Contractor",
     "pic_name": "Hassan Khan",
@@ -1465,7 +1465,9 @@
     "country": "Malaysia",
     "source": "Existing Master Database",
     "remark": "",
-    "is_invalid": false
+    "is_invalid": false,
+    "sent_date": "2026-08-06 01:44",
+    "sender_email": "aminazman.inspection@gmail.com"
   },
   {
     "sent": "FALSE",
