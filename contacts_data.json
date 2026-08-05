@@ -1,6 +1,20 @@
 [
   {
     "sent": "TRUE",
+    "sent_date": "2026-08-05 20:30",
+    "status": "\ud83d\udd25 HOT LEAD (APPLIED)",
+    "company": "Pelican Co., Ltd",
+    "pic_name": "Bilan",
+    "job_title": "Recruitment Lead",
+    "email": "vacancies@pelican-survey.com",
+    "phone": "",
+    "region": "SEA",
+    "country": "Vietnam",
+    "sender_email": "amin87.azman@gmail.com",
+    "remark": "Replied to Bilan for Vietnam 20-day 3.4U project (Aug 10 Mob)"
+  },
+  {
+    "sent": "TRUE",
     "status": "SENT / PENDING",
     "company": "Tectonic Engineering",
     "email": "amustafa@tectonicengineering.com",
