@@ -337,17 +337,19 @@
 
                 const senderAcc = item.sender_email ? `<span style="font-size:0.78rem; font-weight:600; color:#0284c7; background:rgba(2,132,199,0.08); padding:3px 8px; border-radius:4px; border:1px solid rgba(2,132,199,0.2);">${item.sender_email}</span>` : '<span style="color:var(--text-secondary); font-size:0.8rem;">-</span>';
 
+                const statusOptions = [
+                    'ACTIVE', '🔥 HOT LEAD', '🔥 HOT LEAD (APPLIED)', '⏳ SENT / PENDING', 
+                    '💬 REPLIED', '📅 INTERVIEW', '❌ INVALID / BOUNCED', '🔄 AUTO-REDIRECT'
+                ];
+                let selectHtml = `<select class="status-select" onchange="updateStatus(${index}, this.value)">`;
+                statusOptions.forEach(opt => {
+                    const isSel = (item.status && item.status.includes(opt.replace('🔥 ', '').replace('⏳ ', '').replace('💬 ', '').replace('📅 ', '').replace('❌ ', '').replace('🔄 ', ''))) ? 'selected' : '';
+                    selectHtml += `<option value="${opt}" ${isSel}>${opt}</option>`;
+                });
+                selectHtml += `</select>`;
+
                 tr.innerHTML = `
-                    <td>
-                        <select class="status-select" onchange="updateStatus(${index}, this.value)">
-                            <option value="ACTIVE" ${item.status === 'ACTIVE' ? 'selected' : ''}>ACTIVE</option>
-                            <option value="🔥 HOT LEAD" ${item.status === '🔥 HOT LEAD' ? 'selected' : ''}>🔥 HOT LEAD</option>
-                            <option value="⏳ SENT / PENDING" ${item.status && item.status.includes('SENT') ? 'selected' : ''}>⏳ SENT / PENDING</option>
-                            <option value="💬 REPLIED" ${item.status === '💬 REPLIED' ? 'selected' : ''}>💬 REPLIED</option>
-                            <option value="📅 INTERVIEW" ${item.status === '📅 INTERVIEW' ? 'selected' : ''}>📅 INTERVIEW</option>
-                            <option value="❌ NO NCA" ${item.status && item.status.includes('NO NCA') ? 'selected' : ''}>❌ NO NCA</option>
-                        </select>
-                    </td>
+                    <td>${selectHtml}</td>
                     <td>${senderAcc}</td>
                     <td><strong>${item.company}</strong></td>
                     <td>${picInfo}</td>
