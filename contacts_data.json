@@ -1351,8 +1351,8 @@
     "sender_email": "amin87.azman@gmail.com"
   },
   {
-    "sent": "FALSE",
-    "status": "\u23f3 SENT / PENDING",
+    "sent": "TRUE",
+    "status": "SENT / PENDING",
     "company": "Fugro Malaysia",
     "company_type": "Subsea Contractor",
     "pic_name": "Crewing Lead / Subsea Recruiter",
@@ -1363,7 +1363,9 @@
     "country": "Netherlands / Global",
     "source": "Existing Master Database + Enriched",
     "remark": "IMR Giant (Uses your software skills for Africa projects) [Verified Mail Server]",
-    "is_invalid": false
+    "is_invalid": false,
+    "sent_date": "2026-08-05 23:37",
+    "sender_email": "aminazman.inspection@gmail.com"
   },
   {
     "sent": "FALSE",
