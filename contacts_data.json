@@ -1522,20 +1522,20 @@
   },
   {
     "sent": "TRUE",
-    "status": "\ud83d\udd25 HOT LEAD (APPLIED)",
+    "status": "SENT / PENDING",
     "company": "Proceanic",
     "company_type": "Subsea Contractor",
-    "pic_name": "Mr. YH Loh (Director)",
+    "pic_name": "Louise Loh",
     "job_title": "Crewing / Inspection Coordinator",
     "email": "yh.loh@proceanic.com",
     "phone": "",
     "region": "SEA",
     "country": "Malaysia",
     "source": "Existing Master Database",
-    "remark": "Referred by Mustaqim. Applied for long-term contract & campaign roles.",
+    "remark": "",
     "is_invalid": false,
-    "sent_date": "2026-08-06 12:09",
-    "sender_email": "amin87.azman@gmail.com"
+    "sent_date": "2026-08-06 09:03",
+    "sender_email": "aminazman.inspection@gmail.com"
   },
   {
     "sent": "TRUE",
@@ -1691,8 +1691,8 @@
     "sender_email": "amin87.azman@gmail.com"
   },
   {
-    "sent": "FALSE",
-    "status": "\u23f3 SENT / PENDING",
+    "sent": "TRUE",
+    "status": "SENT / PENDING",
     "company": "Vantris Energy",
     "company_type": "Subsea Contractor",
     "pic_name": "Tan Meng Loon",
@@ -1703,7 +1703,9 @@
     "country": "Malaysia",
     "source": "Existing Master Database",
     "remark": "",
-    "is_invalid": false
+    "is_invalid": false,
+    "sent_date": "2026-08-06 15:59",
+    "sender_email": "aminazman.inspection@gmail.com"
   },
   {
     "sent": "FALSE",
