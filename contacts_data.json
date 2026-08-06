@@ -1692,7 +1692,7 @@
   },
   {
     "sent": "TRUE",
-    "status": "SENT / PENDING",
+    "status": "\ud83d\udcac REPLIED (ACKNOWLEDGED)",
     "company": "Vantris Energy",
     "company_type": "Subsea Contractor",
     "pic_name": "Tan Meng Loon",
@@ -1702,9 +1702,9 @@
     "region": "SEA",
     "country": "Malaysia",
     "source": "Existing Master Database",
-    "remark": "",
+    "remark": "Acknowledged Mr. Tan's email & confirmed follow-up sent to Farhan Zain.",
     "is_invalid": false,
-    "sent_date": "2026-08-06 15:59",
+    "sent_date": "2026-08-06 22:26",
     "sender_email": "aminazman.inspection@gmail.com"
   },
   {
