@@ -1,16 +1,5 @@
 [
   {
-    "sent": "FALSE",
-    "status": "\ud83d\udd25 HOT LEAD",
-    "company": "Advance Global Recruitment (AGR Subsea)",
-    "pic_name": "Subsea Recruitment Team",
-    "job_title": "Subsea Desk",
-    "email": "subsea@agrl.co.uk",
-    "country": "United Kingdom",
-    "region": "Europe",
-    "remark": "Redirected from Stacey McMillan"
-  },
-  {
     "sent": "TRUE",
     "sent_date": "2026-08-05 20:30",
     "status": "\ud83d\udd25 HOT LEAD (APPLIED)",
@@ -1822,7 +1811,7 @@
   },
   {
     "sent": "TRUE",
-    "status": "\ud83d\udd04 AUTO-REDIRECT",
+    "status": "SENT / PENDING",
     "company": "AGR",
     "company_type": "Subsea Contractor",
     "pic_name": "Crewing Lead / Subsea Recruiter",
@@ -1832,7 +1821,7 @@
     "region": "Overseas",
     "country": "United Kingdom",
     "source": "Existing Master Database + Enriched",
-    "remark": "Stacey left AGR. Redirected to subsea@agrl.co.uk",
+    "remark": "[Verified Mail Server]",
     "is_invalid": false,
     "sent_date": "2026-08-06 23:49",
     "sender_email": "amin87.azman@gmail.com"
@@ -1872,8 +1861,8 @@
     "sender_email": "amin87.azman@gmail.com"
   },
   {
-    "sent": "FALSE",
-    "status": "\u23f3 SENT / PENDING",
+    "sent": "TRUE",
+    "status": "SENT / PENDING",
     "company": "AGR Group",
     "company_type": "Subsea Contractor",
     "pic_name": "Crewing Lead / Subsea Recruiter",
@@ -1884,7 +1873,9 @@
     "country": "United Kingdom",
     "source": "Existing Master Database + Enriched",
     "remark": "[Verified Mail Server]",
-    "is_invalid": false
+    "is_invalid": false,
+    "sent_date": "2026-08-07 04:02",
+    "sender_email": "aminazman.inspection@gmail.com"
   },
   {
     "sent": "FALSE",
