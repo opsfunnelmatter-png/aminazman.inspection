@@ -1522,20 +1522,20 @@
   },
   {
     "sent": "TRUE",
-    "status": "SENT / PENDING",
+    "status": "\ud83d\udd25 HOT LEAD (APPLIED)",
     "company": "Proceanic",
     "company_type": "Subsea Contractor",
-    "pic_name": "Louise Loh",
+    "pic_name": "Mr. YH Loh (Director)",
     "job_title": "Crewing / Inspection Coordinator",
     "email": "yh.loh@proceanic.com",
     "phone": "",
     "region": "SEA",
     "country": "Malaysia",
     "source": "Existing Master Database",
-    "remark": "",
+    "remark": "Referred by Mustaqim. Applied for long-term contract & campaign roles.",
     "is_invalid": false,
-    "sent_date": "2026-08-06 09:03",
-    "sender_email": "aminazman.inspection@gmail.com"
+    "sent_date": "2026-08-06 12:08",
+    "sender_email": "amin87.azman@gmail.com"
   },
   {
     "sent": "TRUE",
