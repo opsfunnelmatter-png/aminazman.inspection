@@ -2219,8 +2219,8 @@
     "sender_email": "aminazman.inspection@gmail.com"
   },
   {
-    "sent": "FALSE",
-    "status": "ACTIVE",
+    "sent": "TRUE",
+    "status": "SENT / PENDING",
     "company": "Aries Underwater Solutions PTE LTD",
     "company_type": "Inspection & NDT Specialist",
     "pic_name": "Crewing Lead / Subsea Recruiter",
@@ -2231,7 +2231,9 @@
     "country": "United Arab Emirates",
     "source": "Existing Master Database + Enriched",
     "remark": "[Verified Mail Server]",
-    "is_invalid": false
+    "is_invalid": false,
+    "sent_date": "2026-08-07 22:38",
+    "sender_email": "amin87.azman@gmail.com"
   },
   {
     "sent": "FALSE",
