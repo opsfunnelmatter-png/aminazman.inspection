@@ -26,15 +26,17 @@
     "sender_email": "aminazman.inspection@gmail.com"
   },
   {
-    "sent": "FALSE",
-    "status": "\ud83d\udd25 HOT LEAD",
+    "sent": "TRUE",
+    "status": "SENT / PENDING",
     "company": "M3 Marine Group (Singapore)",
     "pic_name": "Capt. John Meade (General Manager) / HR Team",
     "job_title": "Subsea Marine Recruitment",
     "email": "recruiting@m3marine.com.sg",
     "country": "Singapore",
     "region": "SEA",
-    "remark": "ASEAN Regional Subsea Agency (Fast Mob)"
+    "remark": "ASEAN Regional Subsea Agency (Fast Mob)",
+    "sent_date": "2026-08-07 17:31",
+    "sender_email": "amin87.azman@gmail.com"
   },
   {
     "sent": "FALSE",
