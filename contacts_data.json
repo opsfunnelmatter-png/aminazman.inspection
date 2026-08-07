@@ -188,8 +188,8 @@
     "sender_email": "aminazman.inspection@gmail.com"
   },
   {
-    "sent": "FALSE",
-    "status": "ACTIVE",
+    "sent": "TRUE",
+    "status": "SENT / PENDING",
     "company": "Aqua Group",
     "company_type": "Subsea Contractor",
     "pic_name": "Crewing Lead / Subsea Recruiter",
@@ -200,7 +200,9 @@
     "country": "United Arab Emirates",
     "source": "Existing Master Database + Enriched",
     "remark": "Middle East Marine & Subsea [Verified Mail Server]",
-    "is_invalid": false
+    "is_invalid": false,
+    "sent_date": "2026-08-07 20:25",
+    "sender_email": "amin87.azman@gmail.com"
   },
   {
     "sent": "FALSE",
