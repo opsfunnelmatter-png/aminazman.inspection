@@ -13,15 +13,17 @@
     "sender_email": "amin87.azman@gmail.com"
   },
   {
-    "sent": "FALSE",
-    "status": "\ud83d\udd25 HOT LEAD",
+    "sent": "TRUE",
+    "status": "SENT / PENDING",
     "company": "Competentia (Asia Pacific)",
     "pic_name": "Asia Pacific Crewing Desk",
     "job_title": "Offshore Staffing Team",
     "email": "mail@competentia.com",
     "country": "Singapore",
     "region": "SEA",
-    "remark": "ASEAN Regional Subsea Agency (Fast Mob)"
+    "remark": "ASEAN Regional Subsea Agency (Fast Mob)",
+    "sent_date": "2026-08-07 17:12",
+    "sender_email": "aminazman.inspection@gmail.com"
   },
   {
     "sent": "FALSE",
