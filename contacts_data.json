@@ -1,14 +1,16 @@
 [
   {
-    "sent": "FALSE",
-    "status": "\ud83d\udd25 HOT LEAD",
+    "sent": "TRUE",
+    "status": "SENT / PENDING",
     "company": "Oceanscan Subsea (Asia Pacific)",
     "pic_name": "Sathish Selvaraj (Regional Director) / Personnel Team",
     "job_title": "Regional Subsea Personnel Desk",
     "email": "sales@oceanscan.sg",
     "country": "Singapore / Malaysia",
     "region": "SEA",
-    "remark": "ASEAN Regional Subsea Agency (Fast Mob)"
+    "remark": "ASEAN Regional Subsea Agency (Fast Mob)",
+    "sent_date": "2026-08-07 16:50",
+    "sender_email": "amin87.azman@gmail.com"
   },
   {
     "sent": "FALSE",
