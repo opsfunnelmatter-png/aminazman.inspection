@@ -2270,8 +2270,8 @@
     "sender_email": "amin87.azman@gmail.com"
   },
   {
-    "sent": "FALSE",
-    "status": "ACTIVE",
+    "sent": "TRUE",
+    "status": "SENT / PENDING",
     "company": "Asset Integrity Engineering",
     "company_type": "Subsea Contractor",
     "pic_name": "Crewing Lead / Subsea Recruiter",
@@ -2282,7 +2282,9 @@
     "country": "Global / Overseas",
     "source": "Existing Master Database + Enriched",
     "remark": "Integrity Management (Middle East) [Verified Mail Server]",
-    "is_invalid": false
+    "is_invalid": false,
+    "sent_date": "2026-08-07 23:33",
+    "sender_email": "aminazman.inspection@gmail.com"
   },
   {
     "sent": "FALSE",
