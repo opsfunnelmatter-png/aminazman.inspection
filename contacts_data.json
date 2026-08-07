@@ -39,15 +39,17 @@
     "sender_email": "amin87.azman@gmail.com"
   },
   {
-    "sent": "FALSE",
-    "status": "\ud83d\udd25 HOT LEAD",
+    "sent": "TRUE",
+    "status": "SENT / PENDING",
     "company": "Energy Resourcing Singapore",
     "pic_name": "Singapore Recruitment Desk",
     "job_title": "Energy Resourcing SEA Manager",
     "email": "contactus@energyrecruit.net",
     "country": "Singapore",
     "region": "SEA",
-    "remark": "ASEAN Regional Offshore Agency (Fast Mob)"
+    "remark": "ASEAN Regional Offshore Agency (Fast Mob)",
+    "sent_date": "2026-08-07 17:43",
+    "sender_email": "aminazman.inspection@gmail.com"
   },
   {
     "sent": "FALSE",
