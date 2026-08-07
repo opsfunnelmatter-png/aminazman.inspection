@@ -1,5 +1,16 @@
 [
   {
+    "sent": "FALSE",
+    "status": "\ud83d\udd25 HOT LEAD",
+    "company": "AGR Group (Dubai Regional Base)",
+    "pic_name": "AGR Dubai Recruitment Team",
+    "job_title": "Middle East Subsea Desk",
+    "email": "dubai@agrl.co.uk",
+    "country": "United Arab Emirates / Middle East",
+    "region": "Middle East",
+    "remark": "Redirected from Mark Adams (Regional Manager Middle East)"
+  },
+  {
     "sent": "TRUE",
     "status": "SENT / PENDING",
     "company": "Oceanscan Subsea (Asia Pacific)",
@@ -2072,7 +2083,7 @@
   },
   {
     "sent": "TRUE",
-    "status": "SENT / PENDING",
+    "status": "\ud83d\udd04 AUTO-REDIRECT",
     "company": "AGR Group",
     "company_type": "Subsea Contractor",
     "pic_name": "Crewing Lead / Subsea Recruiter",
@@ -2082,7 +2093,7 @@
     "region": "Middle East",
     "country": "United Kingdom",
     "source": "Existing Master Database + Enriched",
-    "remark": "[Verified Mail Server]",
+    "remark": "Mark Adams out of office until 17 Aug. Redirected to dubai@agrl.co.uk",
     "is_invalid": false,
     "sent_date": "2026-08-07 03:47",
     "sender_email": "amin87.azman@gmail.com"
