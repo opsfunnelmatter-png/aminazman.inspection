@@ -25,14 +25,14 @@
   },
   {
     "sent": "TRUE",
-    "status": "SENT / PENDING",
+    "status": "\u274c INVALID / BOUNCED",
     "company": "Competentia (Asia Pacific)",
     "pic_name": "Asia Pacific Crewing Desk",
     "job_title": "Offshore Staffing Team",
     "email": "mail@competentia.com",
     "country": "Singapore",
     "region": "SEA",
-    "remark": "ASEAN Regional Subsea Agency (Fast Mob)",
+    "remark": "Bounced: Competentia merged into Airswift (Use talentacquisition@airswift.com)",
     "sent_date": "2026-08-07 17:12",
     "sender_email": "aminazman.inspection@gmail.com"
   },
