@@ -1,5 +1,16 @@
 [
   {
+    "sent": "FALSE",
+    "status": "\ud83d\udd25 HOT LEAD",
+    "company": "MCS Group (Subsea & ROV Division)",
+    "pic_name": "Subsea Recruitment Team",
+    "job_title": "Subsea & ROV Crewing Desk",
+    "email": "hr@mcsoil.com",
+    "country": "Malaysia (KL HQ) / Global",
+    "region": "SEA",
+    "remark": "MCS Subsea Regional Office (Menara UOA Bangsar KL)"
+  },
+  {
     "sent": "TRUE",
     "status": "SENT / PENDING",
     "company": "Oceanscan Subsea (Asia Pacific)",
@@ -3852,10 +3863,10 @@
   },
   {
     "sent": "FALSE",
-    "status": "ACTIVE",
+    "status": "\ud83d\udd25 HOT LEAD",
     "company": "MCS",
     "company_type": "Subsea Contractor",
-    "pic_name": "Amira Mahrous Sobhy",
+    "pic_name": "Subsea Recruitment Team",
     "job_title": "Crewing / Inspection Coordinator",
     "email": "a.sobhy@mcsoil.com",
     "phone": "",
@@ -3867,10 +3878,10 @@
   },
   {
     "sent": "FALSE",
-    "status": "ACTIVE",
+    "status": "\ud83d\udd25 HOT LEAD",
     "company": "MCS",
     "company_type": "Subsea Contractor",
-    "pic_name": "Crewing Lead / Subsea Recruiter",
+    "pic_name": "Subsea Recruitment Team",
     "job_title": "Crewing & Personnel Manager",
     "email": "e.seoudi@mcsoil.com",
     "phone": "",
@@ -3882,10 +3893,10 @@
   },
   {
     "sent": "FALSE",
-    "status": "ACTIVE",
+    "status": "\ud83d\udd25 HOT LEAD",
     "company": "MCS Group",
     "company_type": "Subsea Contractor",
-    "pic_name": "Crewing Lead / Subsea Recruiter",
+    "pic_name": "Subsea Recruitment Team",
     "job_title": "Crewing & Personnel Manager",
     "email": "mcsinfo@mcsoil.com",
     "phone": "",
