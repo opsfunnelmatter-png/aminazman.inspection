@@ -35,41 +35,109 @@ def generate_email_content(contact, sender_email):
     company = contact.get("company", "Subsea Team")
     pic_name = contact.get("pic_name", "")
     email = contact.get("email", "").lower()
-    location = contact.get("location", "").lower()
-    remark = str(contact.get("remark", "")).lower()
     
-    salutation = f"Hi {pic_name}," if pic_name else f"Hi {company} Recruitment Team,"
-    
-    is_uk = any(uk_tag in email or uk_tag in location or uk_tag in remark or uk_tag in company.lower() 
-               for uk_tag in [".uk", "uk", "aberdeen", "scotland", "north sea", "ukcs", "united kingdom"])
-    
-    subject = f"[AVAILABLE IMMEDIATELY] CSWIP 3.4U Engineer | CA-EBS / Petronas / ADNOC Ready | Amin Azman"
-    
-    uk_clause = ""
-    if is_uk:
-        uk_clause = "\n• North Sea / UKCS Readiness: Certified CSWIP 3.4U Inspection Engineer with valid OPITO CA-EBS (5750), OEUK Medical, and Seaman's Book. Available for vessel-based North Sea/UKCS campaigns outside 12nm via Letter of Guarantee (LOG) / Seafarer Transit status."
+    if email == "aireen.razak@vantrisenergy.com":
+        subject = "CSWIP 3.4U Subsea Inspection Engineer / Data Recorder - Muhammad Amin Azman (Ref: Tan Meng Loon & Farhan Zain)"
+        body = f"""Dear Aireen Razak,
 
-    body = f"""{salutation}
+I hope this email finds you well.
 
-I am a Certified CSWIP 3.4U Subsea Inspection Engineer open for long-term contract positions, offshore campaigns, or ad-hoc freelance mobilizations (3–5 days readiness).
+Following up on my previous communication with Mr. Tan Meng Loon and Mr. Mohammad Farhan Zain, I am writing to formally express my strong interest in joining Vantris Energy for upcoming offshore campaigns, contract, or permanent positions as a CSWIP 3.4U Subsea Inspection Engineer / Data Recorder. I am 100% open and willing to relocate worldwide for long-term contract or permanent roles.
 
-• Certs: CSWIP 3.4U (Cert: 542968), OPITO FOET w/ CA-EBS, OEUK Medical, Petronas OSP, ADNOC Induction & Medical Clear, Seafarers' SID & Passport{uk_clause}
-• Tech: Voyis 3D Laser & VSLAM, TSS 440/350 Pipe Tracker, MBES Bathymetry, Gamma FMD, Sirrihatt / IDAMS / EdgeDVR
+With over 280+ offshore days across 10+ subsea campaigns (including PETRONAS, PTTEP, CHOC, and RINA Class surveys), I possess extensive hands-on expertise in subsea data acquisition, pipeline tracking (TSS 440/350 & MBES), Flooded Member Detection (Cobalt-60 & Impact Subsea FMD), and digital inspection suites (Sirrihatt, EdgeDVR, IDAMS).
 
-Full Documentation & Verified Credentials:
-🔗 Interactive CV & Project History: https://ag-offshore.vercel.app/certificates.html
-📁 All Certificates & Document Pack (Google Drive): https://tinyurl.com/29sg45dw
+Attached is my latest CV (PDF format). Full supporting certificate packages and editable DOCX formats are available immediately upon request.
 
-(Print-ready CV PDF attached for your convenience)
+I am 100% available for immediate worldwide offshore mobilization and willing to relocate. I look forward to hearing from you soon regarding opportunities with Vantris Energy.
 
 Best regards,
 
-Muhammad Amin bin Azman
-CSWIP 3.4U Subsea Inspection Engineer
-📞 Mobile / WhatsApp: +60 12-506 5516
-✉️ Email: {sender_email}
-🔗 LinkedIn: https://www.linkedin.com/in/aminazman-inspection
-🌐 Profile & Credentials: https://ag-offshore.vercel.app
+MUHAMMAD AMIN BIN AZMAN
+CSWIP 3.4U Subsea Inspection Engineer / Data Recorder
+Mobile / WhatsApp: +60125065516
+Email: {sender_email}
+Location: Penang, Malaysia (Point of Hire | Open & Willing to Relocate Worldwide)
+
+__________________________________________________
+VALID OFFSHORE CREDENTIALS & CERTIFICATIONS SUMMARY:
+- CSWIP 3.4U Subsea Inspection Controller (Cert No: 542968 | Valid Jul 2028)
+- OPITO FOET / BOSIET with CA-EBS & Travel Safely By Boat (Valid Dec 2026)
+- PETRONAS & OEUK Offshore Medical Examinations (Valid Sep 2026)
+- ADNOC Offshore HSE Induction & Medical Clearances (Valid Oct 2027)
+- PETRONAS Offshore Safety Passport (OSP) & Competency Cards (Valid Sep 2026 / Mar 2026)
+- OPITO Basic H2S (9014) & Solas Marine Safety Certifications
+- Mercury Awareness Certification
+- Seaman’s Discharge Book / Card & International Passport (Valid Mar 2029)
+- UTM B.Eng (Hons) Petroleum Engineering Degree (CGPA: 3.44)
+"""
+        return subject, body
+
+    if "mcsoil.com" in email:
+        subject = "CSWIP 3.4U Subsea Inspection Engineer / Data Recorder - Muhammad Amin Azman (Immediate Mobilization & Willing to Relocate)"
+        salut = f"Dear {pic_name}," if pic_name else "Dear Esraa Seoudi & Amira Mahrous,"
+        body = f"""{salut}
+
+I am writing to express my strong interest in joining MCS Group for upcoming offshore campaigns, contract, or permanent positions as a CSWIP 3.4U Subsea Inspection Engineer / Data Recorder. I am 100% open and willing to relocate worldwide for long-term contract or permanent roles.
+
+With over 280+ offshore days across 10+ subsea campaigns (including PETRONAS, PTTEP, CHOC, and RINA Class surveys), I possess extensive hands-on expertise in subsea data acquisition, pipeline tracking (TSS 440/350 & MBES), Flooded Member Detection (Cobalt-60 & Impact Subsea FMD), and digital inspection suites (Sirrihatt, EdgeDVR, IDAMS).
+
+Attached is my latest CV (PDF format). Full supporting certificate packages and editable DOCX formats are available immediately upon request.
+
+I am 100% available for immediate worldwide offshore mobilization and willing to relocate. I look forward to hearing from you soon regarding opportunities with MCS Group.
+
+Best regards,
+
+MUHAMMAD AMIN BIN AZMAN
+CSWIP 3.4U Subsea Inspection Engineer / Data Recorder
+Mobile / WhatsApp: +60125065516
+Email: {sender_email}
+Location: Penang, Malaysia (Point of Hire | Open & Willing to Relocate Worldwide)
+
+__________________________________________________
+VALID OFFSHORE CREDENTIALS & CERTIFICATIONS SUMMARY:
+- CSWIP 3.4U Subsea Inspection Controller (Cert No: 542968 | Valid Jul 2028)
+- OPITO FOET / BOSIET with CA-EBS & Travel Safely By Boat (Valid Dec 2026)
+- PETRONAS & OEUK Offshore Medical Examinations (Valid Sep 2026)
+- ADNOC Offshore HSE Induction & Medical Clearances (Valid Oct 2027)
+- PETRONAS Offshore Safety Passport (OSP) & Competency Cards (Valid Sep 2026 / Mar 2026)
+- OPITO Basic H2S (9014) & Solas Marine Safety Certifications
+- Mercury Awareness Certification
+- Seaman’s Discharge Book / Card & International Passport (Valid Mar 2029)
+- UTM B.Eng (Hons) Petroleum Engineering Degree (CGPA: 3.44)
+"""
+        return subject, body
+
+    subject = f"CSWIP 3.4U Subsea Inspection Engineer / Data Recorder - Muhammad Amin Azman (Immediate Mobilization & Willing to Relocate)"
+    salut = f"Hi {pic_name}," if pic_name else f"Hi {company} Recruitment Team,"
+    body = f"""{salut}
+
+I am writing to express my strong interest in joining {company} for upcoming offshore campaigns, contract, or permanent positions as a CSWIP 3.4U Subsea Inspection Engineer / Data Recorder. I am 100% open and willing to relocate worldwide for long-term contract or permanent roles.
+
+With over 280+ offshore days across 10+ subsea campaigns (including PETRONAS, PTTEP, CHOC, and RINA Class surveys), I possess extensive hands-on expertise in subsea data acquisition, pipeline tracking (TSS 440/350 & MBES), Flooded Member Detection (Cobalt-60 & Impact Subsea FMD), and digital inspection suites (Sirrihatt, EdgeDVR, IDAMS).
+
+Attached is my latest CV (PDF format). Full supporting certificate packages and editable DOCX formats are available immediately upon request.
+
+I am 100% available for immediate worldwide offshore mobilization and willing to relocate. I look forward to hearing from you soon regarding opportunities with {company}.
+
+Best regards,
+
+MUHAMMAD AMIN BIN AZMAN
+CSWIP 3.4U Subsea Inspection Engineer / Data Recorder
+Mobile / WhatsApp: +60125065516
+Email: {sender_email}
+Location: Penang, Malaysia (Point of Hire | Open & Willing to Relocate Worldwide)
+
+__________________________________________________
+VALID OFFSHORE CREDENTIALS & CERTIFICATIONS SUMMARY:
+- CSWIP 3.4U Subsea Inspection Controller (Cert No: 542968 | Valid Jul 2028)
+- OPITO FOET / BOSIET with CA-EBS & Travel Safely By Boat (Valid Dec 2026)
+- PETRONAS & OEUK Offshore Medical Examinations (Valid Sep 2026)
+- ADNOC Offshore HSE Induction & Medical Clearances (Valid Oct 2027)
+- PETRONAS Offshore Safety Passport (OSP) & Competency Cards (Valid Sep 2026 / Mar 2026)
+- OPITO Basic H2S (9014) & Solas Marine Safety Certifications
+- Mercury Awareness Certification
+- Seaman’s Discharge Book / Card & International Passport (Valid Mar 2029)
+- UTM B.Eng (Hons) Petroleum Engineering Degree (CGPA: 3.44)
 """
     return subject, body
 
