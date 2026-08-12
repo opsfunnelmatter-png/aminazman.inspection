@@ -5518,5 +5518,93 @@
     "source": "Existing Master Database",
     "remark": "",
     "is_invalid": false
+  },
+  {
+    "id": "MCS_UMA_RAJESWARY",
+    "company": "MCS Subsea Solutions Malaysia",
+    "category": "Subsea Contractor",
+    "pic_name": "Uma Rajeswary T.",
+    "pic_title": "Human Capital / Recruitment Lead",
+    "email": "uma.rajeswary@mcsoil.com",
+    "status": "PAUSED / USER MANUAL APPLICATION",
+    "source": "User Direct Directive",
+    "notes": "MCS Subsea Solutions Malaysia (Bangsar, KL)"
+  },
+  {
+    "id": "ROV_RESOURCES_HR",
+    "company": "ROV Resources (M) Sdn Bhd",
+    "category": "Subsea & ROV Contractor",
+    "pic_name": "HR / Recruitment Team",
+    "pic_title": "Human Resources Department",
+    "email": "hr@rovresources.com.my",
+    "status": "ACTIVE",
+    "source": "Verified Research",
+    "notes": "Shah Alam, Malaysia"
+  },
+  {
+    "id": "ROV_RESOURCES_INFO",
+    "company": "ROV Resources (M) Sdn Bhd",
+    "category": "Subsea & ROV Contractor",
+    "pic_name": "Operations Team",
+    "pic_title": "General Operations Desk",
+    "email": "info@rovresources.com.my",
+    "status": "ACTIVE",
+    "source": "Verified Research",
+    "notes": "Shah Alam, Malaysia"
+  },
+  {
+    "id": "EEST_ENERGY_CAREERS",
+    "company": "EEST Energy Services",
+    "category": "Subsea & Well Intervention",
+    "pic_name": "Recruitment Team",
+    "pic_title": "Careers & Talent Acquisition",
+    "email": "careers@eest-es.com",
+    "status": "ACTIVE",
+    "source": "Verified Research",
+    "notes": "Thailand / Malaysia / Singapore"
+  },
+  {
+    "id": "HORIZON_GEOSCIENCES_CAREERS",
+    "company": "Horizon Geosciences",
+    "category": "Subsea & Geotechnical Specialist",
+    "pic_name": "Recruitment Team",
+    "pic_title": "Global Recruitment Desk",
+    "email": "careers@horizon-geosciences.com",
+    "status": "ACTIVE",
+    "source": "Verified Research",
+    "notes": "Middle East & International"
+  },
+  {
+    "id": "PBJV_BARAKAH_RECRUITMENT",
+    "company": "PBJV Group (Barakah Petroleum)",
+    "category": "Subsea & Pipeline Contractor",
+    "pic_name": "Recruitment Desk",
+    "pic_title": "Group HR & Manning Manager",
+    "email": "recruitment@barakah.my",
+    "status": "ACTIVE",
+    "source": "Verified Research",
+    "notes": "Kota Damansara, Malaysia"
+  },
+  {
+    "id": "PBJV_INFO",
+    "company": "PBJV Group Sdn Bhd",
+    "category": "Subsea & Pipeline Contractor",
+    "pic_name": "General Desk",
+    "pic_title": "Corporate Desk",
+    "email": "info@pbjv.com.my",
+    "status": "ACTIVE",
+    "source": "Verified Research",
+    "notes": "Kota Damansara, Malaysia"
+  },
+  {
+    "id": "DOF_SUBSEA_APAC",
+    "company": "DOF Subsea (Asia Pacific)",
+    "category": "Subsea & Offshore Contractor",
+    "pic_name": "APAC Crewing Desk",
+    "pic_title": "Asia-Pacific Recruitment Desk",
+    "email": "asia-pacific@dofsubsea.com",
+    "status": "ACTIVE",
+    "source": "Verified Research",
+    "notes": "DOF Subsea Asia Pacific"
   }
 ]
