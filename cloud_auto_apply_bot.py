@@ -200,8 +200,11 @@ def run_dual_account_campaign():
         target_email = contact["email"].strip()
         company = contact.get("company", "Company").encode('ascii', 'ignore').decode('ascii')
         
-        # Alternate between ACCOUNTS (Round Robin)
-        sender_acc = ACCOUNTS[(idx - 1) % len(ACCOUNTS)]
+        # Alternate between ACCOUNTS (Round Robin) by default, but force aminazman.inspection@gmail.com for MCS & Vantris
+        if any(domain in target_email.lower() for domain in ["mcsoil.com", "vantrisenergy.com"]):
+            sender_acc = [a for a in ACCOUNTS if "aminazman.inspection" in a["email"]][0]
+        else:
+            sender_acc = ACCOUNTS[(idx - 1) % len(ACCOUNTS)]
         
         subject, body = generate_email_content(contact, sender_acc["email"])
         safe_subject = subject.encode('ascii', 'ignore').decode('ascii')
