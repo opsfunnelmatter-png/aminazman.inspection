@@ -1,18 +1,19 @@
 [
   {
-    "sent": "FALSE",
-    "status": "🔥 HOT LEAD",
+    "sent": "PAUSED_MANUAL",
+    "status": "PAUSED / USER MANUAL APPLICATION",
     "company": "MCS Group (Subsea & ROV Division)",
     "pic_name": "Esraa Seoudi & Amira Mahrous (Human Capital Team)",
     "job_title": "MCS Subsea Crewing & HR Desk",
     "email": "hr@mcsoil.com",
     "country": "Malaysia (KL HQ) / Global",
     "region": "SEA",
-    "remark": "MCS Subsea Regional Office (Menara UOA Bangsar KL)"
+    "remark": "MCS Subsea Regional Office (Menara UOA Bangsar KL)",
+    "notes": "User requested manual handling for MCS, Vantris, and Alam Maritim."
   },
   {
-    "sent": "FALSE",
-    "status": "🔥 HOT LEAD",
+    "sent": "PAUSED_MANUAL",
+    "status": "PAUSED / USER MANUAL APPLICATION",
     "company": "MCS",
     "company_type": "Subsea Contractor",
     "pic_name": "Amira Mahrous",
@@ -23,11 +24,12 @@
     "country": "Global / Overseas",
     "source": "Existing Master Database",
     "remark": "",
-    "is_invalid": false
+    "is_invalid": false,
+    "notes": "User requested manual handling for MCS, Vantris, and Alam Maritim."
   },
   {
-    "sent": "FALSE",
-    "status": "🔥 HOT LEAD",
+    "sent": "PAUSED_MANUAL",
+    "status": "PAUSED / USER MANUAL APPLICATION",
     "company": "MCS",
     "company_type": "Subsea Contractor",
     "pic_name": "Esraa Seoudi",
@@ -38,11 +40,12 @@
     "country": "Global / Overseas",
     "source": "Existing Master Database",
     "remark": "",
-    "is_invalid": false
+    "is_invalid": false,
+    "notes": "User requested manual handling for MCS, Vantris, and Alam Maritim."
   },
   {
-    "sent": "FALSE",
-    "status": "🔥 HOT LEAD",
+    "sent": "PAUSED_MANUAL",
+    "status": "PAUSED / USER MANUAL APPLICATION",
     "company": "MCS Group",
     "company_type": "Subsea Contractor",
     "pic_name": "MCS Subsea Operations Management",
@@ -53,7 +56,8 @@
     "country": "Global / Overseas",
     "source": "Existing Master Database",
     "remark": "Integrated IMR (KL Hub - covers Egypt/Africa)",
-    "is_invalid": false
+    "is_invalid": false,
+    "notes": "User requested manual handling for MCS, Vantris, and Alam Maritim."
   },
   {
     "id": "VANTRIS_AIREEN",
@@ -62,10 +66,11 @@
     "pic_name": "Aireen Razak",
     "pic_title": "Crewing & Personnel Lead",
     "email": "aireen.razak@vantrisenergy.com",
-    "status": "HOT LEAD",
+    "status": "PAUSED / USER MANUAL APPLICATION",
     "source": "User Direct Directive",
-    "notes": "Referred by Tan Meng Loon & Mohammad Farhan Zain",
-    "referred_by": "Tan Meng Loon & Mohammad Farhan Zain"
+    "notes": "User requested manual handling for MCS, Vantris, and Alam Maritim.",
+    "referred_by": "Tan Meng Loon & Mohammad Farhan Zain",
+    "sent": "PAUSED_MANUAL"
   },
   {
     "sent": "TRUE",
@@ -1392,8 +1397,8 @@
     "sender_email": "amin87.azman@gmail.com"
   },
   {
-    "sent": "FALSE",
-    "status": "⏳ SENT / PENDING",
+    "sent": "PAUSED_MANUAL",
+    "status": "PAUSED / USER MANUAL APPLICATION",
     "company": "Alam Maritim Resources Berhad",
     "company_type": "Subsea Contractor",
     "pic_name": "Kalai Ganes",
@@ -1404,11 +1409,12 @@
     "country": "Malaysia",
     "source": "Existing Master Database",
     "remark": "",
-    "is_invalid": false
+    "is_invalid": false,
+    "notes": "User requested manual handling for MCS, Vantris, and Alam Maritim."
   },
   {
-    "sent": "FALSE",
-    "status": "⏳ SENT / PENDING",
+    "sent": "PAUSED_MANUAL",
+    "status": "PAUSED / USER MANUAL APPLICATION",
     "company": "Alam Maritim Resources Berhad",
     "company_type": "Subsea Contractor",
     "pic_name": "Norfian",
@@ -1419,11 +1425,12 @@
     "country": "Malaysia",
     "source": "Existing Master Database",
     "remark": "",
-    "is_invalid": false
+    "is_invalid": false,
+    "notes": "User requested manual handling for MCS, Vantris, and Alam Maritim."
   },
   {
-    "sent": "FALSE",
-    "status": "⏳ SENT / PENDING",
+    "sent": "PAUSED_MANUAL",
+    "status": "PAUSED / USER MANUAL APPLICATION",
     "company": "Alam Maritim Resources Berhad",
     "company_type": "Subsea Contractor",
     "pic_name": "Crewing Lead / Subsea Recruiter",
@@ -1434,7 +1441,8 @@
     "country": "Malaysia",
     "source": "Existing Master Database + Enriched",
     "remark": "Regional Specialist (Malaysia IMR) [Verified Mail Server]",
-    "is_invalid": false
+    "is_invalid": false,
+    "notes": "User requested manual handling for MCS, Vantris, and Alam Maritim."
   },
   {
     "sent": "TRUE",
@@ -1964,8 +1972,8 @@
     "sender_email": "amin87.azman@gmail.com"
   },
   {
-    "sent": "TRUE",
-    "status": "SENT / PENDING",
+    "sent": "PAUSED_MANUAL",
+    "status": "PAUSED / USER MANUAL APPLICATION",
     "company": "Vantris Energy",
     "company_type": "Subsea Contractor",
     "pic_name": "Crewing Lead / Subsea Recruiter",
@@ -1978,11 +1986,12 @@
     "remark": "IMR Giant (Major presence in West Africa) [Verified Mail Server]",
     "is_invalid": false,
     "sent_date": "2026-08-06 11:42",
-    "sender_email": "aminazman.inspection@gmail.com"
+    "sender_email": "aminazman.inspection@gmail.com",
+    "notes": "User requested manual handling for MCS, Vantris, and Alam Maritim."
   },
   {
-    "sent": "TRUE",
-    "status": "SENT / PENDING",
+    "sent": "PAUSED_MANUAL",
+    "status": "PAUSED / USER MANUAL APPLICATION",
     "company": "Vantris Energy",
     "company_type": "Subsea Contractor",
     "pic_name": "Mohammad Farhan Mohd Zain",
@@ -1995,11 +2004,12 @@
     "remark": "",
     "is_invalid": false,
     "sent_date": "2026-08-06 12:05",
-    "sender_email": "amin87.azman@gmail.com"
+    "sender_email": "amin87.azman@gmail.com",
+    "notes": "User requested manual handling for MCS, Vantris, and Alam Maritim."
   },
   {
-    "sent": "TRUE",
-    "status": "💬 REPLIED (ACKNOWLEDGED)",
+    "sent": "PAUSED_MANUAL",
+    "status": "PAUSED / USER MANUAL APPLICATION",
     "company": "Vantris Energy",
     "company_type": "Subsea Contractor",
     "pic_name": "Tan Meng Loon",
@@ -2012,7 +2022,8 @@
     "remark": "Acknowledged Mr. Tan's email & confirmed follow-up sent to Farhan Zain.",
     "is_invalid": false,
     "sent_date": "2026-08-06 22:26",
-    "sender_email": "aminazman.inspection@gmail.com"
+    "sender_email": "aminazman.inspection@gmail.com",
+    "notes": "User requested manual handling for MCS, Vantris, and Alam Maritim."
   },
   {
     "sent": "TRUE",

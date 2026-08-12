@@ -27,7 +27,7 @@ MAX_DELAY_SECONDS = 90     # Fast mode for cloud runner (90s)
 
 JSON_FILE = "contacts_data.json"
 EXCEL_FILE = "Master_Subsea_Contacts_v2.xlsx"
-CV_PDF_PATH = "01_Muhammad_Amin_Azman_CV.pdf"
+CV_PDF_PATH = "01_CV_Muhammad_Amin_Azman.pdf"
 ZIP_DOCS_PATH = r"c:\Users\amin8\Desktop\AG Projects\AG-Offshore\All_Certificates_Amin_Azman.zip"
 PROJECT_DIR = os.getcwd()
 
@@ -36,77 +36,6 @@ def generate_email_content(contact, sender_email):
     pic_name = contact.get("pic_name", "")
     email = contact.get("email", "").lower()
     
-    if email == "aireen.razak@vantrisenergy.com":
-        subject = "CSWIP 3.4U Subsea Inspection Engineer / Data Recorder - Muhammad Amin Azman (Ref: Tan Meng Loon & Farhan Zain)"
-        body = f"""Dear Aireen Razak,
-
-I hope this email finds you well.
-
-Following up on my previous communication with Mr. Tan Meng Loon and Mr. Mohammad Farhan Zain, I am writing to formally express my strong interest in joining Vantris Energy for upcoming offshore campaigns, contract, or permanent positions as a CSWIP 3.4U Subsea Inspection Engineer / Data Recorder. I am 100% open and willing to relocate worldwide for long-term contract or permanent roles.
-
-With over 280+ offshore days across 10+ subsea campaigns (including PETRONAS, PTTEP, CHOC, and RINA Class surveys), I possess extensive hands-on expertise in subsea data acquisition, pipeline tracking (TSS 440/350 & MBES), Flooded Member Detection (Cobalt-60 & Impact Subsea FMD), and digital inspection suites (Sirrihatt, EdgeDVR, IDAMS).
-
-Attached is my latest CV (PDF format). Full supporting certificate packages and editable DOCX formats are available immediately upon request.
-
-I am 100% available for immediate worldwide offshore mobilization and willing to relocate. I look forward to hearing from you soon regarding opportunities with Vantris Energy.
-
-Best regards,
-
-MUHAMMAD AMIN BIN AZMAN
-CSWIP 3.4U Subsea Inspection Engineer / Data Recorder
-Mobile / WhatsApp: +60125065516
-Email: {sender_email}
-Location: Penang, Malaysia (Point of Hire | Open & Willing to Relocate Worldwide)
-
-__________________________________________________
-VALID OFFSHORE CREDENTIALS & CERTIFICATIONS SUMMARY:
-- CSWIP 3.4U Subsea Inspection Controller (Cert No: 542968 | Valid Jul 2028)
-- OPITO FOET / BOSIET with CA-EBS & Travel Safely By Boat (Valid Dec 2026)
-- PETRONAS & OEUK Offshore Medical Examinations (Valid Sep 2026)
-- ADNOC Offshore HSE Induction & Medical Clearances (Valid Oct 2027)
-- PETRONAS Offshore Safety Passport (OSP) & Competency Cards (Valid Sep 2026 / Mar 2026)
-- OPITO Basic H2S (9014) & Solas Marine Safety Certifications
-- Mercury Awareness Certification
-- Seaman’s Discharge Book / Card & International Passport (Valid Mar 2029)
-- UTM B.Eng (Hons) Petroleum Engineering Degree (CGPA: 3.44)
-"""
-        return subject, body
-
-    if "mcsoil.com" in email:
-        subject = "CSWIP 3.4U Subsea Inspection Engineer / Data Recorder - Muhammad Amin Azman (Immediate Mobilization & Willing to Relocate)"
-        salut = f"Dear {pic_name}," if pic_name else "Dear Esraa Seoudi & Amira Mahrous,"
-        body = f"""{salut}
-
-I am writing to express my strong interest in joining MCS Group for upcoming offshore campaigns, contract, or permanent positions as a CSWIP 3.4U Subsea Inspection Engineer / Data Recorder. I am 100% open and willing to relocate worldwide for long-term contract or permanent roles.
-
-With over 280+ offshore days across 10+ subsea campaigns (including PETRONAS, PTTEP, CHOC, and RINA Class surveys), I possess extensive hands-on expertise in subsea data acquisition, pipeline tracking (TSS 440/350 & MBES), Flooded Member Detection (Cobalt-60 & Impact Subsea FMD), and digital inspection suites (Sirrihatt, EdgeDVR, IDAMS).
-
-Attached is my latest CV (PDF format). Full supporting certificate packages and editable DOCX formats are available immediately upon request.
-
-I am 100% available for immediate worldwide offshore mobilization and willing to relocate. I look forward to hearing from you soon regarding opportunities with MCS Group.
-
-Best regards,
-
-MUHAMMAD AMIN BIN AZMAN
-CSWIP 3.4U Subsea Inspection Engineer / Data Recorder
-Mobile / WhatsApp: +60125065516
-Email: {sender_email}
-Location: Penang, Malaysia (Point of Hire | Open & Willing to Relocate Worldwide)
-
-__________________________________________________
-VALID OFFSHORE CREDENTIALS & CERTIFICATIONS SUMMARY:
-- CSWIP 3.4U Subsea Inspection Controller (Cert No: 542968 | Valid Jul 2028)
-- OPITO FOET / BOSIET with CA-EBS & Travel Safely By Boat (Valid Dec 2026)
-- PETRONAS & OEUK Offshore Medical Examinations (Valid Sep 2026)
-- ADNOC Offshore HSE Induction & Medical Clearances (Valid Oct 2027)
-- PETRONAS Offshore Safety Passport (OSP) & Competency Cards (Valid Sep 2026 / Mar 2026)
-- OPITO Basic H2S (9014) & Solas Marine Safety Certifications
-- Mercury Awareness Certification
-- Seaman’s Discharge Book / Card & International Passport (Valid Mar 2029)
-- UTM B.Eng (Hons) Petroleum Engineering Degree (CGPA: 3.44)
-"""
-        return subject, body
-
     subject = f"CSWIP 3.4U Subsea Inspection Engineer / Data Recorder - Muhammad Amin Azman (Freelance / Contract / Permanent)"
     salut = f"Hi {pic_name}," if pic_name else f"Hi {company} Recruitment Team,"
     body = f"""{salut}
@@ -176,13 +105,12 @@ def run_dual_account_campaign():
     with open(JSON_FILE, "r", encoding="utf-8") as f:
         contacts = json.load(f)
 
-    # Filter unsent contacts (excluding Alam Maritim & Bounced)
+    # Filter unsent contacts (excluding MCS, Vantris, Alam Maritim & Bounced/Paused)
     unsent_contacts = [
         c for c in contacts 
-        if str(c.get("sent")).upper() not in ["TRUE", "TRUE (SIMULATED)", "BOUNCED", "REDIRECTED"] 
+        if str(c.get("sent")).upper() not in ["TRUE", "TRUE (SIMULATED)", "BOUNCED", "REDIRECTED", "PAUSED_MANUAL"] 
         and c.get("email") 
-        and "alam-maritim" not in c.get("email", "").lower() 
-        and "alam maritim" not in c.get("company", "").lower()
+        and not any(ex in c.get("email", "").lower() or ex in c.get("company", "").lower() for ex in ["mcsoil", "vantris", "alam-maritim", "alam maritim"])
     ]
 
     print(f"Total Active Database Contacts: {len(contacts)}")
