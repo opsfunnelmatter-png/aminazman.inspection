@@ -107,17 +107,17 @@ VALID OFFSHORE CREDENTIALS & CERTIFICATIONS SUMMARY:
 """
         return subject, body
 
-    subject = f"CSWIP 3.4U Subsea Inspection Engineer / Data Recorder - Muhammad Amin Azman (Immediate Mobilization & Willing to Relocate)"
+    subject = f"CSWIP 3.4U Subsea Inspection Engineer / Data Recorder - Muhammad Amin Azman (Freelance / Contract / Permanent)"
     salut = f"Hi {pic_name}," if pic_name else f"Hi {company} Recruitment Team,"
     body = f"""{salut}
 
-I am writing to express my strong interest in joining {company} for upcoming offshore campaigns, contract, or permanent positions as a CSWIP 3.4U Subsea Inspection Engineer / Data Recorder. I am 100% open and willing to relocate worldwide for long-term contract or permanent roles.
+I am writing to express my strong interest in joining {company} for upcoming offshore campaigns, ad-hoc freelancing mobilizations, contract, or permanent positions as a CSWIP 3.4U Subsea Inspection Engineer / Data Recorder. I am 100% open for freelancing, contract, or permanent roles and willing to relocate worldwide.
 
 With over 280+ offshore days across 10+ subsea campaigns (including PETRONAS, PTTEP, CHOC, and RINA Class surveys), I possess extensive hands-on expertise in subsea data acquisition, pipeline tracking (TSS 440/350 & MBES), Flooded Member Detection (Cobalt-60 & Impact Subsea FMD), and digital inspection suites (Sirrihatt, EdgeDVR, IDAMS).
 
 Attached is my latest CV (PDF format). Full supporting certificate packages and editable DOCX formats are available immediately upon request.
 
-I am 100% available for immediate worldwide offshore mobilization and willing to relocate. I look forward to hearing from you soon regarding opportunities with {company}.
+I am 100% available for immediate worldwide offshore mobilization, open for freelancing / contract / permanent roles, and willing to relocate. I look forward to hearing from you soon regarding opportunities with {company}.
 
 Best regards,
 
@@ -125,7 +125,7 @@ MUHAMMAD AMIN BIN AZMAN
 CSWIP 3.4U Subsea Inspection Engineer / Data Recorder
 Mobile / WhatsApp: +60125065516
 Email: {sender_email}
-Location: Penang, Malaysia (Point of Hire | Open & Willing to Relocate Worldwide)
+Location: Penang, Malaysia (Point of Hire | Freelance, Contract & Permanent | Willing to Relocate Worldwide)
 
 __________________________________________________
 VALID OFFSHORE CREDENTIALS & CERTIFICATIONS SUMMARY:
