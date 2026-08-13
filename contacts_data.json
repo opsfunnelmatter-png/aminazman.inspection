@@ -1407,8 +1407,8 @@
     "sender_email": "amin87.azman@gmail.com"
   },
   {
-    "sent": "PAUSED_MANUAL",
-    "status": "PAUSED / USER MANUAL APPLICATION",
+    "sent": "TRUE",
+    "status": "SENT / PENDING",
     "company": "Alam Maritim Resources Berhad",
     "company_type": "Subsea Contractor",
     "pic_name": "Kalai Ganes",
@@ -1420,7 +1420,9 @@
     "source": "Existing Master Database",
     "remark": "",
     "is_invalid": false,
-    "notes": "User requested manual handling for MCS, Vantris, and Alam Maritim."
+    "notes": "User requested manual handling for MCS, Vantris, and Alam Maritim.",
+    "sent_date": "2026-08-13 11:22",
+    "sender_email": "aminazman.inspection@gmail.com"
   },
   {
     "sent": "PAUSED_MANUAL",
