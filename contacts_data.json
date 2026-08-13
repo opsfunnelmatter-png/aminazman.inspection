@@ -2885,8 +2885,8 @@
     "sender_email": "amin87.azman@gmail.com"
   },
   {
-    "sent": "FALSE",
-    "status": "ACTIVE",
+    "sent": "TRUE",
+    "status": "SENT / PENDING",
     "company": "Dacon Inspection Services Co., Ltd.",
     "company_type": "Inspection & NDT Specialist",
     "pic_name": "Crewing Lead / Subsea Recruiter",
@@ -2897,7 +2897,9 @@
     "country": "Global / Overseas",
     "source": "Existing Master Database + Enriched",
     "remark": "[Verified Mail Server]",
-    "is_invalid": false
+    "is_invalid": false,
+    "sent_date": "2026-08-13 20:45",
+    "sender_email": "amin87.azman@gmail.com"
   },
   {
     "sent": "FALSE",
