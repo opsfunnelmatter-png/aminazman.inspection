@@ -2988,7 +2988,7 @@
   },
   {
     "sent": "TRUE",
-    "status": "SENT / PENDING",
+    "status": "HOT LEAD (CV Passed to Crewing Team)",
     "company": "DCN Diving",
     "company_type": "Subsea Contractor",
     "pic_name": "Russel Harper",
@@ -3001,7 +3001,9 @@
     "remark": "",
     "is_invalid": false,
     "sent_date": "2026-08-13 20:51",
-    "sender_email": "amin87.azman@gmail.com"
+    "sender_email": "amin87.azman@gmail.com",
+    "notes": "Russell Harper (DCN Diving Abu Dhabi) replied 13 Aug: Received CV and passed directly to DCN crewing team.",
+    "last_reply_date": "2026-08-13"
   },
   {
     "sent": "TRUE",
