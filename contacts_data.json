@@ -2395,8 +2395,8 @@
     "sender_email": "amin87.azman@gmail.com"
   },
   {
-    "sent": "FALSE",
-    "status": "ACTIVE",
+    "sent": "TRUE",
+    "status": "SENT / PENDING",
     "company": "Atlas Nextwave",
     "company_type": "Subsea Contractor",
     "pic_name": "James Noonan",
@@ -2407,7 +2407,9 @@
     "country": "Norway",
     "source": "Existing Master Database",
     "remark": "",
-    "is_invalid": false
+    "is_invalid": false,
+    "sent_date": "2026-08-13 11:27",
+    "sender_email": "aminazman.inspection@gmail.com"
   },
   {
     "sent": "FALSE",
@@ -5632,9 +5634,12 @@
     "pic_name": "Neil Hogg",
     "pic_title": "Subsea Recruiter / Account Manager",
     "email": "nhogg@atlasnextwave.com",
-    "status": "HOT LEAD (Redirected from Agata Lebiedzinska)",
+    "status": "SENT / PENDING",
     "source": "Email Auto-Reply Forwarding",
-    "notes": "Forwarded from Agata Lebiedzinska"
+    "notes": "Forwarded from Agata Lebiedzinska",
+    "sent": "TRUE",
+    "sent_date": "2026-08-13 11:27",
+    "sender_email": "aminazman.inspection@gmail.com"
   },
   {
     "id": "ATLAS_ANA_AMADO",
@@ -5643,8 +5648,11 @@
     "pic_name": "Ana Amado",
     "pic_title": "Subsea Recruitment Specialist",
     "email": "aamado@atlasnextwave.com",
-    "status": "HOT LEAD (Redirected from Hannah Goswick)",
+    "status": "SENT / PENDING",
     "source": "Email Auto-Reply Out of Office",
-    "notes": "Alternate contact for Hannah Goswick"
+    "notes": "Alternate contact for Hannah Goswick",
+    "sent": "TRUE",
+    "sent_date": "2026-08-13 11:27",
+    "sender_email": "aminazman.inspection@gmail.com"
   }
 ]
