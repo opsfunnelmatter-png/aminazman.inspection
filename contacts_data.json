@@ -74,11 +74,13 @@
     "pic_name": "Aireen Razak",
     "pic_title": "Crewing & Personnel Lead",
     "email": "aireen.razak@vantrisenergy.com",
-    "status": "PAUSED / USER MANUAL APPLICATION",
+    "status": "SENT / PENDING",
     "source": "User Direct Directive",
     "notes": "User requested manual handling for MCS, Vantris, and Alam Maritim.",
     "referred_by": "Tan Meng Loon & Mohammad Farhan Zain",
-    "sent": "PAUSED_MANUAL"
+    "sent": "TRUE",
+    "sent_date": "2026-08-13 10:54",
+    "sender_email": "aminazman.inspection@gmail.com"
   },
   {
     "sent": "TRUE",
