@@ -2513,8 +2513,8 @@
     "sender_email": "amin87.azman@gmail.com"
   },
   {
-    "sent": "FALSE",
-    "status": "ACTIVE",
+    "sent": "TRUE",
+    "status": "SENT / PENDING",
     "company": "Atlas Professionals / Nextwave",
     "company_type": "Subsea Contractor",
     "pic_name": "Samantha Tulloch",
@@ -2525,7 +2525,9 @@
     "country": "Global / Overseas",
     "source": "Existing Master Database",
     "remark": "",
-    "is_invalid": false
+    "is_invalid": false,
+    "sent_date": "2026-08-13 11:56",
+    "sender_email": "aminazman.inspection@gmail.com"
   },
   {
     "sent": "REDIRECTED",
