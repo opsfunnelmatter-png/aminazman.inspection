@@ -1,7 +1,7 @@
 [
   {
-    "sent": "PAUSED_MANUAL",
-    "status": "PAUSED / USER MANUAL APPLICATION",
+    "sent": "TRUE",
+    "status": "SENT / PENDING",
     "company": "MCS Group (Subsea & ROV Division)",
     "pic_name": "Esraa Seoudi & Amira Mahrous (Human Capital Team)",
     "job_title": "MCS Subsea Crewing & HR Desk",
@@ -9,11 +9,13 @@
     "country": "Malaysia (KL HQ) / Global",
     "region": "SEA",
     "remark": "MCS Subsea Regional Office (Menara UOA Bangsar KL)",
-    "notes": "User requested manual handling for MCS, Vantris, and Alam Maritim."
+    "notes": "User requested manual handling for MCS, Vantris, and Alam Maritim.",
+    "sent_date": "2026-08-13 10:48",
+    "sender_email": "aminazman.inspection@gmail.com"
   },
   {
-    "sent": "PAUSED_MANUAL",
-    "status": "PAUSED / USER MANUAL APPLICATION",
+    "sent": "TRUE",
+    "status": "SENT / PENDING",
     "company": "MCS",
     "company_type": "Subsea Contractor",
     "pic_name": "Amira Mahrous",
@@ -25,11 +27,13 @@
     "source": "Existing Master Database",
     "remark": "",
     "is_invalid": false,
-    "notes": "User requested manual handling for MCS, Vantris, and Alam Maritim."
+    "notes": "User requested manual handling for MCS, Vantris, and Alam Maritim.",
+    "sent_date": "2026-08-13 10:48",
+    "sender_email": "aminazman.inspection@gmail.com"
   },
   {
-    "sent": "PAUSED_MANUAL",
-    "status": "PAUSED / USER MANUAL APPLICATION",
+    "sent": "TRUE",
+    "status": "SENT / PENDING",
     "company": "MCS",
     "company_type": "Subsea Contractor",
     "pic_name": "Esraa Seoudi",
@@ -41,11 +45,13 @@
     "source": "Existing Master Database",
     "remark": "",
     "is_invalid": false,
-    "notes": "User requested manual handling for MCS, Vantris, and Alam Maritim."
+    "notes": "User requested manual handling for MCS, Vantris, and Alam Maritim.",
+    "sent_date": "2026-08-13 10:48",
+    "sender_email": "aminazman.inspection@gmail.com"
   },
   {
-    "sent": "PAUSED_MANUAL",
-    "status": "PAUSED / USER MANUAL APPLICATION",
+    "sent": "TRUE",
+    "status": "SENT / PENDING",
     "company": "MCS Group",
     "company_type": "Subsea Contractor",
     "pic_name": "MCS Subsea Operations Management",
@@ -57,7 +63,9 @@
     "source": "Existing Master Database",
     "remark": "Integrated IMR (KL Hub - covers Egypt/Africa)",
     "is_invalid": false,
-    "notes": "User requested manual handling for MCS, Vantris, and Alam Maritim."
+    "notes": "User requested manual handling for MCS, Vantris, and Alam Maritim.",
+    "sent_date": "2026-08-13 10:48",
+    "sender_email": "aminazman.inspection@gmail.com"
   },
   {
     "id": "VANTRIS_AIREEN",
@@ -5526,9 +5534,12 @@
     "pic_name": "Uma Rajeswary T.",
     "pic_title": "Human Capital / Recruitment Lead",
     "email": "uma.rajeswary@mcsoil.com",
-    "status": "PAUSED / USER MANUAL APPLICATION",
+    "status": "SENT / PENDING",
     "source": "User Direct Directive",
-    "notes": "MCS Subsea Solutions Malaysia (Bangsar, KL)"
+    "notes": "MCS Subsea Solutions Malaysia (Bangsar, KL)",
+    "sent": "TRUE",
+    "sent_date": "2026-08-13 10:48",
+    "sender_email": "aminazman.inspection@gmail.com"
   },
   {
     "id": "ROV_RESOURCES_HR",
