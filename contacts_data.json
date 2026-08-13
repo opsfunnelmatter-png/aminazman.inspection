@@ -2445,8 +2445,8 @@
     "notes": "Out of office. Alternate contact Ana Amado (aamado@atlasnextwave.com)"
   },
   {
-    "sent": "FALSE",
-    "status": "ACTIVE",
+    "sent": "TRUE",
+    "status": "SENT / PENDING",
     "company": "Atlas Professionals / Nextwave",
     "company_type": "Subsea Contractor",
     "pic_name": "Crewing Lead / Subsea Recruiter",
@@ -2457,7 +2457,9 @@
     "country": "Global / Overseas",
     "source": "Existing Master Database + Enriched",
     "remark": "[Verified Mail Server]",
-    "is_invalid": false
+    "is_invalid": false,
+    "sent_date": "2026-08-13 11:51",
+    "sender_email": "aminazman.inspection@gmail.com"
   },
   {
     "sent": "FALSE",
