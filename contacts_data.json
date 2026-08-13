@@ -3282,10 +3282,10 @@
   },
   {
     "sent": "TRUE",
-    "status": "SENT / PENDING",
+    "status": "REPLIED / WARM LEAD (Keeps CV for International Projects)",
     "company": "Fathom 6 Subsea",
     "company_type": "Subsea Contractor",
-    "pic_name": "Crewing Lead / Subsea Recruiter",
+    "pic_name": "Chad Peacock",
     "job_title": "Crewing & Personnel Manager",
     "email": "info@fathom6subsea.com",
     "phone": "",
@@ -3295,7 +3295,9 @@
     "remark": "[Verified Mail Server]",
     "is_invalid": false,
     "sent_date": "2026-08-13 21:11",
-    "sender_email": "aminazman.inspection@gmail.com"
+    "sender_email": "aminazman.inspection@gmail.com",
+    "notes": "Chad Peacock (Fathom 6 Subsea Canada) replied 13 Aug: Currently focusing on Canadian scope, but keeping CV on file for upcoming international projects requiring international personnel.",
+    "last_reply_date": "2026-08-13"
   },
   {
     "sent": "TRUE",
