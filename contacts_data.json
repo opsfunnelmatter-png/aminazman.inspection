@@ -3192,7 +3192,7 @@
   },
   {
     "sent": "TRUE",
-    "status": "SENT / PENDING",
+    "status": "HOT LEAD (Managing Director Referred to Nadia)",
     "company": "Elevate Offshore",
     "company_type": "Crewing / Manpower Agency",
     "pic_name": "Andrew Blears",
@@ -3205,7 +3205,9 @@
     "remark": "",
     "is_invalid": false,
     "sent_date": "2026-08-13 21:05",
-    "sender_email": "amin87.azman@gmail.com"
+    "sender_email": "amin87.azman@gmail.com",
+    "notes": "Andrew Blears (MD Elevate Offshore) replied 13 Aug: Connecting Amin with Nadia for subsea inspection roles.",
+    "last_reply_date": "2026-08-13"
   },
   {
     "sent": "TRUE",
@@ -5769,5 +5771,16 @@
     "sent": "TRUE",
     "sent_date": "2026-08-13 21:15",
     "sender_email": "aminazman.inspection@gmail.com"
+  },
+  {
+    "id": "ELEVATE_NADIA",
+    "company": "Elevate Offshore",
+    "category": "Subsea Recruitment Agency",
+    "pic_name": "Nadia",
+    "pic_title": "Recruitment Specialist / Crewing Manager",
+    "email": "nadia@elevateoffshore.com",
+    "status": "HOT LEAD (Referred by MD Andrew Blears)",
+    "source": "Managing Director Referral",
+    "notes": "Referred by MD Andrew Blears"
   }
 ]
