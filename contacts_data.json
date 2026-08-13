@@ -2698,8 +2698,8 @@
     "sender_email": "aminazman.inspection@gmail.com"
   },
   {
-    "sent": "FALSE",
-    "status": "ACTIVE",
+    "sent": "TRUE",
+    "status": "SENT / PENDING",
     "company": "Certex Angola Lda",
     "company_type": "Subsea Contractor",
     "pic_name": "Crewing Lead / Subsea Recruiter",
@@ -2710,7 +2710,9 @@
     "country": "Nigeria",
     "source": "Existing Master Database + Enriched",
     "remark": "[Verified Mail Server]",
-    "is_invalid": false
+    "is_invalid": false,
+    "sent_date": "2026-08-13 12:08",
+    "sender_email": "amin87.azman@gmail.com"
   },
   {
     "sent": "FALSE",
