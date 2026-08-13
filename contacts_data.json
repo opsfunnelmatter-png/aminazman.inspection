@@ -2562,8 +2562,8 @@
     "notes": "Out of office until 17 Aug. Forwarded/Referenced to James Noonan (jnoonan@atlasnextwave.com)"
   },
   {
-    "sent": "FALSE",
-    "status": "ACTIVE",
+    "sent": "TRUE",
+    "status": "SENT / PENDING",
     "company": "awoffshore",
     "company_type": "Subsea Contractor",
     "pic_name": "Crewing Lead / Subsea Recruiter",
@@ -2574,7 +2574,9 @@
     "country": "Norway",
     "source": "Existing Master Database + Enriched",
     "remark": "[Verified Mail Server]",
-    "is_invalid": false
+    "is_invalid": false,
+    "sent_date": "2026-08-13 11:57",
+    "sender_email": "amin87.azman@gmail.com"
   },
   {
     "sent": "FALSE",
