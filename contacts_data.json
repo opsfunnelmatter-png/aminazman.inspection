@@ -2532,8 +2532,8 @@
     "notes": "Left company. Forwarded to Neil Hogg (nhogg@atlasnextwave.com)"
   },
   {
-    "sent": "FALSE",
-    "status": "ACTIVE",
+    "sent": "REDIRECTED",
+    "status": "REDIRECTED (OUT OF OFFICE)",
     "company": "Atlas Professionals",
     "company_type": "Subsea Contractor",
     "pic_name": "Craig Edwards",
@@ -2544,7 +2544,8 @@
     "country": "Global / Overseas",
     "source": "Existing Master Database",
     "remark": "",
-    "is_invalid": false
+    "is_invalid": false,
+    "notes": "Out of office until 17 Aug. Forwarded/Referenced to James Noonan (jnoonan@atlasnextwave.com)"
   },
   {
     "sent": "FALSE",
