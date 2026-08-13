@@ -2425,8 +2425,8 @@
     "is_invalid": false
   },
   {
-    "sent": "FALSE",
-    "status": "ACTIVE",
+    "sent": "REDIRECTED",
+    "status": "REDIRECTED (OUT OF OFFICE)",
     "company": "Atlas Professionals / Nextwave",
     "company_type": "Subsea Contractor",
     "pic_name": "Hannah Goswick",
@@ -2437,7 +2437,8 @@
     "country": "Global / Overseas",
     "source": "Existing Master Database",
     "remark": "",
-    "is_invalid": false
+    "is_invalid": false,
+    "notes": "Out of office. Alternate contact Ana Amado (aamado@atlasnextwave.com)"
   },
   {
     "sent": "FALSE",
@@ -2515,8 +2516,8 @@
     "is_invalid": false
   },
   {
-    "sent": "FALSE",
-    "status": "ACTIVE",
+    "sent": "REDIRECTED",
+    "status": "REDIRECTED (LEFT COMPANY)",
     "company": "Atlas Professionals / Nextwave",
     "company_type": "Subsea Contractor",
     "pic_name": "Agata Lebiedzinska",
@@ -2527,7 +2528,8 @@
     "country": "Global / Overseas",
     "source": "Existing Master Database",
     "remark": "",
-    "is_invalid": false
+    "is_invalid": false,
+    "notes": "Left company. Forwarded to Neil Hogg (nhogg@atlasnextwave.com)"
   },
   {
     "sent": "FALSE",
@@ -5621,5 +5623,27 @@
     "status": "ACTIVE",
     "source": "Verified Research",
     "notes": "DOF Subsea Asia Pacific"
+  },
+  {
+    "id": "ATLAS_NEIL_HOGG",
+    "company": "Atlas Professionals / Nextwave",
+    "category": "Subsea Recruitment Agency",
+    "pic_name": "Neil Hogg",
+    "pic_title": "Subsea Recruiter / Account Manager",
+    "email": "nhogg@atlasnextwave.com",
+    "status": "HOT LEAD (Redirected from Agata Lebiedzinska)",
+    "source": "Email Auto-Reply Forwarding",
+    "notes": "Forwarded from Agata Lebiedzinska"
+  },
+  {
+    "id": "ATLAS_ANA_AMADO",
+    "company": "Atlas Professionals / Nextwave",
+    "category": "Subsea Recruitment Agency",
+    "pic_name": "Ana Amado",
+    "pic_title": "Subsea Recruitment Specialist",
+    "email": "aamado@atlasnextwave.com",
+    "status": "HOT LEAD (Redirected from Hannah Goswick)",
+    "source": "Email Auto-Reply Out of Office",
+    "notes": "Alternate contact for Hannah Goswick"
   }
 ]
