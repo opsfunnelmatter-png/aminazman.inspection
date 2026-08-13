@@ -2851,8 +2851,8 @@
     "sender_email": "amin87.azman@gmail.com"
   },
   {
-    "sent": "FALSE",
-    "status": "ACTIVE",
+    "sent": "TRUE",
+    "status": "SENT / PENDING",
     "company": "CSS Limited",
     "company_type": "Subsea Contractor",
     "pic_name": "Talor Hooson",
@@ -2863,7 +2863,9 @@
     "country": "United Kingdom",
     "source": "Existing Master Database",
     "remark": "",
-    "is_invalid": false
+    "is_invalid": false,
+    "sent_date": "2026-08-13 12:18",
+    "sender_email": "aminazman.inspection@gmail.com"
   },
   {
     "sent": "FALSE",
