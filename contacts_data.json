@@ -2630,8 +2630,8 @@
     "sender_email": "aminazman.inspection@gmail.com"
   },
   {
-    "sent": "FALSE",
-    "status": "ACTIVE",
+    "sent": "TRUE",
+    "status": "SENT / PENDING",
     "company": "Bourbon Offshore",
     "company_type": "Subsea Contractor",
     "pic_name": "Crewing Lead / Subsea Recruiter",
@@ -2642,7 +2642,9 @@
     "country": "Netherlands",
     "source": "Existing Master Database + Enriched",
     "remark": "IMR Giant (Very active in West Africa/Mauritius) [Verified Mail Server]",
-    "is_invalid": false
+    "is_invalid": false,
+    "sent_date": "2026-08-13 12:03",
+    "sender_email": "amin87.azman@gmail.com"
   },
   {
     "sent": "FALSE",
