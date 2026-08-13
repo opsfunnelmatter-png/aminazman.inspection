@@ -27,7 +27,7 @@ MAX_DELAY_SECONDS = 90     # Fast mode for cloud runner (90s)
 
 JSON_FILE = "contacts_data.json"
 EXCEL_FILE = "Master_Subsea_Contacts_v2.xlsx"
-CV_PDF_PATH = "01_CV_Muhammad_Amin_Azman.pdf"
+CV_PDF_PATH = os.path.join("01_Offshore_Certificates_FULL", "CV - Muhammad Amin Azman (CSWIP 3.4U Inspection Engineer).pdf")
 ZIP_DOCS_PATH = r"c:\Users\amin8\Desktop\AG Projects\AG-Offshore\All_Certificates_Amin_Azman.zip"
 PROJECT_DIR = os.getcwd()
 
