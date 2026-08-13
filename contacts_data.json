@@ -5763,8 +5763,11 @@
     "pic_name": "Kris Braakensiek",
     "pic_title": "Subsea Recruitment Specialist",
     "email": "kris.braakensiek@ersg-global.com",
-    "status": "HOT LEAD (Redirected from Oliver Mean)",
+    "status": "SENT / PENDING",
     "source": "Email Auto-Reply Referral",
-    "notes": "Referred by Oliver Mean"
+    "notes": "Referred by Oliver Mean",
+    "sent": "TRUE",
+    "sent_date": "2026-08-13 21:15",
+    "sender_email": "aminazman.inspection@gmail.com"
   }
 ]
