@@ -3542,8 +3542,8 @@
     "last_reply_date": "2026-08-14"
   },
   {
-    "sent": "FALSE",
-    "status": "ACTIVE",
+    "sent": "TRUE",
+    "status": "SENT / PENDING",
     "company": "Hydro Energy Group",
     "company_type": "Subsea Contractor",
     "pic_name": "Floriza Bascuguin",
@@ -3554,7 +3554,9 @@
     "country": "Global / Overseas",
     "source": "Existing Master Database",
     "remark": "",
-    "is_invalid": false
+    "is_invalid": false,
+    "sent_date": "2026-08-15 19:03",
+    "sender_email": "amin87.azman@gmail.com"
   },
   {
     "sent": "FALSE",
