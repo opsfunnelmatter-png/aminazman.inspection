@@ -3353,8 +3353,8 @@
     "sender_email": "aminazman.inspection@gmail.com"
   },
   {
-    "sent": "FALSE",
-    "status": "ACTIVE",
+    "sent": "TRUE",
+    "status": "SENT / PENDING",
     "company": "First Recruitment Group",
     "company_type": "Crewing / Manpower Agency",
     "pic_name": "Crewing Lead / Subsea Recruiter",
@@ -3365,7 +3365,9 @@
     "country": "Global / Overseas",
     "source": "Existing Master Database + Enriched",
     "remark": "Specialist Agency (Subsea/Technip projects) [Verified Mail Server]",
-    "is_invalid": false
+    "is_invalid": false,
+    "sent_date": "2026-08-15 18:51",
+    "sender_email": "amin87.azman@gmail.com"
   },
   {
     "sent": "FALSE",
