@@ -21,7 +21,7 @@ ACCOUNTS = [
     {"email": "aminazman.inspection@gmail.com", "pass": GMAIL_PASS_2}
 ]
 
-BATCH_LIMIT = 46           # 46 emails per session to finish 100% by Sunday night
+BATCH_LIMIT = 35           # 35 emails per session (17 per account) for 100% safety & completion before Monday 9 AM
 MIN_DELAY_SECONDS = 30     # Fast mode for cloud runner (30s)
 MAX_DELAY_SECONDS = 90     # Fast mode for cloud runner (90s)
 
