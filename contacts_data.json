@@ -3729,8 +3729,8 @@
     "sender_email": "amin87.azman@gmail.com"
   },
   {
-    "sent": "FALSE",
-    "status": "ACTIVE",
+    "sent": "TRUE",
+    "status": "SENT / PENDING",
     "company": "InDepth International",
     "company_type": "Subsea Contractor",
     "pic_name": "Victor Abuyan",
@@ -3741,7 +3741,9 @@
     "country": "Global / Overseas",
     "source": "Existing Master Database",
     "remark": "",
-    "is_invalid": false
+    "is_invalid": false,
+    "sent_date": "2026-08-15 19:16",
+    "sender_email": "aminazman.inspection@gmail.com"
   },
   {
     "sent": "FALSE",
