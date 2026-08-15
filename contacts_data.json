@@ -3576,8 +3576,8 @@
     "sender_email": "aminazman.inspection@gmail.com"
   },
   {
-    "sent": "FALSE",
-    "status": "ACTIVE",
+    "sent": "TRUE",
+    "status": "SENT / PENDING",
     "company": "HydroDive Nigeria",
     "company_type": "Inspection & NDT Specialist",
     "pic_name": "Crewing Lead / Subsea Recruiter",
@@ -3588,7 +3588,9 @@
     "country": "Global / Overseas",
     "source": "Existing Master Database + Enriched",
     "remark": "West Africa Diving & Inspection Specialist [Verified Mail Server]",
-    "is_invalid": false
+    "is_invalid": false,
+    "sent_date": "2026-08-15 19:05",
+    "sender_email": "amin87.azman@gmail.com"
   },
   {
     "sent": "FALSE",
