@@ -2158,7 +2158,7 @@
   },
   {
     "sent": "TRUE",
-    "status": "SENT / PENDING",
+    "status": "APPLIED / HOT LEAD (Turkey Campaign)",
     "company": "AGR Group",
     "company_type": "Subsea Contractor",
     "pic_name": "Ellaine Malinao",
@@ -2171,7 +2171,9 @@
     "remark": "",
     "is_invalid": false,
     "sent_date": "2026-08-07 00:04",
-    "sender_email": "aminazman.inspection@gmail.com"
+    "sender_email": "aminazman.inspection@gmail.com",
+    "notes": "Submitted CV DOCX & details to Ellaine Malinao on 14 Aug 17:12 MYT: USD 600-650/day rate, PEN airport, Immediate availability.",
+    "last_reply_date": "2026-08-14"
   },
   {
     "sent": "TRUE",
@@ -3498,7 +3500,7 @@
   },
   {
     "sent": "TRUE",
-    "status": "💬 REPLIED",
+    "status": "APPLIED / HOT LEAD (SS7 Turkey Campaign)",
     "company": "HPR UK",
     "company_type": "Subsea Contractor",
     "pic_name": "Diane Ritchie",
@@ -3511,7 +3513,9 @@
     "remark": "Replied to Diane regarding UK Aug/Sep 2026 LOG/Outside 12NM status",
     "is_invalid": false,
     "sent_date": "2026-08-05 01:11",
-    "sender_email": "amin87.azman@gmail.com"
+    "sender_email": "amin87.azman@gmail.com",
+    "notes": "Replied to Phil Hargreaves on 14 Aug 16:51 MYT: Confirmed 100% available for both dates (02/09 & 16/09).",
+    "last_reply_date": "2026-08-14"
   },
   {
     "sent": "FALSE",
