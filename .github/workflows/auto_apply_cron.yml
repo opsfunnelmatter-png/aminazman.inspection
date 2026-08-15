@@ -2,7 +2,7 @@ name: 24/7 Cloud Auto-Apply Campaign Runner
 
 on:
   schedule:
-    - cron: '30 0,12 * * 1-5'
+    - cron: '30 0,12 * * *'
   workflow_dispatch:
 
 jobs:
