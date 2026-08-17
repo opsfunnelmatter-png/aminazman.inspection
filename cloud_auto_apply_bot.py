@@ -21,9 +21,9 @@ ACCOUNTS = [
     {"email": "aminazman.inspection@gmail.com", "pass": GMAIL_PASS_2}
 ]
 
-BATCH_LIMIT = 35           # 35 emails per session (17 per account) for 100% safety & completion before Monday 9 AM
-MIN_DELAY_SECONDS = 30     # Fast mode for cloud runner (30s)
-MAX_DELAY_SECONDS = 90     # Fast mode for cloud runner (90s)
+BATCH_LIMIT = 50           # Ultra-Safe 50 emails per session (~25 per account)
+MIN_DELAY_SECONDS = 60     # Ultra-Safe mode (60s min delay)
+MAX_DELAY_SECONDS = 120    # Ultra-Safe mode (120s max delay)
 
 JSON_FILE = "contacts_data.json"
 EXCEL_FILE = "Master_Subsea_Contacts_v2.xlsx"
