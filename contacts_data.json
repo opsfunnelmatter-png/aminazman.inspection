@@ -3803,8 +3803,8 @@
     "sender_email": "aminazman.inspection@gmail.com"
   },
   {
-    "sent": "FALSE",
-    "status": "ACTIVE",
+    "sent": "TRUE",
+    "status": "SENT / PENDING",
     "company": "Insight Overseas",
     "company_type": "Crewing / Manpower Agency",
     "pic_name": "Crewing Lead / Subsea Recruiter",
@@ -3815,7 +3815,9 @@
     "country": "Global / Overseas",
     "source": "Existing Master Database",
     "remark": "Agency (Active in Malaysia/Petronas)",
-    "is_invalid": false
+    "is_invalid": false,
+    "sent_date": "2026-08-17 13:51",
+    "sender_email": "amin87.azman@gmail.com"
   },
   {
     "sent": "FALSE",
