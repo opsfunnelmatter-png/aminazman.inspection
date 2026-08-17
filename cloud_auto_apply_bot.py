@@ -115,17 +115,25 @@ def run_dual_account_campaign():
 
     print(f"Total Active Database Contacts: {len(contacts)}")
     print(f"Unsent Active Contacts Available: {len(unsent_contacts)}")
-    print(f"Batch Limit Set To: {BATCH_LIMIT} emails tonight\n")
+    print(f"Batch Limit Set To: {BATCH_LIMIT} emails\n")
 
     if not unsent_contacts:
-        print("All active contacts have already been emailed!")
+        print("All campaign contacts have been processed successfully!")
         return
 
-    batch_to_send = unsent_contacts[:BATCH_LIMIT]
-    sent_count = 0
-
-    for idx, contact in enumerate(batch_to_send, 1):
-        target_email = contact["email"].strip()
+    processed_count = 0
+    for idx, contact in enumerate(unsent_contacts[:BATCH_LIMIT], 1):
+        target_email = contact.get("email", "").strip()
+        
+        # LIVE GOOGLE SENT MAIL PRE-FLIGHT VERIFICATION
+        if check_already_in_sent_mail(target_email):
+            print(f"[{idx}/{min(len(unsent_contacts), BATCH_LIMIT)}] SKIPPED (Already sent in Sent Mail history): {target_email}")
+            contact["sent"] = "TRUE"
+            contact["sent_date"] = datetime.now().strftime("%Y-%m-%d %H:%M")
+            with open(JSON_FILE, "w", encoding="utf-8") as f:
+                json.dump(contacts, f, indent=2, ensure_ascii=False)
+            continue
+            
         company = contact.get("company", "Company").encode('ascii', 'ignore').decode('ascii')
         
         # Alternate between ACCOUNTS (Round Robin) by default, but force aminazman.inspection@gmail.com for MCS & Vantris
