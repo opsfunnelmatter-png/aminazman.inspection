@@ -3390,7 +3390,7 @@
   },
   {
     "sent": "TRUE",
-    "status": "SENT / PENDING",
+    "status": "HOT LEAD (CV Forwarded to Operations Manager)",
     "company": "Fugro / Middle East",
     "company_type": "Subsea Contractor",
     "pic_name": "Mariane Dizon",
@@ -3403,7 +3403,9 @@
     "remark": "",
     "is_invalid": false,
     "sent_date": "2026-08-15 18:53",
-    "sender_email": "amin87.azman@gmail.com"
+    "sender_email": "amin87.azman@gmail.com",
+    "notes": "Mariane Dizon (Proposal Coordinator Fugro UAE) replied 17 Aug 11:29 AM: Confirmed CV has been forwarded directly to Operations Manager.",
+    "last_reply_date": "2026-08-17"
   },
   {
     "sent": "TRUE",
@@ -3766,7 +3768,7 @@
   },
   {
     "sent": "FALSE",
-    "status": "ACTIVE",
+    "status": "HOT LEAD (Acknowledged by Operations Lead)",
     "company": "Insight Overseas",
     "company_type": "Subsea Contractor",
     "pic_name": "Mohammed Raza",
@@ -3777,7 +3779,9 @@
     "country": "Malaysia / Global",
     "source": "Existing Master Database",
     "remark": "",
-    "is_invalid": false
+    "is_invalid": false,
+    "notes": "Mohammed Raza (Operations Lead Insight Overseas UAE +971 56 494-3288) replied 17 Aug 12:49 PM: Confirmed receipt of profile and will be in touch for upcoming campaigns.",
+    "last_reply_date": "2026-08-17"
   },
   {
     "sent": "FALSE",
