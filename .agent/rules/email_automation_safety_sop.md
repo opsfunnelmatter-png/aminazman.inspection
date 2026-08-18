@@ -17,5 +17,7 @@
 
 ## 4. CV & CERTIFICATES ATTACHMENT RULES
 - CV PDF MUST always be sourced exclusively from:
-  `C:\Users\amin8\Desktop\AG Projects\AG-Offshore\01_Offshore_Certificates_FULL\CV - Muhammad Amin Azman (CSWIP 3.4U Inspection Engineer).pdf`
+  `C:\Users\amin8\Desktop\AG Projects\AG-Offshore\02_Offshore_CV_FULL\CV - Muhammad Amin Azman (CSWIP 3.4U Inspection Engineer).pdf`
+- Sijil-sijil offshore (Certificates) diambil dari:
+  `C:\Users\amin8\Desktop\AG Projects\AG-Offshore\01_Offshore_Certificates_FULL\`
 - Valid offshore credentials summary section must always be placed AFTER the signature block.
