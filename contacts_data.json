@@ -507,7 +507,7 @@
     "sender_email": "aminazman.inspection@gmail.com"
   },
   {
-    "sent": "TRUE",
+    "sent": "BOUNCED",
     "status": "❌ INVALID / BOUNCED",
     "company": "Position: Inspection Engineer Clien",
     "company_type": "Subsea Contractor",
@@ -575,7 +575,7 @@
     "sender_email": "aminazman.inspection@gmail.com"
   },
   {
-    "sent": "TRUE",
+    "sent": "BOUNCED",
     "status": "❌ INVALID / BOUNCED",
     "company": "RESOURCES.COM COATING INSPECTOR Ens",
     "company_type": "Subsea Contractor",
@@ -626,7 +626,7 @@
     "sender_email": "aminazman.inspection@gmail.com"
   },
   {
-    "sent": "TRUE",
+    "sent": "BOUNCED",
     "status": "❌ INVALID / BOUNCED",
     "company": "Certificate in BGAS Painting Inspec",
     "company_type": "Crewing / Manpower Agency",
@@ -694,7 +694,7 @@
     "sender_email": "aminazman.inspection@gmail.com"
   },
   {
-    "sent": "TRUE",
+    "sent": "BOUNCED",
     "status": "❌ INVALID / BOUNCED",
     "company": "5+ years of solid experience in ind",
     "company_type": "Subsea Contractor",
@@ -762,7 +762,7 @@
     "sender_email": "aminazman.inspection@gmail.com"
   },
   {
-    "sent": "TRUE",
+    "sent": "BOUNCED",
     "status": "❌ INVALID / BOUNCED",
     "company": "O&G Job Classified",
     "company_type": "Subsea Contractor",
@@ -898,7 +898,7 @@
     "sender_email": "aminazman.inspection@gmail.com"
   },
   {
-    "sent": "TRUE",
+    "sent": "BOUNCED",
     "status": "❌ INVALID / BOUNCED",
     "company": "Senior Materials Corrosion and Insp",
     "company_type": "Subsea Contractor",
@@ -1323,7 +1323,7 @@
     "sender_email": "aminazman.inspection@gmail.com"
   },
   {
-    "sent": "TRUE",
+    "sent": "REDIRECTED",
     "status": "🔄 AUTO-REDIRECT",
     "company": "DEIDRE DANIEL's Post",
     "company_type": "Subsea Contractor",
@@ -1476,7 +1476,7 @@
     "sender_email": "amin87.azman@gmail.com"
   },
   {
-    "sent": "TRUE",
+    "sent": "BOUNCED",
     "status": "❌ INVALID / BOUNCED",
     "company": "Bintang Subsea Ventures Sdn Bhd",
     "company_type": "Subsea Contractor",
@@ -1493,7 +1493,7 @@
     "sender_email": "amin87.azman@gmail.com"
   },
   {
-    "sent": "TRUE",
+    "sent": "BOUNCED",
     "status": "❌ INVALID / BOUNCED",
     "company": "Bintang Subsea Ventures Sdn Bhd",
     "company_type": "Subsea Contractor",
@@ -2433,7 +2433,7 @@
     "sender_email": "amin87.azman@gmail.com"
   },
   {
-    "sent": "TRUE",
+    "sent": "REDIRECTED",
     "status": "REDIRECTED (OUT OF OFFICE)",
     "company": "Atlas Professionals / Nextwave",
     "company_type": "Subsea Contractor",
@@ -2534,7 +2534,7 @@
     "sender_email": "aminazman.inspection@gmail.com"
   },
   {
-    "sent": "TRUE",
+    "sent": "REDIRECTED",
     "status": "REDIRECTED (LEFT COMPANY)",
     "company": "Atlas Professionals / Nextwave",
     "company_type": "Subsea Contractor",
@@ -2550,7 +2550,7 @@
     "notes": "Left company. Forwarded to Neil Hogg (nhogg@atlasnextwave.com)"
   },
   {
-    "sent": "TRUE",
+    "sent": "REDIRECTED",
     "status": "REDIRECTED (OUT OF OFFICE)",
     "company": "Atlas Professionals",
     "company_type": "Subsea Contractor",
@@ -3250,7 +3250,7 @@
     "sender_email": "amin87.azman@gmail.com"
   },
   {
-    "sent": "TRUE",
+    "sent": "REDIRECTED",
     "status": "REDIRECTED (Referral to Kris Braakensiek)",
     "company": "ERSG Global",
     "company_type": "Subsea Contractor",
@@ -5874,5 +5874,20 @@
     "notes": "User replied manually on 17 Aug 07:58 AM MYT: Highlighted 3.4U qualifications, rate - USD, requested consideration for 25 Aug mob or keeping CV on file.",
     "last_reply_date": "2026-08-17",
     "sent": "TRUE"
+  },
+  {
+    "id": "PRECISE_CONSULTANTS_JQ",
+    "company": "Precise Consultants (Singapore)",
+    "category": "Subsea Recruitment Agency",
+    "pic_name": "Jia Qi Chua (JQ)",
+    "pic_title": "Account Manager",
+    "email": "jiaqi@preciseconsultants.com",
+    "phone": "+65 8101 0285",
+    "status": "HOT LEAD / REPLIED (Referral by Ahmad Basyiruddin)",
+    "source": "Referral (Ahmad Basyiruddin)",
+    "notes": "Jia Qi Chua (JQ - Account Manager Precise Consultants Singapore) reached out on 18 Aug via Basyir referral. Sent latest CSWIP 3.4U CV PDF.",
+    "sent": "TRUE",
+    "sent_date": "2026-08-18 13:25",
+    "last_reply_date": "2026-08-18"
   }
 ]
