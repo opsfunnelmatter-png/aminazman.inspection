@@ -1,0 +1,32 @@
+name: Basyir Monday Morning Batch 1 Dispatcher
+
+on:
+  schedule:
+    # 00:30 UTC = 08:30 AM Malaysia Time (MYT) on Monday
+    - cron: '30 0 * * 1'
+  workflow_dispatch: # Allows manual trigger from GitHub UI anytime
+
+jobs:
+  dispatch_batch1:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Execute Basyir Batch 1 Dispatcher
+        run: |
+          python run_basyir_batch1.py
+
+      - name: Commit and Push Updated Sent Ledger
+        run: |
+          git config --global user.name "AG-Offshore Basyir Bot"
+          git config --global user.email "bot@ag-offshore.com"
+          git add -f profiles/basyir/sent_ledger.json
+          git commit -m "Auto-update Basyir sent ledger from Monday Batch 1 cloud dispatch" || echo "No changes to commit"
+          git push origin main || echo "Push failed or nothing to push"
