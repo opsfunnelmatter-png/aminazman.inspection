@@ -74,7 +74,7 @@ Best regards,
 Senior CSWIP 3.4U Subsea Inspection Coordinator / Inspection Engineer
 Mobile / WhatsApp: {profile_config['phone']}
 Email: {profile_config['email']}
-Location: Kota Damansara, Selangor / Kuala Lumpur, Malaysia (Point of Hire | 100% Available for Freelance / Ad-Hoc Mobilizations)
+Location: Kota Damansara, Selangor / Kuala Lumpur, Malaysia (Point of Hire / Nearest Airport: KLIA / KUL | 100% Available for Freelance / Ad-Hoc Mobilizations)
 """
     else: # amin
         subject = f"CSWIP 3.4U Subsea Inspection Engineer / Data Recorder - {profile_config['name']} (Freelance / Contract / Permanent)"
