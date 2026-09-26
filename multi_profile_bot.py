@@ -51,26 +51,27 @@ def generate_email_content(profile_config, contact):
     greeting = f"Hi {pic.split()[0]}," if pic and pic.lower() not in ["none", "all", "recruitment team", "hr team", "crewing team", "general desk"] else "Dear Hiring & Crewing Team,"
     
     if profile_config["profile_id"] == "basyir":
-        subject = f"CSWIP 3.4U Subsea Inspection Coordinator / Inspection Engineer - {profile_config['name']} (Freelance / Contract / Permanent)"
+        subject = f"Senior CSWIP 3.4U Subsea Inspection Coordinator / Inspection Engineer - {profile_config['name']} (Freelance / Contract / Permanent)"
         body = f"""{greeting}
 
-I am writing to express my strong interest in joining {company} for upcoming offshore campaigns, ad-hoc mobilizations, contract, or permanent opportunities as a CSWIP 3.4U Subsea Inspection Coordinator / Inspection Engineer. I am 100% available for immediate worldwide offshore mobilization.
+I am writing to express my strong interest in joining {company} for upcoming offshore campaigns, ad-hoc mobilizations, contract, or permanent opportunities as a Senior CSWIP 3.4U Subsea Inspection Coordinator / Inspection Engineer. I am 100% available for immediate worldwide offshore mobilization.
 
-Key Qualifications & Field Experience:
-• Certification: CSWIP 3.4U Underwater Inspection Controller (Valid to 14th October 2030)
-• Education: B.Eng (Hons) in Electrical & Electronic Engineering, International Islamic University Malaysia (IIUM)
-• Offshore Sea-Time: 8+ years active technical offshore experience (2016 – Present) across diving and ROV subsea inspection campaigns, UWILD surveys, pipeline integrity, structural inspections, and FMD operations.
-• Subsea Inspection Suites: VisualSoft Suite 10.3 (Certified), Digital EdgeDVR, AutoCAD, MS Project & comprehensive anomaly register/client reporting.
-• Valid Mandatory Offshore Clearances: OPITO FOET & Travel Safely By Boat with CA-EBS (Valid to May 2027), Offshore Medical (OGUK, PETRONAS, Shell, ExxonMobil & QatarGas approved - Valid to Oct 2026), International Passport (Valid to July 2027), and Seaman's Book.
+Key Qualifications & Proven Track Record:
+• CSWIP 3.4U Certification: Underwater Inspection Controller Grade 3.4U (Cert #671180 — Valid to 14th October 2030).
+• Academic Background: B.Eng (Hons) in Electrical & Electronic Engineering, International Islamic University Malaysia (IIUM).
+• 13+ Years Subsea & Offshore Experience: Over 8+ years dedicated as CSWIP 3.4U Inspection Coordinator, Inspection Engineer, and Lead Report Coordinator (2016 – Present) across diving and ROV subsea inspection campaigns, UWILD surveys, deepwater structures (XMT, manifolds, PLET, jumpers), pipeline integrity, FMD, and decommissioning surveys.
+• Major Operator Campaign History: PTT / Chevron Thailand (DP2 Mermaid Sapphire & DP2 MMA Pride), Subsea 7 / North Oil Company Qatar (DP2DSV Swordfish), Sarawak Shell (F23 & Malikai TTR), PETRONAS Carigali (Tangga Barat TBCP), PTTEP (Block H & K Deepwater, Kikeh SPAR UWILD), Mubadala (Pegaga ICPP), and Murphy Oil (Kikeh).
+• Software Mastery: VisualSoft Suite 10.3 (Certified), Digital EdgeDVR, AutoCAD 2D/3D, MS Project, and comprehensive CSWIP 3.4U QA/QC client deliverables.
+• Valid Mandatory Offshore Clearances: OPITO FOET with CA-EBS (Valid to May 2027), Comprehensive Offshore Medical (OEUK, PETRONAS MPM, Shell, ExxonMobil, STCW 2010 ILO, QatarEnergy LNG & PTTEP approved — Valid to 2nd June 2028), International Passport (Valid to 28th July 2027), and Malaysian Seaman Book.
 
-Attached is my updated CV (PDF format). Full certificate packages and editable formats are available immediately upon request.
+Attached is my comprehensive CV (PDF format). Full certified certificate packages and editable formats are available immediately upon request.
 
-Thank you for your time and consideration. I look forward to the opportunity to discuss upcoming campaign requirements with {company}.
+Thank you for your time and consideration. I look forward to discussing potential campaign requirements with {company}.
 
 Best regards,
 
 {profile_config['name'].upper()}
-CSWIP 3.4U Subsea Inspection Coordinator / Inspection Engineer
+Senior CSWIP 3.4U Subsea Inspection Coordinator / Inspection Engineer
 Mobile / WhatsApp: {profile_config['phone']}
 Email: {profile_config['email']}
 Location: {profile_config['location']}
