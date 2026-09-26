@@ -51,10 +51,10 @@ def generate_email_content(profile_config, contact):
     greeting = f"Hi {pic.split()[0]}," if pic and pic.lower() not in ["none", "all", "recruitment team", "hr team", "crewing team", "general desk"] else "Dear Hiring & Crewing Team,"
     
     if profile_config["profile_id"] == "basyir":
-        subject = f"Senior CSWIP 3.4U Subsea Inspection Coordinator / Inspection Engineer - {profile_config['name']} (Freelance / Contract / Permanent)"
+        subject = f"Senior CSWIP 3.4U Subsea Inspection Coordinator / Inspection Engineer - {profile_config['name']} (Freelance / Ad-Hoc Mobilizations)"
         body = f"""{greeting}
 
-I am writing to express my strong interest in joining {company} for upcoming offshore campaigns, ad-hoc mobilizations, contract, or permanent opportunities as a Senior CSWIP 3.4U Subsea Inspection Coordinator / Inspection Engineer. I am 100% available for immediate worldwide offshore mobilization.
+I am writing to express my strong interest in joining {company} for upcoming offshore campaigns, freelancing roles, and ad-hoc mobilizations as a Senior CSWIP 3.4U Subsea Inspection Coordinator / Inspection Engineer. I am 100% available for immediate worldwide freelance mobilization.
 
 Key Qualifications & Proven Track Record:
 • CSWIP 3.4U Certification: Underwater Inspection Controller Grade 3.4U (Cert #671180 — Valid to 14th October 2030).
@@ -74,7 +74,7 @@ Best regards,
 Senior CSWIP 3.4U Subsea Inspection Coordinator / Inspection Engineer
 Mobile / WhatsApp: {profile_config['phone']}
 Email: {profile_config['email']}
-Location: {profile_config['location']}
+Location: Kota Damansara, Selangor / Kuala Lumpur, Malaysia (Point of Hire | 100% Available for Freelance / Ad-Hoc Mobilizations)
 """
     else: # amin
         subject = f"CSWIP 3.4U Subsea Inspection Engineer / Data Recorder - {profile_config['name']} (Freelance / Contract / Permanent)"
