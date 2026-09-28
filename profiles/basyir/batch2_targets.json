@@ -3,90 +3,165 @@
     "company": "Competentia (Asia Pacific)",
     "pic": "Asia Pacific Crewing Desk",
     "email": "mail@competentia.com",
-    "notes": "Tier-1 Subsea Manpower (APAC)"
+    "region": "Singapore / APAC",
+    "utc_offset": 8,
+    "notes": "Tier-1 Subsea Manpower (APAC)",
+    "target_local_time": "10:00",
+    "dispatch_myt": "10:00 AM MYT",
+    "dispatch_utc": "02:00 UTC"
   },
   {
     "company": "M3 Marine Group (Singapore)",
     "pic": "Capt. John Meade / HR Team",
     "email": "recruiting@m3marine.com.sg",
-    "notes": "Offshore Marine & Subsea"
+    "region": "Singapore",
+    "utc_offset": 8,
+    "notes": "Marine Subsea Consultancy & Vessel Ops",
+    "target_local_time": "10:00",
+    "dispatch_myt": "10:00 AM MYT",
+    "dispatch_utc": "02:00 UTC"
   },
   {
     "company": "Energy Resourcing Singapore",
     "pic": "Singapore Recruitment Desk",
     "email": "contactus@energyrecruit.net",
-    "notes": "O&G Technical Specialist"
+    "region": "Singapore",
+    "utc_offset": 8,
+    "notes": "O&G Subsea Technical Specialist",
+    "target_local_time": "10:00",
+    "dispatch_myt": "10:00 AM MYT",
+    "dispatch_utc": "02:00 UTC"
   },
   {
     "company": "Airswift (South East Asia)",
     "pic": "SEA Talent Acquisition Team",
     "email": "talentacquisition@airswift.com",
-    "notes": "Global Offshore Manpower"
+    "region": "Singapore / SEA Hub",
+    "utc_offset": 8,
+    "notes": "Global Offshore Energy Manpower",
+    "target_local_time": "10:00",
+    "dispatch_myt": "10:00 AM MYT",
+    "dispatch_utc": "02:00 UTC"
   },
   {
     "company": "Applus+ (Regional Base)",
-    "pic": "Sijin Unis / Regional Inspection",
+    "pic": "Sijin Unis / Regional Desk",
     "email": "sijin.unis@applus.com",
-    "notes": "Major Global Inspection / NDT"
-  },
-  {
-    "company": "AIM Control Group",
-    "pic": "Inspection & Marine Survey Desk",
-    "email": "inspection@aimcontrolgroup.com",
-    "notes": "Marine & Subsea Inspection"
-  },
-  {
-    "company": "Aries Marine & Engineering",
-    "pic": "Offshore Crewing Desk",
-    "email": "info@ariesgroup.ae",
-    "notes": "Middle East Subsea Inspection"
-  },
-  {
-    "company": "Bourbon Offshore",
-    "pic": "Arianna Guidi (Crewing Lead)",
-    "email": "arianna.guidi@bourbon-online.com",
-    "notes": "Global Vessel & ROV Operations"
-  },
-  {
-    "company": "Pelican Co., Ltd (Survey Ops)",
-    "pic": "Bilan (Survey Desk)",
-    "email": "vacancies@pelican-survey.com",
-    "notes": "Offshore Survey Contractor"
-  },
-  {
-    "company": "MaxiDive (Thailand & APAC)",
-    "pic": "Operations & Crewing Desk",
-    "email": "info@maxidive.com",
-    "notes": "Diving & Subsea Inspection (APAC)"
-  },
-  {
-    "company": "Aqua Group (UAE / ME)",
-    "pic": "HR & Crewing Department",
-    "email": "hr@aquagroup.ae",
-    "notes": "Subsea & Marine Contractor"
-  },
-  {
-    "company": "Allrig Group (Regional)",
-    "pic": "Offshore Recruitment Desk",
-    "email": "info@allriggroup.com",
-    "notes": "Asset Integrity & Subsea"
-  },
-  {
-    "company": "Milaha Group / Halul Offshore",
-    "pic": "Crewing Operations Desk",
-    "email": "info@milaha.com",
-    "notes": "Qatar & Gulf Offshore Operator"
+    "region": "Singapore / SEA",
+    "utc_offset": 8,
+    "notes": "Major Global Inspection / NDT Giant",
+    "target_local_time": "10:00",
+    "dispatch_myt": "10:00 AM MYT",
+    "dispatch_utc": "02:00 UTC"
   },
   {
     "company": "Brunel (South East Asia)",
     "pic": "Regional Energy Recruiter",
     "email": "singapore@brunel.net",
-    "notes": "Global Energy Staffing"
+    "region": "Singapore / APAC",
+    "utc_offset": 8,
+    "notes": "Global Energy Staffing Leader",
+    "target_local_time": "10:00",
+    "dispatch_myt": "10:00 AM MYT",
+    "dispatch_utc": "02:00 UTC"
+  },
+  {
+    "company": "AIM Control Group",
+    "pic": "Inspection & Marine Survey Desk",
+    "email": "inspection@aimcontrolgroup.com",
+    "region": "Vietnam / Indochina",
+    "utc_offset": 7,
+    "notes": "Marine & Subsea Inspection Group",
+    "target_local_time": "10:00",
+    "dispatch_myt": "11:00 AM MYT",
+    "dispatch_utc": "03:00 UTC"
+  },
+  {
+    "company": "Pelican Co., Ltd (Survey Ops)",
+    "pic": "Bilan (Survey Operations Desk)",
+    "email": "vacancies@pelican-survey.com",
+    "region": "Vietnam",
+    "utc_offset": 7,
+    "notes": "Offshore Survey & Inspection Contractor",
+    "target_local_time": "10:00",
+    "dispatch_myt": "11:00 AM MYT",
+    "dispatch_utc": "03:00 UTC"
+  },
+  {
+    "company": "MaxiDive (Thailand & APAC)",
+    "pic": "Operations & Crewing Desk",
+    "email": "info@maxidive.com",
+    "region": "Thailand / Pattaya",
+    "utc_offset": 7,
+    "notes": "Diving & Subsea Inspection Specialist",
+    "target_local_time": "10:00",
+    "dispatch_myt": "11:00 AM MYT",
+    "dispatch_utc": "03:00 UTC"
+  },
+  {
+    "company": "Aries Marine & Engineering",
+    "pic": "Offshore Crewing Desk",
+    "email": "info@ariesgroup.ae",
+    "region": "UAE / Dubai (UTC+4)",
+    "utc_offset": 4,
+    "notes": "Middle East Subsea Inspection",
+    "target_local_time": "10:00",
+    "dispatch_myt": "02:00 PM MYT",
+    "dispatch_utc": "06:00 UTC"
+  },
+  {
+    "company": "Aqua Group (UAE / ME)",
+    "pic": "HR & Crewing Department",
+    "email": "hr@aquagroup.ae",
+    "region": "UAE / Sharjah (UTC+4)",
+    "utc_offset": 4,
+    "notes": "Subsea Diving & Marine Contractor",
+    "target_local_time": "10:00",
+    "dispatch_myt": "02:00 PM MYT",
+    "dispatch_utc": "06:00 UTC"
+  },
+  {
+    "company": "Allrig Group (Regional Base)",
+    "pic": "Offshore Recruitment Desk",
+    "email": "info@allriggroup.com",
+    "region": "UAE / Middle East Hub (UTC+4)",
+    "utc_offset": 4,
+    "notes": "Subsea Asset Integrity Specialist",
+    "target_local_time": "10:00",
+    "dispatch_myt": "02:00 PM MYT",
+    "dispatch_utc": "06:00 UTC"
+  },
+  {
+    "company": "Milaha Group / Halul Offshore",
+    "pic": "Crewing Operations Desk",
+    "email": "info@milaha.com",
+    "region": "Qatar / Doha (UTC+3)",
+    "utc_offset": 3,
+    "notes": "Qatar & Gulf Offshore Operator",
+    "target_local_time": "10:00",
+    "dispatch_myt": "03:00 PM MYT",
+    "dispatch_utc": "07:00 UTC"
+  },
+  {
+    "company": "Bourbon Offshore",
+    "pic": "Arianna Guidi (Crewing Lead)",
+    "email": "arianna.guidi@bourbon-online.com",
+    "region": "France / Europe (CEST - UTC+2)",
+    "utc_offset": 2,
+    "notes": "Global DP Vessel & ROV Operations",
+    "target_local_time": "10:00",
+    "dispatch_myt": "04:00 PM MYT",
+    "dispatch_utc": "08:00 UTC"
   },
   {
     "company": "JFD Global (Subsea Operations)",
     "pic": "Commercial & Personnel Desk",
     "email": "sales@jfdglobal.com",
-    "notes": "Subsea Operations Specialist"
+    "region": "Aberdeen / UK (BST - UTC+1)",
+    "utc_offset": 1,
+    "notes": "Subsea Operations & Hyperbaric",
+    "target_local_time": "10:00",
+    "dispatch_myt": "05:00 PM MYT",
+    "dispatch_utc": "09:00 UTC"
   }
 ]

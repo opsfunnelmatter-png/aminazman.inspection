@@ -1,13 +1,14 @@
-name: Cloud Outreach Scheduled Runner
+name: Timezone-Aware Cloud Outreach Scheduler
 
 on:
   schedule:
-    # Sweep every 20 minutes between 00:00 UTC and 03:00 UTC (8:00 AM - 11:00 AM MYT) Monday to Friday
-    - cron: '*/20 0-3 * * 1-5'
+    # Sweeps every 30 minutes from 02:00 UTC to 10:00 UTC (10:00 AM to 6:00 PM MYT) Monday to Friday
+    # This automatically catches 10:00 AM local time across Singapore, Vietnam, Thailand, UAE, Qatar, and UK/Europe!
+    - cron: '0,30 2-10 * * 1-5'
   workflow_dispatch:
 
 jobs:
-  scheduled_run:
+  timezone_dispatch:
     runs-on: ubuntu-latest
 
     steps:
@@ -19,14 +20,14 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Run Cloud Scheduler Bot
+      - name: Execute Timezone-Aware Cloud Scheduler
         run: |
           python cloud_scheduler_bot.py
 
-      - name: Commit and Push State Updates
+      - name: Commit and Push Ledger State
         run: |
-          git config --global user.name "AG-Offshore Cloud Scheduler"
+          git config --global user.name "AG-Offshore Timezone Scheduler"
           git config --global user.email "scheduler@ag-offshore.com"
           git add -f schedule_config.json profiles/*/sent_ledger.json
-          git commit -m "Automated state sync from cloud outreach run" || echo "No changes to commit"
+          git commit -m "Auto-update sent ledger from timezone-aware cloud dispatch" || echo "No changes to commit"
           git push origin main || echo "Push failed or nothing to push"

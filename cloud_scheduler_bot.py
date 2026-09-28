@@ -8,13 +8,7 @@ sys.stdout.reconfigure(encoding='utf-8')
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 CONFIG_FILE = os.path.join(BASE_DIR, "schedule_config.json")
-CONTACTS_FILE = os.path.join(BASE_DIR, "contacts_data.json")
-
-# Current Malaysia Time (UTC+8)
-MYT = timezone(timedelta(hours=8))
-now_myt = datetime.now(MYT)
-today_str = now_myt.strftime("%Y-%m-%d")
-day_name = now_myt.strftime("%A")
+TARGETS_FILE = os.path.join(BASE_DIR, "profiles", "basyir", "batch2_targets.json")
 
 def check_live_sent_mail(user, app_pass, target_email):
     try:
@@ -30,42 +24,45 @@ def check_live_sent_mail(user, app_pass, target_email):
         return False
 
 def main():
+    now_utc = datetime.now(timezone.utc)
+    MYT = timezone(timedelta(hours=8))
+    now_myt = datetime.now(MYT)
+    today_str = now_myt.strftime("%Y-%m-%d")
+    day_name = now_myt.strftime("%A")
+
     print(f"\n=======================================================")
-    print(f"   CLOUD OUTREACH SCHEDULER ENGINE (SWEEP RUNNER)")
-    print(f"   Server Time (MYT): {now_myt.strftime('%Y-%m-%d %H:%M:%S %Z')} ({day_name})")
+    print(f"   TIMEZONE-AWARE CLOUD SCHEDULER ENGINE (10:00 AM LOCAL)")
+    print(f"   Current UTC Time : {now_utc.strftime('%Y-%m-%d %H:%M:%S UTC')}")
+    print(f"   Current MYT Time : {now_myt.strftime('%Y-%m-%d %H:%M:%S %Z')} ({day_name})")
     print(f"=======================================================")
 
     if not os.path.exists(CONFIG_FILE):
-        print(f"ABORT: Config file not found at {CONFIG_FILE}")
+        print(f"ABORT: Config not found at {CONFIG_FILE}")
         return
 
     with open(CONFIG_FILE, "r", encoding="utf-8") as f:
         sched = json.load(f)
 
-    # 1. Check if schedule is active
     if not sched.get("active", False):
-        print("Schedule is currently INACTIVE in config. Exiting.")
+        print("Schedule is INACTIVE in config. Exiting.")
         return
 
-    # 2. Check scheduled day
     if day_name not in sched.get("scheduled_days", []):
-        print(f"Today ({day_name}) is not in scheduled_days {sched.get('scheduled_days')}. Exiting.")
+        print(f"Today ({day_name}) is not in scheduled_days. Exiting.")
         return
 
-    # 3. Check if already dispatched today (IDEMPOTENCY GUARD)
-    if sched.get("last_run_date") == today_str:
-        print(f"Today's batch for {today_str} has ALREADY been executed and completed. Exiting safely.")
+    # Load targets
+    if not os.path.exists(TARGETS_FILE):
+        print(f"ABORT: Targets file not found at {TARGETS_FILE}")
         return
 
-    # 4. Load target profile
+    with open(TARGETS_FILE, "r", encoding="utf-8") as f:
+        targets = json.load(f)
+
     profile_name = sched.get("profile", "basyir").lower()
     p_dir = os.path.join(BASE_DIR, "profiles", profile_name)
     prof_cfg_file = os.path.join(p_dir, "config.json")
     ledger_file = os.path.join(p_dir, "sent_ledger.json")
-
-    if not os.path.exists(prof_cfg_file):
-        print(f"ABORT: Profile config not found at {prof_cfg_file}")
-        return
 
     with open(prof_cfg_file, "r", encoding="utf-8") as f:
         prof_cfg = json.load(f)
@@ -77,57 +74,70 @@ def main():
         ledger = []
 
     cv_path = os.path.join(p_dir, "cv", prof_cfg.get("cv_filename", ""))
-    if not os.path.exists(cv_path):
-        print(f"ABORT: CV not found at {cv_path}")
-        return
-
     ledger_set = set(e.strip().lower() for e in ledger)
 
-    with open(CONTACTS_FILE, "r", encoding="utf-8") as f:
-        contacts = json.load(f)
+    print(f"Sender: {prof_cfg['name']} <{prof_cfg['email']}>")
+    print(f"Total Batch 2 Targets: {len(targets)}")
+    print(f"Already in Ledger: {len(ledger_set)}\n")
 
-    # Filter unsent eligible contacts
-    eligible = []
-    for c in contacts:
-        e = c.get("email", "").strip().lower()
-        if not e or any(ex in e or ex in c.get("company", "").lower() for ex in ["mcsoil", "vantris", "alam-maritim"]):
+    # Evaluate who is eligible for 10:00 AM local dispatch in this sweep window
+    ready_to_send = []
+    waiting_queue = []
+
+    for t in targets:
+        em = t["email"].strip().lower()
+        if em in ledger_set:
             continue
-        if e in ledger_set:
-            continue
-        eligible.append(c)
+            
+        utc_off = t.get("utc_offset", 8)
+        # Calculate recipient's current local hour and minute
+        recip_time = now_utc + timedelta(hours=utc_off)
+        recip_hour = recip_time.hour
+        recip_min = recip_time.minute
+        
+        # 10:00 AM Local delivery window rule:
+        # Eligible if recipient local time is >= 10:00 AM (and during working day < 18:00)
+        if recip_hour >= 10 and recip_hour < 18:
+            ready_to_send.append((t, recip_time))
+        else:
+            waiting_queue.append((t, recip_time))
 
-    batch_limit = sched.get("batch_size", 15)
-    to_send = eligible[:batch_limit]
+    print(f"--- SWEEP EVALUATION ---")
+    print(f"• Ready for Dispatch NOW (Local Time >= 10:00 AM) : {len(ready_to_send)} targets")
+    print(f"• Waiting for 10:00 AM in their Timezone       : {len(waiting_queue)} targets")
 
-    print(f"Target Profile: {prof_cfg['name']} ({prof_cfg['email']})")
-    print(f"Eligible Unsent Available: {len(eligible)} contacts")
-    print(f"Batch Limit Today: {batch_limit} emails\n")
+    for t, rt in waiting_queue:
+        print(f"  [WAITING] {t['company']} ({t['region']}) — Current Local: {rt.strftime('%I:%M %p')}")
 
-    if not to_send:
-        print("No eligible contacts remaining in queue. Exiting.")
+    if not ready_to_send:
+        print("\nNo targets currently in the 10:00 AM window for this sweep. Safe exit.")
         return
 
+    print("\n--- EXECUTING DISPATCH FOR RECIPIENTS AT 10:00 AM LOCAL ---")
     sent_count = 0
-    for idx, contact in enumerate(to_send, 1):
-        target_email = contact["email"].strip()
-        comp = contact.get("company", "Company")
-        pic = contact.get("pic_name", "Recruitment Team")
 
-        print(f"[{idx}/{len(to_send)}] Target: {comp} ({pic}) <{target_email}>")
+    for idx, (target, recip_time) in enumerate(ready_to_send, 1):
+        target_email = target["email"].strip()
+        comp = target.get("company", "Company")
+        pic = target.get("pic", "Recruitment Team")
+        region = target.get("region", "Global")
+
+        print(f"\n[{idx}/{len(ready_to_send)}] Target: {comp} ({pic}) <{target_email}>")
+        print(f"     Recipient Local Time: {recip_time.strftime('%I:%M %p')} ({region})")
 
         # Live Google Sent Mail check
         if check_live_sent_mail(prof_cfg["email"], prof_cfg["app_password"], target_email):
-            print("     -> SKIPPED (Found in live Google Sent Mail)")
+            print("     -> SKIPPED (Already in live Google Sent Mail)")
             ledger.append(target_email.lower())
             with open(ledger_file, "w", encoding="utf-8") as f:
                 json.dump(list(set(ledger)), f, indent=2)
             continue
 
-        greeting = f"Hi {pic.split()[0]}," if pic and pic.lower() not in ["none", "all", "recruitment team", "hr team", "crewing team", "operations team", "general desk", "crewing desk", "recruitment desk"] else "Dear Hiring & Crewing Team,"
+        greeting = f"Hi {pic.split()[0]}," if pic and pic.lower() not in ["none", "all", "recruitment team", "hr team", "crewing team", "operations team", "general desk", "crewing desk", "recruitment desk", "asia pacific crewing desk", "singapore recruitment desk", "sea talent acquisition team", "sijin unis / regional desk", "inspection & marine survey desk", "offshore crewing desk", "operations & crewing desk", "hr & crewing department", "offshore recruitment desk", "crewing operations desk", "regional energy recruiter", "commercial & personnel desk"] else "Dear Hiring & Crewing Team,"
 
-        if profile_name == "basyir":
-            subject = f"Senior CSWIP 3.4U Subsea Inspection Coordinator / Inspection Engineer - {prof_cfg['name']} (Freelance / Ad-Hoc Mobilizations)"
-            body = f"""{greeting}
+        subject = f"Senior CSWIP 3.4U Subsea Inspection Coordinator / Inspection Engineer - {prof_cfg['name']} (Freelance / Ad-Hoc Mobilizations)"
+
+        body = f"""{greeting}
 
 I am writing to express my strong interest in joining {comp} for upcoming offshore campaigns, freelancing roles, and ad-hoc mobilizations as a Senior CSWIP 3.4U Subsea Inspection Coordinator / Inspection Engineer. I am 100% available for immediate worldwide freelance mobilization.
 
@@ -151,33 +161,6 @@ Mobile / WhatsApp: {prof_cfg['phone']}
 Email: {prof_cfg['email']}
 Location: {prof_cfg['location']}
 """
-        else: # amin
-            subject = f"CSWIP 3.4U Subsea Inspection Engineer / Data Recorder - {prof_cfg['name']} (Freelance / Contract / Permanent)"
-            body = f"""{greeting}
-
-I am writing to express my strong interest in joining {comp} for upcoming offshore campaigns, ad-hoc freelancing mobilizations, contract, or permanent positions as a CSWIP 3.4U Subsea Inspection Engineer / Data Recorder. I am 100% open for freelancing, contract, or permanent roles and willing to relocate worldwide.
-
-With over 280+ offshore days across 10+ subsea campaigns (including PETRONAS, PTTEP, CHOC, Fugro Upper Zakum, ADNOC, and RINA Class surveys), I possess extensive hands-on expertise in subsea data acquisition, pipeline tracking (TSS 440/350 & MBES), Flooded Member Detection (Cobalt-60 & Impact Subsea FMD), and digital inspection suites (Sirrihatt, EdgeDVR, IDAMS).
-
-Key Qualifications & Active Offshore Clearances:
-• CSWIP 3.4U Subsea Inspection Engineer (Cert #542968 - Valid to 2028)
-• B.Eng (Hons) Petroleum Engineering, Universiti Teknologi Malaysia (UTM)
-• OPITO BOSIET with CA-EBS & EBS, PETRONAS & OEUK Offshore Medicals (Valid to May 2027)
-• ADNOC Offshore HSE Induction (Valid to Nov 2026) & Malaysian Seaman Card/Book
-• Digital Suites: Sirrihatt, Digital EdgeDVR, IDAMS WinCairs, VOYIS Live Discovery/VSLAM, Agisoft 3D Photogrammetry, OBS Studio
-
-Attached is my latest CV (PDF format). Full supporting certificate packages and editable formats are available immediately upon request.
-
-I am 100% available for immediate worldwide offshore mobilization, open for freelancing / contract / permanent roles, and willing to relocate. I look forward to hearing from you soon regarding opportunities with {comp}.
-
-Best regards,
-
-{prof_cfg['name'].upper()}
-CSWIP 3.4U Subsea Inspection Engineer / Data Recorder
-Mobile / WhatsApp: {prof_cfg['phone']}
-Email: {prof_cfg['email']}
-Location: {prof_cfg['location']}
-"""
 
         msg = MIMEMultipart()
         msg["From"] = f"{prof_cfg['name']} <{prof_cfg['email']}>"
@@ -197,28 +180,22 @@ Location: {prof_cfg['location']}
             server.login(prof_cfg["email"], prof_cfg["app_password"])
             server.sendmail(prof_cfg["email"], target_email, msg.as_string())
             server.quit()
-            print(f"     SUCCESS: Email delivered to {target_email}!")
+            print(f"     SUCCESS: Delivered to {target_email} at {recip_time.strftime('%I:%M %p')} recipient local time!")
             sent_count += 1
 
             ledger.append(target_email.lower())
             with open(ledger_file, "w", encoding="utf-8") as f:
                 json.dump(list(set(ledger)), f, indent=2)
 
-            if idx < len(to_send):
+            if idx < len(ready_to_send):
                 delay = random.randint(60, 110)
-                print(f"     Waiting {delay}s safety delay before next email...")
+                print(f"     Waiting {delay}s safety delay before next send...")
                 time.sleep(delay)
         except Exception as e:
             print(f"     FAILED to send to {target_email}: {e}")
 
-    # Mark last_run_date to today
-    sched["last_run_date"] = today_str
-    with open(CONFIG_FILE, "w", encoding="utf-8") as f:
-        json.dump(sched, f, indent=2)
-
     print(f"\n=======================================================")
-    print(f"   SWEEP DISPATCH FINISHED: {sent_count} EMAILS DELIVERED")
-    print(f"   Marked last_run_date: {today_str}")
+    print(f"   SWEEP FINISHED: {sent_count} EMAILS DELIVERED AT 10:00 AM LOCAL")
     print(f"=======================================================\n")
 
 if __name__ == "__main__":
