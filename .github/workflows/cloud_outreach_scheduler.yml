@@ -1,0 +1,32 @@
+name: Cloud Outreach Scheduled Runner
+
+on:
+  schedule:
+    # Sweep every 20 minutes between 00:00 UTC and 03:00 UTC (8:00 AM - 11:00 AM MYT) Monday to Friday
+    - cron: '*/20 0-3 * * 1-5'
+  workflow_dispatch:
+
+jobs:
+  scheduled_run:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Run Cloud Scheduler Bot
+        run: |
+          python cloud_scheduler_bot.py
+
+      - name: Commit and Push State Updates
+        run: |
+          git config --global user.name "AG-Offshore Cloud Scheduler"
+          git config --global user.email "scheduler@ag-offshore.com"
+          git add -f schedule_config.json profiles/*/sent_ledger.json
+          git commit -m "Automated state sync from cloud outreach run" || echo "No changes to commit"
+          git push origin main || echo "Push failed or nothing to push"
