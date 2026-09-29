@@ -8,7 +8,7 @@ sys.stdout.reconfigure(encoding='utf-8')
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 CONFIG_FILE = os.path.join(BASE_DIR, "schedule_config.json")
-TARGETS_FILE = os.path.join(BASE_DIR, "profiles", "basyir", "batch2_targets.json")
+TARGETS_FILE = os.path.join(BASE_DIR, "profiles", "basyir", "batch3_targets.json")
 
 def check_live_sent_mail(user, app_pass, target_email):
     try:

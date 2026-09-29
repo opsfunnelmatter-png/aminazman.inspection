@@ -1,0 +1,152 @@
+[
+  {
+    "company": "Atlas Professionals (Singapore / APAC)",
+    "pic": "APAC Subsea Crewing Desk",
+    "email": "singapore@atlasprofessionals.com",
+    "utc_offset": 8,
+    "region": "UTC+8",
+    "notes": "Tier-1 Subsea & ROV Staffing",
+    "target_local_time": "10:00 AM",
+    "dispatch_myt": "10:00 AM MYT"
+  },
+  {
+    "company": "Subsea 7 (Singapore / APAC Regional)",
+    "pic": "Subsea Crewing Desk",
+    "email": "recruitment@subsea7.com",
+    "utc_offset": 8,
+    "region": "UTC+8",
+    "notes": "Global Tier-1 Subsea EPCI Contractor",
+    "target_local_time": "10:00 AM",
+    "dispatch_myt": "10:00 AM MYT"
+  },
+  {
+    "company": "Fugro Singapore Marine",
+    "pic": "Marine Inspection Coordinator",
+    "email": "sales.marine@fugro.com",
+    "utc_offset": 8,
+    "region": "UTC+8",
+    "notes": "Global Subsea Survey & Geoconsulting",
+    "target_local_time": "10:00 AM",
+    "dispatch_myt": "10:00 AM MYT"
+  },
+  {
+    "company": "AqualisBraemar LOC (Singapore)",
+    "pic": "Offshore Survey & Inspection Desk",
+    "email": "singapore@abl-group.com",
+    "utc_offset": 8,
+    "region": "UTC+8",
+    "notes": "Offshore Marine & Subsea Warranty",
+    "target_local_time": "10:00 AM",
+    "dispatch_myt": "10:00 AM MYT"
+  },
+  {
+    "company": "Ajang Subsea Services (Malaysia)",
+    "pic": "Offshore Operations Desk",
+    "email": "admin@ajang.com.my",
+    "utc_offset": 8,
+    "region": "UTC+8",
+    "notes": "Malaysian Subsea & Diving Contractor",
+    "target_local_time": "10:00 AM",
+    "dispatch_myt": "10:00 AM MYT"
+  },
+  {
+    "company": "C-OPS (Singapore / APAC)",
+    "pic": "Offshore Crewing Team",
+    "email": "crewing@c-ops.com",
+    "utc_offset": 8,
+    "region": "UTC+8",
+    "notes": "Offshore Personnel & Subsea Specialist",
+    "target_local_time": "10:00 AM",
+    "dispatch_myt": "10:00 AM MYT"
+  },
+  {
+    "company": "Mermaid Subsea Services (Thailand)",
+    "pic": "HR & Crewing Desk",
+    "email": "recruitment@mermaid-subsea.com",
+    "utc_offset": 7,
+    "region": "UTC+7",
+    "notes": "Major Subsea & ROV Contractor",
+    "target_local_time": "10:00 AM",
+    "dispatch_myt": "11:00 AM MYT"
+  },
+  {
+    "company": "PVD Offshore (Vietnam)",
+    "pic": "Technical Crewing Desk",
+    "email": "pvd-offshore@pvdrilling.com.vn",
+    "utc_offset": 7,
+    "region": "UTC+7",
+    "notes": "Vietnam Subsea & Marine Services",
+    "target_local_time": "10:00 AM",
+    "dispatch_myt": "11:00 AM MYT"
+  },
+  {
+    "company": "HydroDive (Middle East / Gulf)",
+    "pic": "Subsea Crewing Desk",
+    "email": "info@hydrodive.com",
+    "utc_offset": 4,
+    "region": "UTC+4",
+    "notes": "Commercial Diving & Subsea Contractor",
+    "target_local_time": "10:00 AM",
+    "dispatch_myt": "14:00 PM MYT"
+  },
+  {
+    "company": "Mubarak Subsea (UAE)",
+    "pic": "Subsea Operations Team",
+    "email": "info@mubaraksubsea.ae",
+    "utc_offset": 4,
+    "region": "UTC+4",
+    "notes": "Offshore Marine & Subsea Inspection",
+    "target_local_time": "10:00 AM",
+    "dispatch_myt": "14:00 PM MYT"
+  },
+  {
+    "company": "RAWABI Subsea (KSA / UAE)",
+    "pic": "Subsea Recruitment Desk",
+    "email": "info@rawabisubsea.com",
+    "utc_offset": 3,
+    "region": "UTC+3",
+    "notes": "Saudi & Gulf Offshore Subsea Contractor",
+    "target_local_time": "10:00 AM",
+    "dispatch_myt": "15:00 PM MYT"
+  },
+  {
+    "company": "Maridive & Oil Services (Gulf)",
+    "pic": "Crewing & Personnel Desk",
+    "email": "maridive@maridive.com.eg",
+    "utc_offset": 3,
+    "region": "UTC+3",
+    "notes": "Offshore Marine & Subsea Contractor",
+    "target_local_time": "10:00 AM",
+    "dispatch_myt": "15:00 PM MYT"
+  },
+  {
+    "company": "TechnipFMC (Aberdeen / Global)",
+    "pic": "Subsea Crewing Coordinator",
+    "email": "recruitment.uk@technipfmc.com",
+    "utc_offset": 1,
+    "region": "UTC+1",
+    "notes": "Global Subsea EPCI Leader",
+    "target_local_time": "10:00 AM",
+    "dispatch_myt": "17:00 PM MYT"
+  },
+  {
+    "company": "DeepOcean (Aberdeen / UK)",
+    "pic": "Offshore Inspection Desk",
+    "email": "recruitment@deepocean.com",
+    "utc_offset": 1,
+    "region": "UTC+1",
+    "notes": "Subsea Inspection & Trenching Contractor",
+    "target_local_time": "10:00 AM",
+    "dispatch_myt": "17:00 PM MYT"
+  },
+  {
+    "company": "James Fisher Subsea (Aberdeen)",
+    "pic": "Subsea Inspection Desk",
+    "email": "recruitment@james-fisher.com",
+    "utc_offset": 1,
+    "region": "UTC+1",
+    "notes": "Offshore Diving & ROV Subsea Integrity",
+    "target_local_time": "10:00 AM",
+    "dispatch_myt": "17:00 PM MYT"
+  }
+]

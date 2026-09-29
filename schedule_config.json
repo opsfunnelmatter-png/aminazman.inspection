@@ -8,8 +8,8 @@
     "Thursday",
     "Friday"
   ],
-  "target_time_myt": "08:30",
   "batch_size": 15,
-  "last_run_date": "2026-09-28",
-  "notes": "Automated morning cloud schedule. Runs next batch on scheduled days between 8:00 AM and 11:00 AM MYT."
+  "last_run_date": "2026-09-29",
+  "current_batch": "batch3",
+  "notes": "Ready for Batch 3 on Wednesday, 30 September 2026. Dispatches across 4 timezone waves starting 10:00 AM MYT."
 }
