@@ -120,33 +120,33 @@
     "dispatch_myt": "15:00 PM MYT"
   },
   {
-    "company": "TechnipFMC (Aberdeen / Global)",
-    "pic": "Subsea Crewing Coordinator",
-    "email": "recruitment.uk@technipfmc.com",
+    "company": "Oceaneering (Aberdeen / UK)",
+    "pic": "Subsea Crewing Desk",
+    "email": "aberdeen_recruitment@oceaneering.com",
     "utc_offset": 1,
     "region": "UTC+1",
-    "notes": "Global Subsea EPCI Leader",
+    "notes": "Major Global ROV & Subsea Specialist",
     "target_local_time": "10:00 AM",
-    "dispatch_myt": "17:00 PM MYT"
+    "dispatch_myt": "05:00 PM MYT"
   },
   {
-    "company": "DeepOcean (Aberdeen / UK)",
-    "pic": "Offshore Inspection Desk",
-    "email": "recruitment@deepocean.com",
+    "company": "DOF Subsea (Aberdeen / UK)",
+    "pic": "Offshore Personnel Desk",
+    "email": "aberdeen.crewing@dof.com",
     "utc_offset": 1,
     "region": "UTC+1",
-    "notes": "Subsea Inspection & Trenching Contractor",
+    "notes": "Subsea Vessel & Survey Operations",
     "target_local_time": "10:00 AM",
-    "dispatch_myt": "17:00 PM MYT"
+    "dispatch_myt": "05:00 PM MYT"
   },
   {
-    "company": "James Fisher Subsea (Aberdeen)",
-    "pic": "Subsea Inspection Desk",
-    "email": "recruitment@james-fisher.com",
+    "company": "Rovop Ltd (Aberdeen / UK)",
+    "pic": "ROV & Inspection Personnel",
+    "email": "careers@rovop.com",
     "utc_offset": 1,
     "region": "UTC+1",
-    "notes": "Offshore Diving & ROV Subsea Integrity",
+    "notes": "Specialist ROV Services Operator",
     "target_local_time": "10:00 AM",
-    "dispatch_myt": "17:00 PM MYT"
+    "dispatch_myt": "05:00 PM MYT"
   }
 ]

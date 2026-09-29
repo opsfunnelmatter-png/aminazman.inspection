@@ -21,7 +21,10 @@ def check_live_sent_mail(user, app_pass, target_email):
         return has_sent
     except Exception as e:
         print(f"     [IMAP Warning] Live check error for {target_email}: {e}")
-        return False
+        # FAIL-SAFE CRITICAL GUARD: Never assume unsent on error!
+        # If network error occurs, assume it was sent to prevent ANY risk of duplicate spam!
+        print(f"     [SAFETY LOCK] Skipping {target_email} due to check error to prevent duplicate email!")
+        return True
 
 def main():
     now_utc = datetime.now(timezone.utc)
@@ -169,9 +172,16 @@ Location: {prof_cfg['location']}
         msg.attach(MIMEText(body, "plain"))
 
         with open(cv_path, "rb") as cv_f:
-            part = MIMEApplication(cv_f.read(), Name=os.path.basename(cv_path))
+            cv_bytes = cv_f.read()
+            if len(cv_bytes) < 500000:
+                raise ValueError(f"FATAL: CV attachment at {cv_path} is corrupted or empty ({len(cv_bytes)} bytes)!")
+            part = MIMEApplication(cv_bytes, Name=os.path.basename(cv_path))
             part['Content-Disposition'] = f'attachment; filename="{os.path.basename(cv_path)}"'
             msg.attach(part)
+
+        # STRICT VERIFICATION: Ensure both text body and PDF attachment exist in MIME message
+        if len(msg.get_payload()) < 2:
+            raise ValueError(f"FATAL: MIME structure missing attachment! Aborting send to {target_email}!")
 
         try:
             print(f"     Sending email via {prof_cfg['email']}...")
