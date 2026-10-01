@@ -8,7 +8,7 @@ sys.stdout.reconfigure(encoding='utf-8')
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 CONFIG_FILE = os.path.join(BASE_DIR, "schedule_config.json")
-TARGETS_FILE = os.path.join(BASE_DIR, "profiles", "basyir", "batch3_targets.json")
+
 
 def check_live_sent_mail(user, app_pass, target_email):
     try:
@@ -54,18 +54,20 @@ def main():
         print(f"Today ({day_name}) is not in scheduled_days. Exiting.")
         return
 
-    # Load targets
-    if not os.path.exists(TARGETS_FILE):
-        print(f"ABORT: Targets file not found at {TARGETS_FILE}")
-        return
-
-    with open(TARGETS_FILE, "r", encoding="utf-8") as f:
-        targets = json.load(f)
-
     profile_name = sched.get("profile", "basyir").lower()
+    current_batch = sched.get("current_batch", "batch3")
     p_dir = os.path.join(BASE_DIR, "profiles", profile_name)
     prof_cfg_file = os.path.join(p_dir, "config.json")
     ledger_file = os.path.join(p_dir, "sent_ledger.json")
+    targets_file = os.path.join(p_dir, f"{current_batch}_targets.json")
+
+    # Load targets
+    if not os.path.exists(targets_file):
+        print(f"ABORT: Targets file not found at {targets_file}")
+        return
+
+    with open(targets_file, "r", encoding="utf-8") as f:
+        targets = json.load(f)
 
     with open(prof_cfg_file, "r", encoding="utf-8") as f:
         prof_cfg = json.load(f)
@@ -80,7 +82,7 @@ def main():
     ledger_set = set(e.strip().lower() for e in ledger)
 
     print(f"Sender: {prof_cfg['name']} <{prof_cfg['email']}>")
-    print(f"Total Batch 2 Targets: {len(targets)}")
+    print(f"Current Active Batch: {current_batch.upper()} ({len(targets)} targets)")
     print(f"Already in Ledger: {len(ledger_set)}\n")
 
     # Evaluate who is eligible for 10:00 AM local dispatch in this sweep window

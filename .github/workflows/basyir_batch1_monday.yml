@@ -9,10 +9,15 @@ on:
 jobs:
   dispatch_batch1:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
 
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -27,6 +32,8 @@ jobs:
         run: |
           git config --global user.name "AG-Offshore Basyir Bot"
           git config --global user.email "bot@ag-offshore.com"
+          git pull origin main --rebase || true
           git add -f profiles/basyir/sent_ledger.json
           git commit -m "Auto-update Basyir sent ledger from Monday Batch 1 cloud dispatch" || echo "No changes to commit"
-          git push origin main || echo "Push failed or nothing to push"
+          git push origin main
+
