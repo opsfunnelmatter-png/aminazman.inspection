@@ -1,0 +1,152 @@
+[
+  {
+    "company": "MCS Group (Malaysia HQ)",
+    "pic": "Esraa Seoudi & Human Capital Team",
+    "email": "hr@mcsoil.com",
+    "utc_offset": 8,
+    "region": "UTC+8",
+    "notes": "Global Subsea, ROV & Advanced Inspection Specialist (KL Base)",
+    "target_local_time": "10:00 AM",
+    "dispatch_myt": "10:00 AM MYT"
+  },
+  {
+    "company": "Bintang Subsea Ventures",
+    "pic": "Subsea Operations & Crewing Team",
+    "email": "bsv@bintangsubsea.com",
+    "utc_offset": 8,
+    "region": "UTC+8",
+    "notes": "Subsea Survey, ROV & Positioning Specialist (Malaysia/SG)",
+    "target_local_time": "10:00 AM",
+    "dispatch_myt": "10:00 AM MYT"
+  },
+  {
+    "company": "Blackpearl Subsea Services",
+    "pic": "Commercial & Operations Desk",
+    "email": "admin@bpsubsea.com",
+    "utc_offset": 8,
+    "region": "UTC+8",
+    "notes": "Commercial Diving, ROV & Subsea Inspection Contractor",
+    "target_local_time": "10:00 AM",
+    "dispatch_myt": "10:00 AM MYT"
+  },
+  {
+    "company": "Borneo Subsea Services",
+    "pic": "Offshore Recruitment Desk",
+    "email": "resume@borneosubsea.com",
+    "utc_offset": 8,
+    "region": "UTC+8",
+    "notes": "Offshore Subsea Inspection & Diving Services (East/West Malaysia)",
+    "target_local_time": "10:00 AM",
+    "dispatch_myt": "10:00 AM MYT"
+  },
+  {
+    "company": "Clockwise Subsea",
+    "pic": "Personnel & Crewing Desk",
+    "email": "malaysia@cwsubsea.com",
+    "utc_offset": 8,
+    "region": "UTC+8",
+    "notes": "Subsea Engineering & Inspection Specialist",
+    "target_local_time": "10:00 AM",
+    "dispatch_myt": "10:00 AM MYT"
+  },
+  {
+    "company": "Dalamair Subsea",
+    "pic": "Afizudeen Hj. Ahmad",
+    "email": "afizudeen@dalamair.com.my",
+    "utc_offset": 8,
+    "region": "UTC+8",
+    "notes": "Malaysian Underwater Inspection & Diving Contractor",
+    "target_local_time": "10:00 AM",
+    "dispatch_myt": "10:00 AM MYT"
+  },
+  {
+    "company": "Bermuda Subsea (M) Sdn Bhd",
+    "pic": "Crewing & Offshore Operations Desk",
+    "email": "bermuda@bermudasubsea.com.my",
+    "utc_offset": 8,
+    "region": "UTC+8",
+    "notes": "Malaysian Offshore Diving & Subsea Support Services",
+    "target_local_time": "10:00 AM",
+    "dispatch_myt": "10:00 AM MYT"
+  },
+  {
+    "company": "Cornerstone Offshore",
+    "pic": "Offshore Commercial & Crewing Team",
+    "email": "sales@cornerstone-offshore.com",
+    "utc_offset": 8,
+    "region": "UTC+8",
+    "notes": "Offshore Marine Support & Subsea Services",
+    "target_local_time": "10:00 AM",
+    "dispatch_myt": "10:00 AM MYT"
+  },
+  {
+    "company": "IRM Energy & Technology Services WLL (Qatar)",
+    "pic": "Subsea Inspection & Crewing Desk",
+    "email": "info@irmqatar.com",
+    "utc_offset": 3,
+    "region": "UTC+3",
+    "notes": "Qatar Offshore IRM Specialist (Basyir holds active Qatar HSP clearances)",
+    "target_local_time": "10:00 AM",
+    "dispatch_myt": "15:00 PM MYT"
+  },
+  {
+    "company": "Marine Engineering Diving Services - MEDS (UAE)",
+    "pic": "Commercial & Subsea Crewing Desk",
+    "email": "info@marinedubai.com",
+    "utc_offset": 4,
+    "region": "UTC+4",
+    "notes": "Offshore Diving, ROV & Inspection Contractor (Dubai/UAE)",
+    "target_local_time": "10:00 AM",
+    "dispatch_myt": "14:00 PM MYT"
+  },
+  {
+    "company": "Petrogas Services (UAE)",
+    "pic": "Offshore Recruitment Team",
+    "email": "careers@petrogasuae.com",
+    "utc_offset": 4,
+    "region": "UTC+4",
+    "notes": "Middle East Offshore Support & Inspection Services",
+    "target_local_time": "10:00 AM",
+    "dispatch_myt": "14:00 PM MYT"
+  },
+  {
+    "company": "Zamil Mermaid Offshore Services (Saudi Arabia)",
+    "pic": "Offshore Operations & Crewing Team",
+    "email": "commercial@zamiloffshore.com",
+    "utc_offset": 3,
+    "region": "UTC+3",
+    "notes": "Saudi Offshore EPCI & Subsea Support Services",
+    "target_local_time": "10:00 AM",
+    "dispatch_myt": "15:00 PM MYT"
+  },
+  {
+    "company": "Archirodon Group (Middle East Regional)",
+    "pic": "Marine & Subsea Crewing Desk",
+    "email": "info@archirodon.net",
+    "utc_offset": 4,
+    "region": "UTC+4",
+    "notes": "Major Marine Contracting & Subsea Infrastructure (UAE/Oman/Qatar)",
+    "target_local_time": "10:00 AM",
+    "dispatch_myt": "14:00 PM MYT"
+  },
+  {
+    "company": "N-Sea Group (Europe / North Sea)",
+    "pic": "Subsea Survey & Inspection Recruitment",
+    "email": "recruitment@n-sea.com",
+    "utc_offset": 1,
+    "region": "UTC+1",
+    "notes": "Leading Subsea Survey, UXO, IRM & Diving Contractor",
+    "target_local_time": "10:00 AM",
+    "dispatch_myt": "17:00 PM MYT"
+  },
+  {
+    "company": "Reach Subsea (North Sea / Global)",
+    "pic": "Personnel & Crewing Desk",
+    "email": "hr@reachsubsea.no",
+    "utc_offset": 1,
+    "region": "UTC+1",
+    "notes": "Global Subsea Vessel, ROV & Survey Contractor",
+    "target_local_time": "10:00 AM",
+    "dispatch_myt": "17:00 PM MYT"
+  }
+]

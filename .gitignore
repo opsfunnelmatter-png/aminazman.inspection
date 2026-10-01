@@ -19,6 +19,8 @@ Desktop.ini
 !19. Certificate of Appreciation KL Petrogas - Amin Azman.png
 *.json
 !contacts_data.json
+!schedule_config.json
+!profiles/**/*.json
 generate_pdf.js
 render_pdf.js
 node_modules/
