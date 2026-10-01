@@ -9,7 +9,7 @@
     "Friday"
   ],
   "batch_size": 15,
-  "last_run_date": "2026-09-29",
-  "current_batch": "batch3",
-  "notes": "Ready for Batch 3 on Wednesday, 30 September 2026. Dispatches across 4 timezone waves starting 10:00 AM MYT."
+  "last_run_date": "2026-10-01",
+  "current_batch": "batch4",
+  "notes": "Batch 4 (15 targets) configured for Basyir. Dispatches across 3 timezone waves starting 10:00 AM local recipient time."
 }
