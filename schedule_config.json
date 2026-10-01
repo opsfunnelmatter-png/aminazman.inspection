@@ -1,5 +1,5 @@
 {
-  "active": true,
+  "active": false,
   "profile": "basyir",
   "scheduled_days": [
     "Monday",
@@ -11,5 +11,5 @@
   "batch_size": 15,
   "last_run_date": "2026-10-01",
   "current_batch": "batch4",
-  "notes": "Batch 4 (15 targets) configured for Basyir. Dispatches across 3 timezone waves starting 10:00 AM local recipient time."
+  "notes": "PAUSED: Basyir successfully secured offshore campaign contract at $650/day in KSA. All automated dispatches halted."
 }
